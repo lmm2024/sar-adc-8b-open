@@ -1,0 +1,5 @@
+Illegal option -k
+[INFO] Running PEX of <oa_sar8_acore13.gds>.
+[INFO] Results are put into </foss/designs/sar-adc/layout/pex_a13>.
+[INFO] PEX (C-coupled) done, the extracted SPICE netlist is </foss/designs/sar-adc/layout/pex_a13/oa_sar8_acore13.pex.spice>.
+[DONE] Bye!

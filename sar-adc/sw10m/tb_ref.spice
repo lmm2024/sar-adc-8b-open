@@ -1,0 +1,79 @@
+* VREF network at 10MS/s: bondwire + on-chip decap, worst SAR bit sequence
+* drivers pull bit bottoms to vref_i; droop at decision instants must be < 1 LSB
+.lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.param vdd=1.5
+.subckt drv bot ctl VDD VSS
+XMND bot ctl VSS VSS sg13_lv_nmos w=2.0u l=0.13u
+XMPD bot ctl VDD VDD sg13_lv_pmos w=4.0u l=0.13u
+.ends
+
+Vext vref_ext 0 {vdd}
+Rb   vref_ext n1 3
+Lb   n1 vref_i 4n
+Cdec vref_i 0 0.1p
+
+VDDl vddl 0 {vdd}
+VSSs VSS  0 0
+
+* 8 bit drivers powered from vref_i; ctl falls (bot: VSS -> vref) MSB-first, 9ns pitch
+Xd7 b7 c7 vref_i VSS drv
+Xd6 b6 c6 vref_i VSS drv
+Xd5 b5 c5 vref_i VSS drv
+Xd4 b4 c4 vref_i VSS drv
+Xd3 b3 c3 vref_i VSS drv
+Xd2 b2 c2 vref_i VSS drv
+Xd1 b1 c1 vref_i VSS drv
+Xd0 b0 c0 vref_i VSS drv
+Vc7 c7 0 pwl(0 {vdd} 5.0n {vdd} 5.2n 0)
+Vc6 c6 0 pwl(0 {vdd} 14.0n {vdd} 14.2n 0)
+Vc5 c5 0 pwl(0 {vdd} 23.0n {vdd} 23.2n 0)
+Vc4 c4 0 pwl(0 {vdd} 32.0n {vdd} 32.2n 0)
+Vc3 c3 0 pwl(0 {vdd} 41.0n {vdd} 41.2n 0)
+Vc2 c2 0 pwl(0 {vdd} 50.0n {vdd} 50.2n 0)
+Vc1 c1 0 pwl(0 {vdd} 59.0n {vdd} 59.2n 0)
+Vc0 c0 0 pwl(0 {vdd} 68.0n {vdd} 68.2n 0)
+
+* capacitor ladder (binary) + terminator + topp wiring
+C7 b7 topp 929.3f
+C6 b6 topp 464.6f
+C5 b5 topp 232.3f
+C4 b4 topp 116.2f
+C3 b3 topp 58.1f
+C2 b2 topp 29.0f
+C1 b1 topp 14.5f
+C0 b0 topp 7.26f
+Ct tb topp 7.26f
+Vt tb 0 0
+Cw topp 0 60f
+Rlk topp 0 1e12
+
+.control
+let cds = vector(4)
+let cds[0] = 0.1p
+let cds[1] = 4.7p
+let cds[2] = 22p
+let cds[3] = 47p
+let i = 0
+echo "# cdec worst_droop_at_decisions_mV" > ref.txt
+dowhile i < 4
+  let cv = cds[i]
+  alter Cdec = $&cv
+  tran 20p 80n
+  meas tran d7 find v(vref_i) at=14n
+  meas tran d6 find v(vref_i) at=23n
+  meas tran d5 find v(vref_i) at=32n
+  meas tran d4 find v(vref_i) at=41n
+  meas tran d3 find v(vref_i) at=50n
+  meas tran d2 find v(vref_i) at=59n
+  meas tran d1 find v(vref_i) at=68n
+  meas tran d0 find v(vref_i) at=77n
+  let wd = 1000 * maximum(abs(1.5-d7), abs(1.5-d6), abs(1.5-d5), abs(1.5-d4))
+  let wd2 = 1000 * maximum(abs(1.5-d3), abs(1.5-d2), abs(1.5-d1), abs(1.5-d0))
+  let w = maximum(wd, wd2)
+  echo "$&cv $&w" >> ref.txt
+  destroy all
+  let i = i + 1
+end
+quit
+.endc
+.end

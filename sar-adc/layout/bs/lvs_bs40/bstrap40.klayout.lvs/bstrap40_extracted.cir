@@ -1,0 +1,19 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 16/08/2026 08:56
+
+.SUBCKT bstrap40 VDD VSS ckb gb out vin
+C$1 \$6 \$7 cap_cmim w=39.8u l=9.94u A=395.612p P=99.48u m=1
+M$2 gb ckb \$6 \$6 sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$3 \$6 gb VDD \$6 sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$4 vin gb out VSS sg13_lv_nmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$6 VSS ckb \$8 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$8 VSS ckb \$7 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$10 vin gb \$7 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$12 \$8 VDD gb VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+.ENDS bstrap40

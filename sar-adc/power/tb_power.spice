@@ -1,0 +1,134 @@
+* OA-SAR8 analog-core power at 10 MS/s: real bootstrap x2, real switch cells x18,
+* real StrongARM comparator, real cmim CDACs. SAR code sequence supplied by PWL
+* (mirrors the logic macro output for an input near mid-scale with a slow ramp).
+.lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerCAP.lib cap_typ
+.param vdd=1.5
+.param T=100n
+
+.include /foss/designs/sar-adc/sw10m/bootstrap.cir
+
+* switch bit cell (driver inverter + boosted-gate sampling nmos), one per bit
+.subckt cell10 bot vin ctl trkb gb VDD VSS
+XMND bot ctl VSS VSS sg13_lv_nmos w=2.0u l=0.13u
+XMPD bot ctl VDD VDD sg13_lv_pmos w=4.0u l=0.13u
+XMNT bot gb  vin VSS sg13_lv_nmos w=2.0u l=0.13u
+XMPT bot trkb vin VDD sg13_lv_pmos w=4.0u l=0.13u
+.ends
+
+* StrongARM comparator
+.subckt sacomp inp inn clk outp outn VDD VSS
+XM1 p inp tail VSS sg13_lv_nmos w=2.0u l=0.15u ng=2
+XM2 q inn tail VSS sg13_lv_nmos w=2.0u l=0.15u ng=2
+XM3 outn outp p VSS sg13_lv_nmos w=4.0u l=0.13u ng=2
+XM4 outp outn q VSS sg13_lv_nmos w=4.0u l=0.13u ng=2
+XMT tail clk VSS VSS sg13_lv_nmos w=3.0u l=0.3u ng=2
+XM5 outn outp VDD VDD sg13_lv_pmos w=6.0u l=0.13u ng=2
+XM6 outp outn VDD VDD sg13_lv_pmos w=6.0u l=0.13u ng=2
+XMS1 p clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u
+XMS2 q clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u
+XMS3 outn clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u
+XMS4 outp clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u
+.ends
+
+* ---- supplies: separate meters for analog blocks
+VDDA vdda 0 {vdd}
+VSS  vss  0 0
+VCM  vcm  0 0.75
+VINP vinp 0 dc 0.75 sin(0.75 0.6 1.0meg 0 0)
+VINN vinn 0 dc 0.75 sin(0.75 -0.6 1.0meg 0 0)
+
+* clocks: track window 5..35 ns of each 100 ns; comparator clk 8 x 8 ns pulses in the conversion window
+Vtrk  trk  0 pulse(0 {vdd} 5n 0.2n 0.2n 30n {T})
+Vtrkb trkb 0 pulse({vdd} 0 5n 0.2n 0.2n 30n {T})
+Vclk  clk  0 pulse(0 {vdd} 42n 0.1n 0.1n 3n 7n)
+
+* bootstraps (P and N), gates gbp/gbn drive the two switch rows
+Xbp vinp vinpr trkb gbp vdda vss bstrap
+Xbn vinn vinnr trkb gbn vdda vss bstrap
+
+* CDAC P: 9 cells (b7..b0 + term) driving cmim units 2.14 um
+XcP7 bp7 vinpr c7 trkb gbp vdda vss cell10
+XcP6 bp6 vinpr c6 trkb gbp vdda vss cell10
+XcP5 bp5 vinpr c5 trkb gbp vdda vss cell10
+XcP4 bp4 vinpr c4 trkb gbp vdda vss cell10
+XcP3 bp3 vinpr c3 trkb gbp vdda vss cell10
+XcP2 bp2 vinpr c2 trkb gbp vdda vss cell10
+XcP1 bp1 vinpr c1 trkb gbp vdda vss cell10
+XcP0 bp0 vinpr c0 trkb gbp vdda vss cell10
+XcPt bpt vinpr vdda trkb gbp vdda vss cell10
+XC7 topp bp7 cap_cmim w=2.14u l=2.14u m=128
+XC6 topp bp6 cap_cmim w=2.14u l=2.14u m=64
+XC5 topp bp5 cap_cmim w=2.14u l=2.14u m=32
+XC4 topp bp4 cap_cmim w=2.14u l=2.14u m=16
+XC3 topp bp3 cap_cmim w=2.14u l=2.14u m=8
+XC2 topp bp2 cap_cmim w=2.14u l=2.14u m=4
+XC1 topp bp1 cap_cmim w=2.14u l=2.14u m=2
+XC0 topp bp0 cap_cmim w=2.14u l=2.14u m=1
+XCt topp bpt cap_cmim w=2.14u l=2.14u m=1
+* CDAC N: complementary code
+XcN7 bn7 vinnr c7n trkb gbn vdda vss cell10
+XcN6 bn6 vinnr c6n trkb gbn vdda vss cell10
+XcN5 bn5 vinnr c5n trkb gbn vdda vss cell10
+XcN4 bn4 vinnr c4n trkb gbn vdda vss cell10
+XcN3 bn3 vinnr c3n trkb gbn vdda vss cell10
+XcN2 bn2 vinnr c2n trkb gbn vdda vss cell10
+XcN1 bn1 vinnr c1n trkb gbn vdda vss cell10
+XcN0 bn0 vinnr c0n trkb gbn vdda vss cell10
+XcNt bnt vinnr vdda trkb gbn vdda vss cell10
+XD7 topn bn7 cap_cmim w=2.14u l=2.14u m=128
+XD6 topn bn6 cap_cmim w=2.14u l=2.14u m=64
+XD5 topn bn5 cap_cmim w=2.14u l=2.14u m=32
+XD4 topn bn4 cap_cmim w=2.14u l=2.14u m=16
+XD3 topn bn3 cap_cmim w=2.14u l=2.14u m=8
+XD2 topn bn2 cap_cmim w=2.14u l=2.14u m=4
+XD1 topn bn1 cap_cmim w=2.14u l=2.14u m=2
+XD0 topn bn0 cap_cmim w=2.14u l=2.14u m=1
+XDt topn bnt cap_cmim w=2.14u l=2.14u m=1
+* top-plate reset TGs to VCM during track
+XTGp topp vcm trk trkb vdda vss tgsw
+XTGn topn vcm trk trkb vdda vss tgsw
+.subckt tgsw a b trk trkb VDD VSS
+XMN a trk b VSS sg13_lv_nmos w=2.0u l=0.13u
+XMP a trkb b VDD sg13_lv_pmos w=4.0u l=0.13u
+.ends
+* comparator
+Xcmp topp topn clk outp outn vdda vss sacomp
+Cl1 outp 0 5f
+Cl2 outn 0 5f
+
+* ---- SAR code (representative binary search, MSB-first, 8 ns per bit after 40 ns):
+* trial sequence for a mid-scale-ish input: 1000 0000 -> keep/discard pattern 1 0 1 1 0 1 0 1
+* ctl_k = 1 during track (bottom = VSS ... note driver inverts: ctl=1 -> bot=VSS)
+.param t0=40n
+Vc7 c7 0 pwl(0 {vdd} {t0} {vdd} {t0+0.1n} 0 {T} 0 {T+5n} 0 {T+5.1n} {vdd} {T+t0} {vdd} {T+t0+0.1n} 0)
+Vc6 c6 0 pwl(0 {vdd} {t0+8n} {vdd} {t0+8.1n} 0 {t0+16n} 0 {t0+16.1n} {vdd} {T+5n} {vdd} {T+t0+8n} {vdd} {T+t0+8.1n} 0 {T+t0+16n} 0 {T+t0+16.1n} {vdd})
+Vc5 c5 0 pwl(0 {vdd} {t0+16n} {vdd} {t0+16.1n} 0 {T+5n} 0 {T+5.1n} {vdd} {T+t0+16n} {vdd} {T+t0+16.1n} 0)
+Vc4 c4 0 pwl(0 {vdd} {t0+24n} {vdd} {t0+24.1n} 0 {T+5n} 0 {T+5.1n} {vdd} {T+t0+24n} {vdd} {T+t0+24.1n} 0)
+Vc3 c3 0 pwl(0 {vdd} {t0+32n} {vdd} {t0+32.1n} 0 {t0+40n} 0 {t0+40.1n} {vdd} {T+t0+32n} {vdd} {T+t0+32.1n} 0 {T+t0+40n} 0 {T+t0+40.1n} {vdd})
+Vc2 c2 0 pwl(0 {vdd} {t0+40n} {vdd} {t0+40.1n} 0 {T+5n} 0 {T+5.1n} {vdd} {T+t0+40n} {vdd} {T+t0+40.1n} 0)
+Vc1 c1 0 pwl(0 {vdd} {t0+48n} {vdd} {t0+48.1n} 0 {t0+56n} 0 {t0+56.1n} {vdd} {T+t0+48n} {vdd} {T+t0+48.1n} 0 {T+t0+56n} 0 {T+t0+56.1n} {vdd})
+Vc0 c0 0 pwl(0 {vdd} {t0+56n} {vdd} {t0+56.1n} 0 {T+5n} 0 {T+5.1n} {vdd} {T+t0+56n} {vdd} {T+t0+56.1n} 0)
+* complementary N-side codes
+Ec7 c7n 0 vol='v(vdda)-v(c7)'
+Ec6 c6n 0 vol='v(vdda)-v(c6)'
+Ec5 c5n 0 vol='v(vdda)-v(c5)'
+Ec4 c4n 0 vol='v(vdda)-v(c4)'
+Ec3 c3n 0 vol='v(vdda)-v(c3)'
+Ec2 c2n 0 vol='v(vdda)-v(c2)'
+Ec1 c1n 0 vol='v(vdda)-v(c1)'
+Ec0 c0n 0 vol='v(vdda)-v(c0)'
+
+.control
+set filetype=ascii
+tran 0.05n 200n
+* average supply current over the second full period (100..200 ns) -> steady state
+meas tran iavg AVG i(VDDA) from=100n to=200n
+meas tran qtot INTEG i(VDDA) from=100n to=200n
+let pavg = -iavg * 1.5
+echo "ANALOG_CORE_IAVG_A = $&iavg"
+echo "ANALOG_CORE_P_W    = $&pavg"
+wrdata /foss/designs/sar-adc/power/isupply.csv i(VDDA)
+quit
+.endc
+.end

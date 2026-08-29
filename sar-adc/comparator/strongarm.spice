@@ -1,0 +1,50 @@
+* OA-SAR8 StrongARM comparator, first cut (IHP sg13g2 LV, tt corner)
+* Fast deterministic noise flow: clean transients only ->
+*   Tint, A_int(integration gain), CM slope  =>  sigma_n = sqrt(4kTg/(A_int*Cpq))
+.lib cornerMOSlv.lib mos_tt
+
+.param vdd=1.5
+.param vcm=0.9
+.param dv=2m
+
+* ---- StrongARM core (Razavi topology) ----
+* input pair
+XM1 p   inp tail 0   sg13_lv_nmos w=8u l=0.15u ng=4
+XM2 q   inn tail 0   sg13_lv_nmos w=8u l=0.15u ng=4
+* cross-coupled NMOS
+XM3 outn outp p 0    sg13_lv_nmos w=4u l=0.13u ng=2
+XM4 outp outn q 0    sg13_lv_nmos w=4u l=0.13u ng=2
+* cross-coupled PMOS
+XM5 outn outp vdd vdd sg13_lv_pmos w=6u l=0.13u ng=2
+XM6 outp outn vdd vdd sg13_lv_pmos w=6u l=0.13u ng=2
+* precharge switches (active while clk=0)
+XS1 p    clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS2 q    clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS3 outn clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS4 outp clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+* clocked tail
+XMt tail clk 0 0     sg13_lv_nmos w=3u l=0.3u ng=2
+
+VDD  vdd 0 {vdd}
+Vclk clk 0 pulse(0 {vdd} 2n 0.1n 0.1n 8n 20n)
+Vip  inp 0 {vcm+dv/2}
+Vin  inn 0 {vcm-dv/2}
+
+.control
+set wr_vecnames
+set wr_singlescale
+tran 10p 12n
+wrdata sa_p2mv.csv v(clk) v(p) v(q) v(outp) v(outn)
+* flip input polarity: -2 mV
+alter Vip dc = 0.899
+alter Vin dc = 0.901
+tran 10p 12n
+wrdata sa_n2mv.csv v(clk) v(p) v(q) v(outp) v(outn)
+* small input: 0.2 mV (sub-LSB/10) to stress resolution
+alter Vip dc = 0.9001
+alter Vin dc = 0.8999
+tran 10p 12n
+wrdata sa_p0m2.csv v(clk) v(p) v(q) v(outp) v(outn)
+quit
+.endc
+.end

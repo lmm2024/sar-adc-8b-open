@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+"""Print the ideal-quantizer limit for planned coherent PEX records."""
+
+import argparse
+import math
+
+import numpy as np
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--points", type=int, default=32)
+parser.add_argument("--tone-bin", type=int, default=15)
+parser.add_argument("--fs-msps", type=float, default=10.0)
+parser.add_argument("--aperture-ns", type=float, default=27.93)
+parser.add_argument("--amplitudes", nargs="*", type=float,
+                    default=[0.68, 0.69, 0.70, 0.71, 0.72, 0.73, 0.74, 0.745])
+args = parser.parse_args()
+
+phase0 = 2 * math.pi * args.tone_bin / args.points * (
+    args.aperture_ns * args.fs_msps * 1e-3
+)
+indices = np.arange(args.points)
+print("amplitude_v,sndr_db,enob_bit,min_code,max_code")
+for amplitude in args.amplitudes:
+    vin = 0.75 + amplitude * np.sin(
+        2 * math.pi * args.tone_bin / args.points * indices + phase0
+    )
+    codes = np.clip(np.floor(vin / 1.5 * 256), 0, 255)
+    spectrum = np.fft.rfft(codes - np.mean(codes))
+    power = np.abs(spectrum) ** 2
+    power[0] = 0.0
+    signal = power[args.tone_bin]
+    noise_distortion = np.sum(power) - signal
+    sndr = 10 * math.log10(signal / noise_distortion)
+    print(
+        f"{amplitude:.6f},{sndr:.6f},{(sndr - 1.76) / 6.02:.6f},"
+        f"{int(np.min(codes))},{int(np.max(codes))}"
+    )

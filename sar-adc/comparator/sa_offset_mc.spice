@@ -1,0 +1,46 @@
+* OA-SAR8: comparator offset Monte Carlo (mismatch models).
+* Ramp trick: ONE transient per MC sample -- differential input ramps
+* -15mV -> +15mV across 32 clocked decisions; the flip cycle gives Vos.
+.lib cornerMOSlv.lib mos_tt_mismatch
+
+* IHP mismatch master switch: agauss sigmas are multiplied by (mm_ok!=1 ? 0 : 1)
+.param mm_ok=1
+.param vdd=1.5
+.param vcm=0.9
+
+XM1 p   inp tail 0   sg13_lv_nmos w=8u l=0.15u ng=4
+XM2 q   inn tail 0   sg13_lv_nmos w=8u l=0.15u ng=4
+XM3 outn outp p 0    sg13_lv_nmos w=4u l=0.13u ng=2
+XM4 outp outn q 0    sg13_lv_nmos w=4u l=0.13u ng=2
+XM5 outn outp vdd vdd sg13_lv_pmos w=6u l=0.13u ng=2
+XM6 outp outn vdd vdd sg13_lv_pmos w=6u l=0.13u ng=2
+XS1 p    clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS2 q    clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS3 outn clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS4 outp clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XMt tail clk 0 0     sg13_lv_nmos w=3u l=0.3u ng=2
+
+VDD  vdd 0 {vdd}
+* 4ns period: 1ns precharge lead-in, eval 1..3ns, 32 cycles in 130ns
+Vclk clk 0 pulse(0 {vdd} 1n 0.05n 0.05n 2n 4n)
+* differential ramp on inp: -15mV .. +15mV over 130ns
+Vip  inp 0 pwl(0 {vcm-15m} 130n {vcm+15m})
+Vin  inn 0 {vcm}
+
+.control
+set wr_vecnames
+set wr_singlescale
+let mcruns = 60
+let r = 1
+dowhile r <= mcruns
+  setseed $&r
+  reset
+  tran 100p 131n
+  set fnum = $&r
+  wrdata mc_run_$fnum v(outp) v(outn)
+  destroy all
+  let r = r + 1
+end
+quit
+.endc
+.end

@@ -1,0 +1,16 @@
+16-Aug-2026 08:56:36 | INFO    | Your Klayout version is: KLayout 0.30.9 (required >= 0.30.5)
+16-Aug-2026 08:56:36 | INFO    | Running SG13G2 LVS checks on design /foss/designs/sar-adc/layout/bs/bstrap40.gds on cell bstrap40
+16-Aug-2026 08:56:54 | INFO    | ==============================================================================
+16-Aug-2026 08:56:54 | INFO    | Important Summary
+16-Aug-2026 08:56:54 | INFO    | +------------------+---------------------------------------------------------------+
+16-Aug-2026 08:56:54 | INFO    | | Status           | PASS                                                          |
+16-Aug-2026 08:56:54 | INFO    | | Mode             | COMPARE                                                       |
+16-Aug-2026 08:56:54 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                       |
+16-Aug-2026 08:56:54 | INFO    | | Layout           | bstrap40.gds                                                  |
+16-Aug-2026 08:56:54 | INFO    | | Top Cell         | bstrap40                                                      |
+16-Aug-2026 08:56:54 | INFO    | | Results Dir      | /foss/designs/sar-adc/layout/bs/lvs_bs40/bstrap40.klayout.lvs |
+16-Aug-2026 08:56:54 | INFO    | | Warnings         | 0                                                             |
+16-Aug-2026 08:56:54 | INFO    | | Errors           | 0                                                             |
+16-Aug-2026 08:56:54 | INFO    | | Run Time (s)     | 19.156                                                        |
+16-Aug-2026 08:56:54 | INFO    | +------------------+---------------------------------------------------------------+
+16-Aug-2026 08:56:54 | INFO    | ==============================================================================

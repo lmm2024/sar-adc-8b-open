@@ -1,0 +1,499 @@
+
+Cell sg13g2_decap_8 (0) disconnected node: VDD
+Cell sg13g2_decap_8 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_decap_8                  |Circuit 2: sg13g2_decap_8                  
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_decap_8 and sg13g2_decap_8 are equivalent.
+
+Cell sg13g2_Filler2000 (0) disconnected node: iovdd
+Cell sg13g2_Filler2000 (0) disconnected node: iovss
+Cell sg13g2_Filler2000 (0) disconnected node: vdd
+Cell sg13g2_Filler2000 (0) disconnected node: vss
+Cell sg13g2_Filler2000 (1) disconnected node: vdd
+Cell sg13g2_Filler2000 (1) disconnected node: iovdd
+
+Subcircuit pins:
+Circuit 1: sg13g2_Filler2000               |Circuit 2: sg13g2_Filler2000               
+-------------------------------------------|-------------------------------------------
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_Filler2000 and sg13g2_Filler2000 are equivalent.
+
+Cell sg13g2_fill_2 (0) disconnected node: VDD
+Cell sg13g2_fill_2 (0) disconnected node: VSS
+Cell sg13g2_fill_2 (1) disconnected node: VDD
+Cell sg13g2_fill_2 (1) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_fill_2                   |Circuit 2: sg13g2_fill_2                   
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_fill_2 and sg13g2_fill_2 are equivalent.
+
+Cell sg13g2_decap_4 (0) disconnected node: VDD
+Cell sg13g2_decap_4 (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_decap_4                  |Circuit 2: sg13g2_decap_4                  
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_decap_4 and sg13g2_decap_4 are equivalent.
+
+Cell sg13g2_Filler400 (0) disconnected node: iovdd
+Cell sg13g2_Filler400 (0) disconnected node: iovss
+Cell sg13g2_Filler400 (0) disconnected node: vdd
+Cell sg13g2_Filler400 (0) disconnected node: vss
+Cell sg13g2_Filler400 (1) disconnected node: vdd
+Cell sg13g2_Filler400 (1) disconnected node: iovdd
+
+Subcircuit pins:
+Circuit 1: sg13g2_Filler400                |Circuit 2: sg13g2_Filler400                
+-------------------------------------------|-------------------------------------------
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_Filler400 and sg13g2_Filler400 are equivalent.
+
+Cell sg13g2_ip__bondpad_70x70 (0) disconnected node: pad
+
+Subcircuit pins:
+Circuit 1: sg13g2_ip__bondpad_70x70        |Circuit 2: sg13g2_ip__bondpad_70x70        
+-------------------------------------------|-------------------------------------------
+pad                                        |pad                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_ip__bondpad_70x70 and sg13g2_ip__bondpad_70x70 are equivalent.
+
+Cell sg13g2_fill_1 (0) disconnected node: VDD
+Cell sg13g2_fill_1 (0) disconnected node: VSS
+Cell sg13g2_fill_1 (1) disconnected node: VDD
+Cell sg13g2_fill_1 (1) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_fill_1                   |Circuit 2: sg13g2_fill_1                   
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_fill_1 and sg13g2_fill_1 are equivalent.
+
+Cell sg13g2_Filler4000 (0) disconnected node: iovdd
+Cell sg13g2_Filler4000 (0) disconnected node: iovss
+Cell sg13g2_Filler4000 (0) disconnected node: vdd
+Cell sg13g2_Filler4000 (0) disconnected node: vss
+Cell sg13g2_Filler4000 (1) disconnected node: vdd
+Cell sg13g2_Filler4000 (1) disconnected node: iovdd
+
+Subcircuit pins:
+Circuit 1: sg13g2_Filler4000               |Circuit 2: sg13g2_Filler4000               
+-------------------------------------------|-------------------------------------------
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_Filler4000 and sg13g2_Filler4000 are equivalent.
+Flattening unmatched subcell sg13g2_Clamp_N43N43D4R in circuit sg13g2_IOPadVdd (1)(1 instance)
+Flattening unmatched subcell sg13g2_RCClampResistor in circuit sg13g2_IOPadVdd (1)(1 instance)
+Flattening unmatched subcell sg13g2_RCClampInverter in circuit sg13g2_IOPadVdd (1)(1 instance)
+
+Cell sg13g2_IOPadVdd (0) disconnected node: iovdd
+Cell sg13g2_IOPadVdd (0) disconnected node: iovss
+Cell sg13g2_IOPadVdd (0) disconnected node: vdd
+Cell sg13g2_IOPadVdd (0) disconnected node: vss
+Cell sg13g2_IOPadVdd (1) disconnected node: iovdd
+
+Subcircuit pins:
+Circuit 1: sg13g2_IOPadVdd                 |Circuit 2: sg13g2_IOPadVdd                 
+-------------------------------------------|-------------------------------------------
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_IOPadVdd and sg13g2_IOPadVdd are equivalent.
+
+Cell sg13g2_Filler200 (0) disconnected node: iovdd
+Cell sg13g2_Filler200 (0) disconnected node: iovss
+Cell sg13g2_Filler200 (0) disconnected node: vdd
+Cell sg13g2_Filler200 (0) disconnected node: vss
+Cell sg13g2_Filler200 (1) disconnected node: vdd
+Cell sg13g2_Filler200 (1) disconnected node: iovdd
+
+Subcircuit pins:
+Circuit 1: sg13g2_Filler200                |Circuit 2: sg13g2_Filler200                
+-------------------------------------------|-------------------------------------------
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_Filler200 and sg13g2_Filler200 are equivalent.
+Flattening unmatched subcell sg13g2_GateLevelUpInv in circuit sg13g2_IOPadOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_LevelUpInv in circuit sg13g2_IOPadOut30mA (1)(2 instances)
+Flattening unmatched subcell sg13g2_Clamp_P15N15D in circuit sg13g2_IOPadOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_Clamp_N15N15D in circuit sg13g2_IOPadOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_DCNDiode in circuit sg13g2_IOPadOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_DCPDiode in circuit sg13g2_IOPadOut30mA (1)(1 instance)
+
+Cell sg13g2_IOPadOut30mA (0) disconnected node: c2p
+Cell sg13g2_IOPadOut30mA (0) disconnected node: iovdd
+Cell sg13g2_IOPadOut30mA (0) disconnected node: iovss
+Cell sg13g2_IOPadOut30mA (0) disconnected node: pad
+Cell sg13g2_IOPadOut30mA (0) disconnected node: vdd
+Cell sg13g2_IOPadOut30mA (0) disconnected node: vss
+
+Subcircuit pins:
+Circuit 1: sg13g2_IOPadOut30mA             |Circuit 2: sg13g2_IOPadOut30mA             
+-------------------------------------------|-------------------------------------------
+c2p                                        |c2p                                        
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+pad                                        |pad                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_IOPadOut30mA and sg13g2_IOPadOut30mA are equivalent.
+Flattening unmatched subcell sg13g2_DCNDiode in circuit sg13g2_IOPadVss (1)(1 instance)
+Flattening unmatched subcell sg13g2_DCPDiode in circuit sg13g2_IOPadVss (1)(1 instance)
+
+Cell sg13g2_IOPadVss (0) disconnected node: iovdd
+Cell sg13g2_IOPadVss (0) disconnected node: iovss
+Cell sg13g2_IOPadVss (0) disconnected node: vdd
+Cell sg13g2_IOPadVss (0) disconnected node: vss
+Cell sg13g2_IOPadVss (1) disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: sg13g2_IOPadVss                 |Circuit 2: sg13g2_IOPadVss                 
+-------------------------------------------|-------------------------------------------
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_IOPadVss and sg13g2_IOPadVss are equivalent.
+
+Cell oa_sar8_core16 (0) disconnected node: VDD
+Cell oa_sar8_core16 (0) disconnected node: VSS
+Cell oa_sar8_core16 (0) disconnected node: busy
+Cell oa_sar8_core16 (0) disconnected node: clk
+Cell oa_sar8_core16 (0) disconnected node: done
+Cell oa_sar8_core16 (0) disconnected node: result[0]
+Cell oa_sar8_core16 (0) disconnected node: result[1]
+Cell oa_sar8_core16 (0) disconnected node: result[2]
+Cell oa_sar8_core16 (0) disconnected node: result[3]
+Cell oa_sar8_core16 (0) disconnected node: result[4]
+Cell oa_sar8_core16 (0) disconnected node: result[5]
+Cell oa_sar8_core16 (0) disconnected node: result[6]
+Cell oa_sar8_core16 (0) disconnected node: result[7]
+Cell oa_sar8_core16 (0) disconnected node: rst_n
+Cell oa_sar8_core16 (0) disconnected node: start
+Cell oa_sar8_core16 (0) disconnected node: vcm
+Cell oa_sar8_core16 (0) disconnected node: vinn
+Cell oa_sar8_core16 (0) disconnected node: vinp
+
+Subcircuit pins:
+Circuit 1: oa_sar8_core16                  |Circuit 2: oa_sar8_core16                  
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+busy                                       |busy                                       
+clk                                        |clk                                        
+done                                       |done                                       
+result[0]                                  |result[0]                                  
+result[1]                                  |result[1]                                  
+result[2]                                  |result[2]                                  
+result[3]                                  |result[3]                                  
+result[4]                                  |result[4]                                  
+result[5]                                  |result[5]                                  
+result[6]                                  |result[6]                                  
+result[7]                                  |result[7]                                  
+rst_n                                      |rst_n                                      
+start                                      |start                                      
+vcm                                        |vcm                                        
+vinn                                       |vinn                                       
+vinp                                       |vinp                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes oa_sar8_core16 and oa_sar8_core16 are equivalent.
+
+Cell sg13g2_Corner (0) disconnected node: iovdd
+Cell sg13g2_Corner (0) disconnected node: iovss
+Cell sg13g2_Corner (0) disconnected node: vdd
+Cell sg13g2_Corner (0) disconnected node: vss
+Cell sg13g2_Corner (1) disconnected node: vdd
+Cell sg13g2_Corner (1) disconnected node: iovdd
+
+Subcircuit pins:
+Circuit 1: sg13g2_Corner                   |Circuit 2: sg13g2_Corner                   
+-------------------------------------------|-------------------------------------------
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_Corner and sg13g2_Corner are equivalent.
+
+Cell sg13g2_tielo (0) disconnected node: L_LO
+Cell sg13g2_tielo (0) disconnected node: VDD
+Cell sg13g2_tielo (0) disconnected node: VSS
+
+Subcircuit pins:
+Circuit 1: sg13g2_tielo                    |Circuit 2: sg13g2_tielo                    
+-------------------------------------------|-------------------------------------------
+L_LO                                       |L_LO                                       
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_tielo and sg13g2_tielo are equivalent.
+Flattening unmatched subcell sg13g2_DCNDiode in circuit sg13g2_IOPadIOVss (1)(1 instance)
+Flattening unmatched subcell sg13g2_DCPDiode in circuit sg13g2_IOPadIOVss (1)(1 instance)
+
+Cell sg13g2_IOPadIOVss (0) disconnected node: iovdd
+Cell sg13g2_IOPadIOVss (0) disconnected node: iovss
+Cell sg13g2_IOPadIOVss (0) disconnected node: vdd
+Cell sg13g2_IOPadIOVss (0) disconnected node: vss
+Cell sg13g2_IOPadIOVss (1) disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: sg13g2_IOPadIOVss               |Circuit 2: sg13g2_IOPadIOVss               
+-------------------------------------------|-------------------------------------------
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_IOPadIOVss and sg13g2_IOPadIOVss are equivalent.
+Flattening unmatched subcell sg13g2_Clamp_N43N43D4R in circuit sg13g2_IOPadIOVdd (1)(1 instance)
+Flattening unmatched subcell sg13g2_RCClampResistor in circuit sg13g2_IOPadIOVdd (1)(1 instance)
+Flattening unmatched subcell sg13g2_RCClampInverter in circuit sg13g2_IOPadIOVdd (1)(1 instance)
+
+Cell sg13g2_IOPadIOVdd (0) disconnected node: iovdd
+Cell sg13g2_IOPadIOVdd (0) disconnected node: iovss
+Cell sg13g2_IOPadIOVdd (0) disconnected node: vdd
+Cell sg13g2_IOPadIOVdd (0) disconnected node: vss
+Cell sg13g2_IOPadIOVdd (1) disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: sg13g2_IOPadIOVdd               |Circuit 2: sg13g2_IOPadIOVdd               
+-------------------------------------------|-------------------------------------------
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_IOPadIOVdd and sg13g2_IOPadIOVdd are equivalent.
+
+
+Subcircuit pins:
+Circuit 1: sg13g2_ip__jku                  |Circuit 2: sg13g2_ip__jku                  
+-------------------------------------------|-------------------------------------------
+(no pins)                                  |(no pins)                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_ip__jku and sg13g2_ip__jku are equivalent.
+Flattening unmatched subcell sg13g2_Clamp_P20N0D in circuit sg13g2_IOPadAnalog (1)(1 instance)
+Flattening unmatched subcell sg13g2_DCNDiode in circuit sg13g2_IOPadAnalog (1)(1 instance)
+Flattening unmatched subcell sg13g2_DCPDiode in circuit sg13g2_IOPadAnalog (1)(1 instance)
+Flattening unmatched subcell sg13g2_SecondaryProtection in circuit sg13g2_IOPadAnalog (1)(1 instance)
+Flattening unmatched subcell sg13g2_Clamp_N20N0D in circuit sg13g2_IOPadAnalog (1)(1 instance)
+
+Cell sg13g2_IOPadAnalog (0) disconnected node: iovdd
+Cell sg13g2_IOPadAnalog (0) disconnected node: iovss
+Cell sg13g2_IOPadAnalog (0) disconnected node: pad
+Cell sg13g2_IOPadAnalog (0) disconnected node: padbare
+Cell sg13g2_IOPadAnalog (0) disconnected node: padres
+Cell sg13g2_IOPadAnalog (0) disconnected node: vdd
+Cell sg13g2_IOPadAnalog (0) disconnected node: vss
+Cell sg13g2_IOPadAnalog (1) disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: sg13g2_IOPadAnalog              |Circuit 2: sg13g2_IOPadAnalog              
+-------------------------------------------|-------------------------------------------
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+pad                                        |pad                                        
+padres                                     |padres                                     
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+padbare                                    |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_IOPadAnalog and sg13g2_IOPadAnalog are equivalent.
+Flattening unmatched subcell sg13g2_LevelDown in circuit sg13g2_IOPadIn (1)(1 instance)
+Flattening unmatched subcell sg13g2_SecondaryProtection in circuit sg13g2_IOPadIn (1)(1 instance)
+Flattening unmatched subcell sg13g2_DCNDiode in circuit sg13g2_IOPadIn (1)(1 instance)
+Flattening unmatched subcell sg13g2_DCPDiode in circuit sg13g2_IOPadIn (1)(1 instance)
+
+Cell sg13g2_IOPadIn (0) disconnected node: iovdd
+Cell sg13g2_IOPadIn (0) disconnected node: iovss
+Cell sg13g2_IOPadIn (0) disconnected node: p2c
+Cell sg13g2_IOPadIn (0) disconnected node: pad
+Cell sg13g2_IOPadIn (0) disconnected node: vdd
+Cell sg13g2_IOPadIn (0) disconnected node: vss
+
+Subcircuit pins:
+Circuit 1: sg13g2_IOPadIn                  |Circuit 2: sg13g2_IOPadIn                  
+-------------------------------------------|-------------------------------------------
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+p2c                                        |p2c                                        
+pad                                        |pad                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_IOPadIn and sg13g2_IOPadIn are equivalent.
+
+
+Subcircuit pins:
+Circuit 1: sg13g2_ip__jku_names            |Circuit 2: sg13g2_ip__jku_names            
+-------------------------------------------|-------------------------------------------
+(no pins)                                  |(no pins)                                  
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_ip__jku_names and sg13g2_ip__jku_names are equivalent.
+Flattening unmatched subcell sg13g2_LevelDown in circuit sg13g2_IOPadInOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_SecondaryProtection in circuit sg13g2_IOPadInOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_DCPDiode in circuit sg13g2_IOPadInOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_Clamp_P15N15D in circuit sg13g2_IOPadInOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_DCNDiode in circuit sg13g2_IOPadInOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_Clamp_N15N15D in circuit sg13g2_IOPadInOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_GateDecode in circuit sg13g2_IOPadInOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_io_inv_x1 in circuit sg13g2_IOPadInOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_LevelUp in circuit sg13g2_IOPadInOut30mA (1)(2 instances)
+Flattening unmatched subcell sg13g2_io_nor2_x1 in circuit sg13g2_IOPadInOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_io_tie in circuit sg13g2_IOPadInOut30mA (1)(1 instance)
+Flattening unmatched subcell sg13g2_io_nand2_x1 in circuit sg13g2_IOPadInOut30mA (1)(1 instance)
+
+Cell sg13g2_IOPadInOut30mA (0) disconnected node: c2p
+Cell sg13g2_IOPadInOut30mA (0) disconnected node: c2p_en
+Cell sg13g2_IOPadInOut30mA (0) disconnected node: iovdd
+Cell sg13g2_IOPadInOut30mA (0) disconnected node: iovss
+Cell sg13g2_IOPadInOut30mA (0) disconnected node: p2c
+Cell sg13g2_IOPadInOut30mA (0) disconnected node: pad
+Cell sg13g2_IOPadInOut30mA (0) disconnected node: vdd
+Cell sg13g2_IOPadInOut30mA (0) disconnected node: vss
+
+Subcircuit pins:
+Circuit 1: sg13g2_IOPadInOut30mA           |Circuit 2: sg13g2_IOPadInOut30mA           
+-------------------------------------------|-------------------------------------------
+c2p                                        |c2p                                        
+c2p_en                                     |c2p_en                                     
+iovdd                                      |iovdd                                      
+iovss                                      |iovss                                      
+p2c                                        |p2c                                        
+pad                                        |pad                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13g2_IOPadInOut30mA and sg13g2_IOPadInOut30mA are equivalent.
+
+Cell chip_top (0) disconnected node: sg13g2_ip__jku:jku_logo/(no pins)
+Cell chip_top (0) disconnected node: sg13g2_ip__jku_names:jku_names/(no pins)
+Cell chip_top (1) disconnected node: jku_logo/(no pins)
+Cell chip_top (1) disconnected node: jku_names/(no pins)
+Class chip_top (0):  Merged 53006 parallel devices.
+Class chip_top (1):  Merged 53006 parallel devices.
+Cell chip_top (0) disconnected node: sg13g2_ip__jku:jku_logo/(no pins)
+Cell chip_top (0) disconnected node: sg13g2_ip__jku_names:jku_names/(no pins)
+Cell chip_top (1) disconnected node: jku_logo/(no pins)
+Cell chip_top (1) disconnected node: jku_names/(no pins)
+Subcircuit summary:
+Circuit 1: chip_top                        |Circuit 2: chip_top                        
+-------------------------------------------|-------------------------------------------
+sg13g2_decap_8 (52422->1)                  |sg13g2_decap_8 (52422->1)                  
+sg13g2_Filler2000 (28)                     |sg13g2_Filler2000 (28)                     
+sg13g2_fill_2 (132->1)                     |sg13g2_fill_2 (132->1)                     
+sg13g2_decap_4 (227->1)                    |sg13g2_decap_4 (227->1)                    
+sg13g2_Filler400 (56)                      |sg13g2_Filler400 (56)                      
+sg13g2_ip__bondpad_70x70 (32)              |sg13g2_ip__bondpad_70x70 (32)              
+sg13g2_fill_1 (229->1)                     |sg13g2_fill_1 (229->1)                     
+sg13g2_Filler4000 (44)                     |sg13g2_Filler4000 (44)                     
+sg13g2_IOPadVdd (4)                        |sg13g2_IOPadVdd (4)                        
+sg13g2_Filler200 (8)                       |sg13g2_Filler200 (8)                       
+sg13g2_IOPadOut30mA (15)                   |sg13g2_IOPadOut30mA (15)                   
+sg13g2_IOPadVss (4)                        |sg13g2_IOPadVss (4)                        
+oa_sar8_core16 (1)                         |oa_sar8_core16 (1)                         
+sg13g2_Corner (4)                          |sg13g2_Corner (4)                          
+sg13g2_tielo (7)                           |sg13g2_tielo (7)                           
+sg13g2_IOPadIOVss (1)                      |sg13g2_IOPadIOVss (1)                      
+sg13g2_IOPadIOVdd (1)                      |sg13g2_IOPadIOVdd (1)                      
+sg13g2_ip__jku (1)                         |sg13g2_ip__jku (1)                         
+sg13g2_IOPadAnalog (3)                     |sg13g2_IOPadAnalog (3)                     
+sg13g2_IOPadIn (3)                         |sg13g2_IOPadIn (3)                         
+sg13g2_ip__jku_names (1)                   |sg13g2_ip__jku_names (1)                   
+sg13g2_IOPadInOut30mA (1)                  |sg13g2_IOPadInOut30mA (1)                  
+Number of devices: 218                     |Number of devices: 218                     
+Number of nets: 50                         |Number of nets: 50                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 9 symmetries.
+
+Subcircuit pins:
+Circuit 1: chip_top                        |Circuit 2: chip_top                        
+-------------------------------------------|-------------------------------------------
+analog_PAD[2]                              |analog_PAD[2]                              
+analog_PAD[1]                              |analog_PAD[1]                              
+analog_PAD[0]                              |analog_PAD[0]                              
+bidir_PAD                                  |bidir_PAD                                  
+output_PAD[5]                              |output_PAD[5]                              
+output_PAD[0]                              |output_PAD[0]                              
+output_PAD[9]                              |output_PAD[9]                              
+output_PAD[4]                              |output_PAD[4]                              
+output_PAD[8]                              |output_PAD[8]                              
+output_PAD[3]                              |output_PAD[3]                              
+output_PAD[7]                              |output_PAD[7]                              
+output_PAD[2]                              |output_PAD[2]                              
+output_PAD[6]                              |output_PAD[6]                              
+output_PAD[1]                              |output_PAD[1]                              
+output_PAD[11]                             |output_PAD[11]                             
+output_PAD[10]                             |output_PAD[10]                             
+output_PAD[14]                             |output_PAD[14]                             
+output_PAD[13]                             |output_PAD[13]                             
+output_PAD[12]                             |output_PAD[12]                             
+clk_PAD                                    |clk_PAD                                    
+rst_n_PAD                                  |rst_n_PAD                                  
+input_PAD                                  |input_PAD                                  
+IOVDD                                      |IOVDD                                      
+IOVSS                                      |IOVSS                                      
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes chip_top and chip_top are equivalent.
+
+Final result: Circuits match uniquely.
+.

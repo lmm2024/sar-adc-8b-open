@@ -1,0 +1,78 @@
+* OA-SAR8 analog core reference netlist
+.subckt cdac_array b7 b6 b5 b4 b3 b2 b1 b0 term topp
+Cb7 topp b7 cap_cmim w=2.14u l=2.14u m=128
+Cb6 topp b6 cap_cmim w=2.14u l=2.14u m=64
+Cb5 topp b5 cap_cmim w=2.14u l=2.14u m=32
+Cb4 topp b4 cap_cmim w=2.14u l=2.14u m=16
+Cb3 topp b3 cap_cmim w=2.14u l=2.14u m=8
+Cb2 topp b2 cap_cmim w=2.14u l=2.14u m=4
+Cb1 topp b1 cap_cmim w=2.14u l=2.14u m=2
+Cb0 topp b0 cap_cmim w=2.14u l=2.14u m=1
+Cterm topp term cap_cmim w=2.14u l=2.14u m=1
+.ends
+.subckt sa_comp inp inn clk outp outn VDD VSS
+M1 p inp tail VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+M2 q inn tail VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+M3 outn outp p VSS sg13_lv_nmos w=4.0u l=0.13u rfmode=1
+M4 outp outn q VSS sg13_lv_nmos w=4.0u l=0.13u rfmode=1
+MT tail clk VSS VSS sg13_lv_nmos w=3.0u l=0.3u rfmode=1
+M5 outn outp VDD VDD sg13_lv_pmos w=6.0u l=0.13u rfmode=1
+M6 outp outn VDD VDD sg13_lv_pmos w=6.0u l=0.13u rfmode=1
+MS1 p clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+MS2 q clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+MS3 outn clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+MS4 outp clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+.ends
+.subckt sw_bitcell bot vin ctl trk trkb VDD VSS
+MND bot ctl VSS VSS sg13_lv_nmos w=2.0u l=0.13u rfmode=1
+MPD bot ctl VDD VDD sg13_lv_pmos w=4.0u l=0.13u rfmode=1
+MNT bot trk vin VSS sg13_lv_nmos w=2.0u l=0.13u rfmode=1
+MPT bot trkb vin VDD sg13_lv_pmos w=4.0u l=0.13u rfmode=1
+.ends
+.subckt sw_bitcell10 bot vin ctl trkb gb VDD VSS
+MND bot ctl VSS VSS sg13_lv_nmos w=2.0u l=0.13u rfmode=1
+MPD bot ctl VDD VDD sg13_lv_pmos w=4.0u l=0.13u rfmode=1
+MNT bot gb vin VSS sg13_lv_nmos w=2.0u l=0.13u rfmode=1
+MPT bot trkb vin VDD sg13_lv_pmos w=4.0u l=0.13u rfmode=1
+.ends
+.subckt bstrap vin out ckb gb VDD VSS
+Msw  out gb  vin VSS sg13_lv_nmos w=4.0u l=0.13u rfmode=1
+MN_c gb  VDD x   VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+MN_g x   ckb VSS VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+MN_cb cb ckb VSS VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+MP_ct ct gb  VDD ct  sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+MN_bt cb gb  vin VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+MP_gt gb ckb ct  ct  sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+Cb   ct  cb  cap_cmim w=9.94u l=9.94u
+.ends
+.subckt sw_tg bot vin trk trkb VDD VSS
+MNT bot trk vin VSS sg13_lv_nmos w=2.0u l=0.13u rfmode=1
+MPT bot trkb vin VDD sg13_lv_pmos w=4.0u l=0.13u rfmode=1
+.ends
+.subckt oa_sar8_acore7 vin vcm clk_cmp trk ctl7 ctl6 ctl5 ctl4 ctl3 ctl2 ctl1 ctl0 outp outn VDD VSS
+Xmain b7 b6 b5 b4 b3 b2 b1 b0 term topm cdac_array
+Xrep b7r b6r b5r b4r b3r b2r b1r b0r termr topr cdac_array
+Xcmp topr topm clk_cmp outp outn VDD VSS sa_comp
+Xsw0 b7 vinr ctl7 trkb gb VDD VSS sw_bitcell10
+Xsw1 b6 vinr ctl6 trkb gb VDD VSS sw_bitcell10
+Xsw2 b5 vinr ctl5 trkb gb VDD VSS sw_bitcell10
+Xsw3 b4 vinr ctl4 trkb gb VDD VSS sw_bitcell10
+Xsw4 b3 vinr ctl3 trkb gb VDD VSS sw_bitcell10
+Xsw5 b2 vinr ctl2 trkb gb VDD VSS sw_bitcell10
+Xsw6 b1 vinr ctl1 trkb gb VDD VSS sw_bitcell10
+Xsw7 b0 vinr ctl0 trkb gb VDD VSS sw_bitcell10
+Xsw8 term vinr VDD trkb gb VDD VSS sw_bitcell10
+Xsw9 trkb VSS trk trk trkb VDD VSS sw_bitcell
+Xsw10 topm vcm trk trkb VDD VSS sw_tg
+Xboot vin vinr trkb gb VDD VSS bstrap
+Xswr0 b7r vcm VSS VDD VSS VDD VSS sw_bitcell10
+Xswr1 b6r vcm VDD VDD VSS VDD VSS sw_bitcell10
+Xswr2 b5r vcm VDD VDD VSS VDD VSS sw_bitcell10
+Xswr3 b4r vcm VDD VDD VSS VDD VSS sw_bitcell10
+Xswr4 b3r vcm VDD VDD VSS VDD VSS sw_bitcell10
+Xswr5 b2r vcm VDD VDD VSS VDD VSS sw_bitcell10
+Xswr6 b1r vcm VDD VDD VSS VDD VSS sw_bitcell10
+Xswr7 b0r vcm VDD VDD VSS VDD VSS sw_bitcell10
+Xswr8 termr vcm VDD VDD VSS VDD VSS sw_bitcell10
+Xtgr topr vcm trk trkb VDD VSS sw_tg
+.ends

@@ -1,0 +1,51 @@
+* OA-SAR8 analog core reference netlist
+.subckt cdac_array b7 b6 b5 b4 b3 b2 b1 b0 term topp
+Cb7 topp b7 cap_cmim w=2.14u l=2.14u m=128
+Cb6 topp b6 cap_cmim w=2.14u l=2.14u m=64
+Cb5 topp b5 cap_cmim w=2.14u l=2.14u m=32
+Cb4 topp b4 cap_cmim w=2.14u l=2.14u m=16
+Cb3 topp b3 cap_cmim w=2.14u l=2.14u m=8
+Cb2 topp b2 cap_cmim w=2.14u l=2.14u m=4
+Cb1 topp b1 cap_cmim w=2.14u l=2.14u m=2
+Cb0 topp b0 cap_cmim w=2.14u l=2.14u m=1
+Cterm topp term cap_cmim w=2.14u l=2.14u m=1
+.ends
+.subckt sa_comp inp inn clk outp outn VDD VSS
+M1 p inp tail VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+M2 q inn tail VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+M3 outn outp p VSS sg13_lv_nmos w=4.0u l=0.13u rfmode=1
+M4 outp outn q VSS sg13_lv_nmos w=4.0u l=0.13u rfmode=1
+MT tail clk VSS VSS sg13_lv_nmos w=3.0u l=0.3u rfmode=1
+M5 outn outp VDD VDD sg13_lv_pmos w=6.0u l=0.13u rfmode=1
+M6 outp outn VDD VDD sg13_lv_pmos w=6.0u l=0.13u rfmode=1
+MS1 p clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+MS2 q clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+MS3 outn clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+MS4 outp clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+.ends
+.subckt sw_bitcell bot vin ctl trk trkb VDD VSS
+MND bot ctl VSS VSS sg13_lv_nmos w=2.0u l=0.13u rfmode=1
+MPD bot ctl VDD VDD sg13_lv_pmos w=4.0u l=0.13u rfmode=1
+MNT bot trk vin VSS sg13_lv_nmos w=2.0u l=0.13u rfmode=1
+MPT bot trkb vin VDD sg13_lv_pmos w=4.0u l=0.13u rfmode=1
+.ends
+.subckt sw_tg bot vin trk trkb VDD VSS
+MNT bot trk vin VSS sg13_lv_nmos w=2.0u l=0.13u rfmode=1
+MPT bot trkb vin VDD sg13_lv_pmos w=4.0u l=0.13u rfmode=1
+.ends
+.subckt oa_sar8_acore2 vin vcm clk_cmp trk ctl7 ctl6 ctl5 ctl4 ctl3 ctl2 ctl1 ctl0 outp outn VDD VSS
+Xmain b7 b6 b5 b4 b3 b2 b1 b0 term topm cdac_array
+Xrep vcm vcm vcm vcm vcm vcm vcm vcm vcm topr cdac_array
+Xcmp topr topm clk_cmp outp outn VDD VSS sa_comp
+Xsw0 b7 vin ctl7 trk trkb VDD VSS sw_bitcell
+Xsw1 b6 vin ctl6 trk trkb VDD VSS sw_bitcell
+Xsw2 b5 vin ctl5 trk trkb VDD VSS sw_bitcell
+Xsw3 b4 vin ctl4 trk trkb VDD VSS sw_bitcell
+Xsw4 b3 vin ctl3 trk trkb VDD VSS sw_bitcell
+Xsw5 b2 vin ctl2 trk trkb VDD VSS sw_bitcell
+Xsw6 b1 vin ctl1 trk trkb VDD VSS sw_bitcell
+Xsw7 b0 vin ctl0 trk trkb VDD VSS sw_bitcell
+Xsw8 term vin VDD trk trkb VDD VSS sw_bitcell
+Xsw9 trkb VSS trk trk trkb VDD VSS sw_bitcell
+Xsw10 topm vcm trk trkb VDD VSS sw_tg
+.ends

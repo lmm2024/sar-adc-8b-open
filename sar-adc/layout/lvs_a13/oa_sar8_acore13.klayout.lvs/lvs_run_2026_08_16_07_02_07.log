@@ -1,0 +1,16 @@
+16-Aug-2026 09:02:08 | INFO    | Your Klayout version is: KLayout 0.30.9 (required >= 0.30.5)
+16-Aug-2026 09:02:08 | INFO    | Running SG13G2 LVS checks on design /foss/designs/sar-adc/layout/oa_sar8_acore13.gds on cell oa_sar8_acore13
+16-Aug-2026 09:02:25 | INFO    | ==============================================================================
+16-Aug-2026 09:02:25 | INFO    | Important Summary
+16-Aug-2026 09:02:25 | INFO    | +------------------+------------------------------------------------------------------+
+16-Aug-2026 09:02:25 | INFO    | | Status           | PASS                                                             |
+16-Aug-2026 09:02:25 | INFO    | | Mode             | COMPARE                                                          |
+16-Aug-2026 09:02:25 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                          |
+16-Aug-2026 09:02:25 | INFO    | | Layout           | oa_sar8_acore13.gds                                              |
+16-Aug-2026 09:02:25 | INFO    | | Top Cell         | oa_sar8_acore13                                                  |
+16-Aug-2026 09:02:25 | INFO    | | Results Dir      | /foss/designs/sar-adc/layout/lvs_a13/oa_sar8_acore13.klayout.lvs |
+16-Aug-2026 09:02:25 | INFO    | | Warnings         | 0                                                                |
+16-Aug-2026 09:02:25 | INFO    | | Errors           | 0                                                                |
+16-Aug-2026 09:02:25 | INFO    | | Run Time (s)     | 17.396                                                           |
+16-Aug-2026 09:02:25 | INFO    | +------------------+------------------------------------------------------------------+
+16-Aug-2026 09:02:25 | INFO    | ==============================================================================

@@ -1,0 +1,36 @@
+# generated bulk (regenerate with the scripts in the README)
+**/runs/
+**/lvs_*/**/*.lvsdb
+*.csv
+*.vcd
+*.vvp
+__pycache__/
+*.pyc
+sar-adc/report/zipwork/
+sar-adc/report/deliver/
+sar-adc/report/*.zip
+sar-adc/logic/harden_v[1-8].log
+sar-adc/power/mixed*.log
+sar-adc/power/x[0-9]*.log
+sar-adc/power/hi*.log
+sar-adc/power/st*.log
+sar-adc/power/m6*.log
+sar-adc/power/tb_mixed[2-6]*.spice
+sar-adc/layout/oa_sar8_acore[0-9].gds
+sar-adc/layout/oa_sar8_acore1[0-2].gds
+sar-adc/layout/oa_sar8_core[0-9].gds
+sar-adc/layout/oa_sar8_core1[0-5]*.gds
+sar-adc/layout/oa_sar8_pas*.gds
+sar-chip/flow/librelane/runs/
+
+# The current asynchronous macro final views are intentional release inputs.
+!sar-adc/logic/runs/
+!sar-adc/logic/runs/RUN_2026-08-20_POSTDAC_PENDING/
+!sar-adc/logic/runs/RUN_2026-08-20_POSTDAC_PENDING/final/
+!sar-adc/logic/runs/RUN_2026-08-20_POSTDAC_PENDING/final/**
+
+# Compact verification evidence is intentionally tracked.
+!results/
+!results/core18_pex/
+!results/core18_pex/*.json
+!results/core18_pex/*.csv

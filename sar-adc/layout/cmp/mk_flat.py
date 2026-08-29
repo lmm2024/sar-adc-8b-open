@@ -1,0 +1,10 @@
+import pya
+ly = pya.Layout()
+ly.read("sa_comp.gds")
+src = ly.cell("sa_comp")
+src.flatten(-1, True)
+opts = pya.SaveLayoutOptions()
+opts.set_format_from_filename("sa_comp_flat.gds")
+opts.add_cell(src.cell_index())
+ly.write("sa_comp_flat.gds", opts)
+print("flat single-top written", src.dbbox())

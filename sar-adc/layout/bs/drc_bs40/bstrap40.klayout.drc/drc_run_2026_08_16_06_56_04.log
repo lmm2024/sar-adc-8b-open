@@ -1,0 +1,7 @@
+16-Aug-2026 08:56:06 | INFO    | KLayout version detected: 0.30.9 (required >= 0.30.5)
+16-Aug-2026 08:56:06 | INFO    | Using DRC JSON file: /foss/pdks/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+16-Aug-2026 08:56:06 | INFO    | Running IHP-SG13G2 main checks on design /foss/designs/sar-adc/layout/bs/bstrap40.gds, topcell: bstrap40
+16-Aug-2026 08:56:34 | INFO    | =====================================================================================
+16-Aug-2026 08:56:34 | INFO    | ✅ --- KLayout DRC Check Passed: No DRC violations detected in the layout. --- ✅
+16-Aug-2026 08:56:34 | INFO    | =====================================================================================
+16-Aug-2026 08:56:34 | INFO    | Total DRC Run time: 29.73 seconds (including execution, analysis, and reporting)

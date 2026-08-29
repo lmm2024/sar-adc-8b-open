@@ -1,0 +1,7 @@
+* parameterized bottom-plate driver + boosted-gate sampling switch
+.subckt sw_bitcell_opt_b4 bot vin ctl trkb gb VDD VSS VSSB
+MND bot ctl VSS VSSB sg13_lv_nmos w=4.8u l=0.13u rfmode=1
+MPD bot ctl VDD VDD sg13_lv_pmos w=9.6u l=0.13u rfmode=1
+MNT bot gb vin VSSB sg13_lv_nmos w=2.0u l=0.13u rfmode=1
+MPT bot trkb vin VDD sg13_lv_pmos w=4.0u l=0.13u rfmode=1
+.ends

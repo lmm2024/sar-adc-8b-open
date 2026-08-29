@@ -1,0 +1,99 @@
+* OA-SAR8 real core: CDAC + switches + StrongARM (generated)
+.lib cornerMOSlv.lib mos_tt
+.lib cornerCAP.lib cap_typ
+.param vdd=1.5
+.param vcm=0.9
+
+VDD vdd 0 {vdd}
+VCMs vcm 0 {vcm}
+VIN vin 0 1.3857
+
+* ---- CDAC: binary-weighted cmim, unit 2.2x2.2um (~7fF), 255u + 1u terminator
+XC0 top bot0 cap_cmim w=2.2u l=2.2u m=1
+XC1 top bot1 cap_cmim w=2.2u l=2.2u m=2
+XC2 top bot2 cap_cmim w=2.2u l=2.2u m=4
+XC3 top bot3 cap_cmim w=2.2u l=2.2u m=8
+XC4 top bot4 cap_cmim w=2.2u l=2.2u m=16
+XC5 top bot5 cap_cmim w=2.2u l=2.2u m=32
+XC6 top bot6 cap_cmim w=2.2u l=2.2u m=64
+XC7 top bot7 cap_cmim w=2.2u l=2.2u m=128
+XCd top botd cap_cmim w=2.2u l=2.2u m=1
+
+* ---- track switches: top->VCM, bottoms->VIN
+Stop top vcm ctrk 0 swm
+Strk0 bot0 vin ctrk 0 swm
+Strk1 bot1 vin ctrk 0 swm
+Strk2 bot2 vin ctrk 0 swm
+Strk3 bot3 vin ctrk 0 swm
+Strk4 bot4 vin ctrk 0 swm
+Strk5 bot5 vin ctrk 0 swm
+Strk6 bot6 vin ctrk 0 swm
+Strk7 bot7 vin ctrk 0 swm
+Strkd botd vin ctrk 0 swm
+
+* ---- conversion switches: bottoms -> VREF(vdd) or GND
+Sr0 bot0 vdd cr0 0 swm
+Sg0 bot0 0 cg0 0 swm
+Sr1 bot1 vdd cr1 0 swm
+Sg1 bot1 0 cg1 0 swm
+Sr2 bot2 vdd cr2 0 swm
+Sg2 bot2 0 cg2 0 swm
+Sr3 bot3 vdd cr3 0 swm
+Sg3 bot3 0 cg3 0 swm
+Sr4 bot4 vdd cr4 0 swm
+Sg4 bot4 0 cg4 0 swm
+Sr5 bot5 vdd cr5 0 swm
+Sg5 bot5 0 cg5 0 swm
+Sr6 bot6 vdd cr6 0 swm
+Sg6 bot6 0 cg6 0 swm
+Sr7 bot7 vdd cr7 0 swm
+Sg7 bot7 0 cg7 0 swm
+Sgd botd 0 cinv 0 swm
+.model swm sw vt=0.75 vh=0.05 ron=100 roff=1e12
+
+* ---- pseudo-differential reference: replica floating node, kickback -> common-mode
+XCrep topr 0 cap_cmim w=2.2u l=2.2u m=256
+Strep topr vcm ctrk 0 swm
+
+* ---- StrongARM comparator: inp=topr(float@VCM), inn=top (outp HIGH <=> vin>vdac)
+XM1 p   topr tail 0  sg13_lv_nmos w=2u l=0.15u ng=2
+XM2 q   top tail 0   sg13_lv_nmos w=2u l=0.15u ng=2
+XM3 outn outp p 0    sg13_lv_nmos w=4u l=0.13u ng=2
+XM4 outp outn q 0    sg13_lv_nmos w=4u l=0.13u ng=2
+XM5 outn outp vdd vdd sg13_lv_pmos w=6u l=0.13u ng=2
+XM6 outp outn vdd vdd sg13_lv_pmos w=6u l=0.13u ng=2
+XS1 p    clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS2 q    clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS3 outn clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS4 outp clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XMt tail clk 0 0     sg13_lv_nmos w=3u l=0.3u ng=2
+
+* ---- controls
+Vctrk ctrk 0 pwl(0 1.5 1.5e-08 1.5 1.52e-08 0)
+Vcinv cinv 0 pwl(0 0 1.5e-08 0 1.52e-08 1.5)
+Vclk  clk  0 pwl(0 0 2.3e-08 0 2.32e-08 1.5 2.6e-08 1.5 2.62e-08 0 3.5e-08 0 3.52e-08 1.5 3.8e-08 1.5 3.82e-08 0 4.7e-08 0 4.72e-08 1.5 5e-08 1.5 5.02e-08 0 5.9e-08 0 5.92e-08 1.5 6.2e-08 1.5 6.22e-08 0 7.1e-08 0 7.12e-08 1.5 7.4e-08 1.5 7.42e-08 0 8.3e-08 0 8.32e-08 1.5 8.6e-08 1.5 8.62e-08 0 9.5e-08 0 9.52e-08 1.5 9.8e-08 1.5 9.82e-08 0 1.07e-07 0 1.072e-07 1.5 1.1e-07 1.5 1.102e-07 0)
+Vcr0 cr0 0 pwl(0 0 1.5e-08 0 1.52e-08 0 2.7e-08 0 2.72e-08 0 3.9e-08 0 3.92e-08 0 5.1e-08 0 5.12e-08 0 6.3e-08 0 6.32e-08 0 7.5e-08 0 7.52e-08 0 8.7e-08 0 8.72e-08 0 9.9e-08 0 9.92e-08 1.5)
+Vcg0 cg0 0 pwl(0 0 1.5e-08 0 1.52e-08 1.5 2.7e-08 1.5 2.72e-08 1.5 3.9e-08 1.5 3.92e-08 1.5 5.1e-08 1.5 5.12e-08 1.5 6.3e-08 1.5 6.32e-08 1.5 7.5e-08 1.5 7.52e-08 1.5 8.7e-08 1.5 8.72e-08 1.5 9.9e-08 1.5 9.92e-08 0)
+Vcr1 cr1 0 pwl(0 0 1.5e-08 0 1.52e-08 0 2.7e-08 0 2.72e-08 0 3.9e-08 0 3.92e-08 0 5.1e-08 0 5.12e-08 0 6.3e-08 0 6.32e-08 0 7.5e-08 0 7.52e-08 0 8.7e-08 0 8.72e-08 1.5 9.9e-08 1.5 9.92e-08 0)
+Vcg1 cg1 0 pwl(0 0 1.5e-08 0 1.52e-08 1.5 2.7e-08 1.5 2.72e-08 1.5 3.9e-08 1.5 3.92e-08 1.5 5.1e-08 1.5 5.12e-08 1.5 6.3e-08 1.5 6.32e-08 1.5 7.5e-08 1.5 7.52e-08 1.5 8.7e-08 1.5 8.72e-08 0 9.9e-08 0 9.92e-08 1.5)
+Vcr2 cr2 0 pwl(0 0 1.5e-08 0 1.52e-08 0 2.7e-08 0 2.72e-08 0 3.9e-08 0 3.92e-08 0 5.1e-08 0 5.12e-08 0 6.3e-08 0 6.32e-08 0 7.5e-08 0 7.52e-08 1.5 8.7e-08 1.5 8.72e-08 1.5 9.9e-08 1.5 9.92e-08 1.5)
+Vcg2 cg2 0 pwl(0 0 1.5e-08 0 1.52e-08 1.5 2.7e-08 1.5 2.72e-08 1.5 3.9e-08 1.5 3.92e-08 1.5 5.1e-08 1.5 5.12e-08 1.5 6.3e-08 1.5 6.32e-08 1.5 7.5e-08 1.5 7.52e-08 0 8.7e-08 0 8.72e-08 0 9.9e-08 0 9.92e-08 0)
+Vcr3 cr3 0 pwl(0 0 1.5e-08 0 1.52e-08 0 2.7e-08 0 2.72e-08 0 3.9e-08 0 3.92e-08 0 5.1e-08 0 5.12e-08 0 6.3e-08 0 6.32e-08 1.5 7.5e-08 1.5 7.52e-08 1.5 8.7e-08 1.5 8.72e-08 1.5 9.9e-08 1.5 9.92e-08 1.5)
+Vcg3 cg3 0 pwl(0 0 1.5e-08 0 1.52e-08 1.5 2.7e-08 1.5 2.72e-08 1.5 3.9e-08 1.5 3.92e-08 1.5 5.1e-08 1.5 5.12e-08 1.5 6.3e-08 1.5 6.32e-08 0 7.5e-08 0 7.52e-08 0 8.7e-08 0 8.72e-08 0 9.9e-08 0 9.92e-08 0)
+Vcr4 cr4 0 pwl(0 0 1.5e-08 0 1.52e-08 0 2.7e-08 0 2.72e-08 0 3.9e-08 0 3.92e-08 0 5.1e-08 0 5.12e-08 1.5 6.3e-08 1.5 6.32e-08 0 7.5e-08 0 7.52e-08 0 8.7e-08 0 8.72e-08 0 9.9e-08 0 9.92e-08 0)
+Vcg4 cg4 0 pwl(0 0 1.5e-08 0 1.52e-08 1.5 2.7e-08 1.5 2.72e-08 1.5 3.9e-08 1.5 3.92e-08 1.5 5.1e-08 1.5 5.12e-08 0 6.3e-08 0 6.32e-08 1.5 7.5e-08 1.5 7.52e-08 1.5 8.7e-08 1.5 8.72e-08 1.5 9.9e-08 1.5 9.92e-08 1.5)
+Vcr5 cr5 0 pwl(0 0 1.5e-08 0 1.52e-08 0 2.7e-08 0 2.72e-08 0 3.9e-08 0 3.92e-08 1.5 5.1e-08 1.5 5.12e-08 1.5 6.3e-08 1.5 6.32e-08 1.5 7.5e-08 1.5 7.52e-08 1.5 8.7e-08 1.5 8.72e-08 1.5 9.9e-08 1.5 9.92e-08 1.5)
+Vcg5 cg5 0 pwl(0 0 1.5e-08 0 1.52e-08 1.5 2.7e-08 1.5 2.72e-08 1.5 3.9e-08 1.5 3.92e-08 0 5.1e-08 0 5.12e-08 0 6.3e-08 0 6.32e-08 0 7.5e-08 0 7.52e-08 0 8.7e-08 0 8.72e-08 0 9.9e-08 0 9.92e-08 0)
+Vcr6 cr6 0 pwl(0 0 1.5e-08 0 1.52e-08 0 2.7e-08 0 2.72e-08 1.5 3.9e-08 1.5 3.92e-08 1.5 5.1e-08 1.5 5.12e-08 1.5 6.3e-08 1.5 6.32e-08 1.5 7.5e-08 1.5 7.52e-08 1.5 8.7e-08 1.5 8.72e-08 1.5 9.9e-08 1.5 9.92e-08 1.5)
+Vcg6 cg6 0 pwl(0 0 1.5e-08 0 1.52e-08 1.5 2.7e-08 1.5 2.72e-08 0 3.9e-08 0 3.92e-08 0 5.1e-08 0 5.12e-08 0 6.3e-08 0 6.32e-08 0 7.5e-08 0 7.52e-08 0 8.7e-08 0 8.72e-08 0 9.9e-08 0 9.92e-08 0)
+Vcr7 cr7 0 pwl(0 0 1.5e-08 0 1.52e-08 1.5 2.7e-08 1.5 2.72e-08 1.5 3.9e-08 1.5 3.92e-08 1.5 5.1e-08 1.5 5.12e-08 1.5 6.3e-08 1.5 6.32e-08 1.5 7.5e-08 1.5 7.52e-08 1.5 8.7e-08 1.5 8.72e-08 1.5 9.9e-08 1.5 9.92e-08 1.5)
+Vcg7 cg7 0 pwl(0 0 1.5e-08 0 1.52e-08 0 2.7e-08 0 2.72e-08 0 3.9e-08 0 3.92e-08 0 5.1e-08 0 5.12e-08 0 6.3e-08 0 6.32e-08 0 7.5e-08 0 7.52e-08 0 8.7e-08 0 8.72e-08 0 9.9e-08 0 9.92e-08 0)
+
+.control
+set wr_vecnames
+set wr_singlescale
+tran 100p 111.0n
+wrdata core_out.csv v(outp) v(outn) v(top) v(clk)
+quit
+.endc
+.end

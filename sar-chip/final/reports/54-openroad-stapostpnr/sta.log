@@ -1,0 +1,344 @@
++ define_corners nom_typ_1p20V_25C
+Reading timing models for corner nom_typ_1p20V_25C…
+Reading cell library for the 'nom_typ_1p20V_25C' corner at '/foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/lib/sg13g2_stdcell_typ_1p20V_25C.lib'…
+Reading cell library for the 'nom_typ_1p20V_25C' corner at '/foss/designs/sar-chip/ip/sg13g2_io_custom/lib/sg13g2_io_typ_1p2V_3p3V_25C.lib'…
+Reading cell library for the 'nom_typ_1p20V_25C' corner at '/foss/designs/sar-chip/ip/sg13g2_ip__jku/final/lib/sg13g2_ip__jku.lib'…
+Reading cell library for the 'nom_typ_1p20V_25C' corner at '/foss/designs/sar-chip/ip/sg13g2_ip__jku_names/final/lib/sg13g2_ip__jku_names.lib'…
+Reading top-level netlist at '/foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/51-openroad-fillinsertion/chip_top.nl.v'…
+Linking design 'chip_top' from netlist…
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/51-openroad-fillinsertion/chip_top.nl.v line 53052, module sg13g2_ip__bondpad_70x70 not found. Creating black box for IO_BOND_clk_pad.
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/51-openroad-fillinsertion/chip_top.nl.v line 53084, module sg13g2_Corner not found. Creating black box for IO_CORNER_NORTH_EAST_INST.
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/51-openroad-fillinsertion/chip_top.nl.v line 53088, module sg13g2_Filler4000 not found. Creating black box for IO_FILL_IO_EAST_0_0.
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/51-openroad-fillinsertion/chip_top.nl.v line 53090, module sg13g2_Filler200 not found. Creating black box for IO_FILL_IO_EAST_0_40.
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/51-openroad-fillinsertion/chip_top.nl.v line 53092, module sg13g2_Filler2000 not found. Creating black box for IO_FILL_IO_EAST_1_20.
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/51-openroad-fillinsertion/chip_top.nl.v line 53093, module sg13g2_Filler400 not found. Creating black box for IO_FILL_IO_EAST_1_30.
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/51-openroad-fillinsertion/chip_top.nl.v line 53288, module oa_sar8_core16 not found. Creating black box for \i_chip_core.sar_adc .
+Reading design constraints file at '/foss/designs/sar-chip/flow/librelane/chip_top.sdc'…
+[INFO] Using clock clk_PAD…
+[INFO] Setting output delay to: 2
+[INFO] Setting input delay to: 2
+Warning: chip_top.sdc line 51, port 'input_PAD[*]' not found.
+Warning: chip_top.sdc line 66, port 'bidir_PAD[*]' not found.
+[INFO] Setting load to: 0.006
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.15
+[INFO] Setting timing derate to: 5%
+Reading top-level design parasitics for the 'nom_typ_1p20V_25C' corner at '/foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef'…
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53411, i_chip_core.sar_adc not connected to net i_chip_core.result[0].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53418, i_chip_core.sar_adc not connected to net i_chip_core.result[0].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53431, i_chip_core.sar_adc not connected to net i_chip_core.result[1].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53438, i_chip_core.sar_adc not connected to net i_chip_core.result[1].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53451, i_chip_core.sar_adc not connected to net i_chip_core.result[2].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53465, i_chip_core.sar_adc not connected to net i_chip_core.result[2].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53478, i_chip_core.sar_adc not connected to net i_chip_core.result[3].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53489, i_chip_core.sar_adc not connected to net i_chip_core.result[3].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53502, i_chip_core.sar_adc not connected to net i_chip_core.result[4].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53510, i_chip_core.sar_adc not connected to net i_chip_core.result[4].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53521, i_chip_core.sar_adc not connected to net i_chip_core.result[5].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53540, i_chip_core.sar_adc not connected to net i_chip_core.result[5].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53558, i_chip_core.sar_adc not connected to net i_chip_core.result[6].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53570, i_chip_core.sar_adc not connected to net i_chip_core.result[6].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53583, i_chip_core.sar_adc not connected to net i_chip_core.result[7].
+Warning: /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/53-openroad-rcx/nom/chip_top.nom.spef line 53597, i_chip_core.sar_adc not connected to net i_chip_core.result[7].
+%OL_CREATE_REPORT min.rpt
+
+===========================================================================
+report_checks -path_delay min (Hold)
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+No paths found.
+
+%OL_END_REPORT
+%OL_CREATE_REPORT max.rpt
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+No paths found.
+
+%OL_END_REPORT
+%OL_CREATE_REPORT checks.rpt
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Startpoint: analog_PAD[0] (input port)
+Endpoint: analog_PAD[0] (output port)
+Path Group: unconstrained
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000 ^ input external delay
+     2    1.006000    0.000000    0.000000    0.000000 ^ analog_PAD[0] (inout)
+                                                         analog_PAD[0] (net)
+                      0.000000    0.000000    0.000000 ^ g_analogs[0].analog_pad/pad (sg13g2_IOPadAnalog)
+     2    1.006000  200.000000 1000.000000 1000.000000 ^ g_analogs[0].analog_pad/pad (sg13g2_IOPadAnalog)
+                                                         analog_PAD[0] (net)
+                    150.000015    0.000000 1000.000000 ^ analog_PAD[0] (inout)
+                                           1000.000000   data arrival time
+---------------------------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 45 unannotated drivers.
+ analog_PAD[0]
+ analog_PAD[1]
+ analog_PAD[2]
+ bidir_PAD
+ clk_PAD
+ input_PAD
+ output_PAD[0]
+ output_PAD[10]
+ output_PAD[11]
+ output_PAD[12]
+ output_PAD[13]
+ output_PAD[14]
+ output_PAD[1]
+ output_PAD[2]
+ output_PAD[3]
+ output_PAD[4]
+ output_PAD[5]
+ output_PAD[6]
+ output_PAD[7]
+ output_PAD[8]
+ output_PAD[9]
+ rst_n_PAD
+ g_analogs\[0\].analog_pad/pad
+ g_analogs\[0\].analog_pad/padbare
+ g_analogs\[1\].analog_pad/pad
+ g_analogs\[1\].analog_pad/padbare
+ g_analogs\[2\].analog_pad/pad
+ g_analogs\[2\].analog_pad/padbare
+ g_bidirs\[0\].bidir_pad/p2c
+ g_bidirs\[0\].bidir_pad/pad
+ g_outputs\[0\].output_pad/pad
+ g_outputs\[10\].output_pad/pad
+ g_outputs\[11\].output_pad/pad
+ g_outputs\[12\].output_pad/pad
+ g_outputs\[13\].output_pad/pad
+ g_outputs\[14\].output_pad/pad
+ g_outputs\[1\].output_pad/pad
+ g_outputs\[2\].output_pad/pad
+ g_outputs\[3\].output_pad/pad
+ g_outputs\[4\].output_pad/pad
+ g_outputs\[5\].output_pad/pad
+ g_outputs\[6\].output_pad/pad
+ g_outputs\[7\].output_pad/pad
+ g_outputs\[8\].output_pad/pad
+ g_outputs\[9\].output_pad/pad
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+%OL_METRIC_I design__max_slew_violation__count__corner:nom_typ_1p20V_25C 0
+max fanout violation count 0
+%OL_METRIC_I design__max_fanout_violation__count__corner:nom_typ_1p20V_25C 0
+max cap violation count 0
+%OL_METRIC_I design__max_cap_violation__count__corner:nom_typ_1p20V_25C 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 16 input ports missing set_input_delay.
+  analog_PAD[0]
+  analog_PAD[1]
+  analog_PAD[2]
+  bidir_PAD
+  clk_PAD
+  input_PAD
+  output_PAD[0]
+  output_PAD[1]
+  output_PAD[2]
+  output_PAD[3]
+  output_PAD[4]
+  output_PAD[5]
+  output_PAD[6]
+  output_PAD[7]
+  output_PAD[8]
+  output_PAD[9]
+Warning: There are 17 unconstrained endpoints.
+  analog_PAD[0]
+  analog_PAD[1]
+  analog_PAD[2]
+  bidir_PAD
+  clk_PAD
+  input_PAD
+  output_PAD[0]
+  output_PAD[1]
+  output_PAD[2]
+  output_PAD[3]
+  output_PAD[4]
+  output_PAD[5]
+  output_PAD[6]
+  output_PAD[7]
+  output_PAD[8]
+  output_PAD[9]
+  rst_n_PAD
+%OL_END_REPORT
+%OL_CREATE_REPORT power.rpt
+
+===========================================================================
+ report_power
+============================================================================
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Group                    Internal    Switching      Leakage        Total
+                            Power        Power        Power        Power (Watts)
+------------------------------------------------------------------------
+Sequential           0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00   0.0%
+Combinational        0.000000e+00 0.000000e+00 4.049360e-10 4.049360e-10   0.0%
+Clock                0.000000e+00 0.000000e+00 4.154370e-05 4.154370e-05   0.5%
+Macro                0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00   0.0%
+Pad                  3.420145e-03 4.935669e-03 1.982675e-08 8.355834e-03  99.5%
+------------------------------------------------------------------------
+Total                3.420145e-03 4.935669e-03 4.156394e-05 8.397378e-03 100.0%
+                            40.7%        58.8%         0.5%
+%OL_METRIC_F power__internal__total 0.0034201450180262327
+%OL_METRIC_F power__switching__total 0.004935669247061014
+%OL_METRIC_F power__leakage__total 4.156394425081089e-5
+%OL_METRIC_F power__total 0.008397378027439117
+
+%OL_END_REPORT
+%OL_CREATE_REPORT skew.min.rpt
+
+===========================================================================
+Clock Skew (Hold)
+============================================================================
+%OL_METRIC_F clock__skew__worst_hold__corner:nom_typ_1p20V_25C 0.0
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Clock clk_PAD
+No launch/capture paths found.
+
+%OL_END_REPORT
+%OL_CREATE_REPORT skew.max.rpt
+
+===========================================================================
+Clock Skew (Setup)
+============================================================================
+%OL_METRIC_F clock__skew__worst_setup__corner:nom_typ_1p20V_25C 0.0
+======================= nom_typ_1p20V_25C Corner ===================================
+
+Clock clk_PAD
+No launch/capture paths found.
+
+%OL_END_REPORT
+%OL_CREATE_REPORT ws.min.rpt
+
+===========================================================================
+Worst Slack (Hold)
+============================================================================
+%OL_METRIC_F timing__hold__ws__corner:nom_typ_1p20V_25C 1.0000000433293989e+39
+nom_typ_1p20V_25C: 1.0000000433293989e+39
+%OL_END_REPORT
+%OL_CREATE_REPORT ws.max.rpt
+
+===========================================================================
+Worst Slack (Setup)
+============================================================================
+%OL_METRIC_F timing__setup__ws__corner:nom_typ_1p20V_25C 1.0000000433293989e+39
+nom_typ_1p20V_25C: 1.0000000433293989e+39
+%OL_END_REPORT
+%OL_CREATE_REPORT tns.min.rpt
+
+===========================================================================
+Total Negative Slack (Hold)
+============================================================================
+%OL_METRIC_F timing__hold__tns__corner:nom_typ_1p20V_25C 0.0
+nom_typ_1p20V_25C: 0.0
+%OL_END_REPORT
+%OL_CREATE_REPORT tns.max.rpt
+
+===========================================================================
+Total Negative Slack (Setup)
+============================================================================
+%OL_METRIC_F timing__setup__tns__corner:nom_typ_1p20V_25C 0.0
+nom_typ_1p20V_25C: 0.0
+%OL_END_REPORT
+%OL_CREATE_REPORT wns.min.rpt
+
+===========================================================================
+Worst Negative Slack (Hold)
+============================================================================
+%OL_METRIC_F timing__hold__wns__corner:nom_typ_1p20V_25C 0
+nom_typ_1p20V_25C: 0
+%OL_END_REPORT
+%OL_CREATE_REPORT wns.max.rpt
+
+===========================================================================
+Worst Negative Slack (Setup)
+============================================================================
+%OL_METRIC_F timing__setup__wns__corner:nom_typ_1p20V_25C 0.0
+nom_typ_1p20V_25C: 0.0
+%OL_END_REPORT
+%OL_CREATE_REPORT violator_list.rpt
+
+===========================================================================
+Violator List
+============================================================================
+%OL_METRIC_I timing__hold_vio__count__corner:nom_typ_1p20V_25C 0
+%OL_METRIC_F timing__hold_r2r__ws__corner:nom_typ_1p20V_25C inf
+%OL_METRIC_I timing__hold_r2r_vio__count__corner:nom_typ_1p20V_25C 0
+%OL_METRIC_I timing__setup_vio__count__corner:nom_typ_1p20V_25C 0
+%OL_METRIC_F timing__setup_r2r__ws__corner:nom_typ_1p20V_25C inf
+%OL_METRIC_I timing__setup_r2r_vio__count__corner:nom_typ_1p20V_25C 0
+%OL_END_REPORT
+%OL_CREATE_REPORT unpropagated.rpt
+%OL_END_REPORT
+%OL_CREATE_REPORT clock.rpt
+Clock: clk_PAD
+Sources: clk_pad/p2c 
+Generated: no
+Virtual: yes
+Propagated: no
+Period: 10.000000
+
+===========================================================================
+report_clock_properties
+============================================================================
+Clock                   Period          Waveform
+----------------------------------------------------
+clk_PAD              10.000000    0.000000  5.000000
+
+===========================================================================
+report_clock_latency
+============================================================================
+Clock clk_PAD
+
+
+===========================================================================
+report_clock_min_period
+============================================================================
+clk_PAD period_min = 0.00 fmax = inf
+%OL_END_REPORT
+Writing SDF files for all corners…
+Removing Clock latencies before writing libs…
+Writing timing models for all corners…
+Writing timing models for the nom_typ_1p20V_25C corner to /foss/designs/sar-chip/flow/librelane/runs/RUN_2026-08-16_09-07-48/54-openroad-stapostpnr/nom_typ_1p20V_25C/chip_top__nom_typ_1p20V_25C.lib…

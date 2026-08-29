@@ -1,0 +1,14 @@
+* StrongARM comparator reference
+.subckt sa_comp inp inn clk outp outn VDD VSS
+M1 p inp tail VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+M2 q inn tail VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+M3 outn outp p VSS sg13_lv_nmos w=4.0u l=0.13u rfmode=1
+M4 outp outn q VSS sg13_lv_nmos w=4.0u l=0.13u rfmode=1
+MT tail clk VSS VSS sg13_lv_nmos w=3.0u l=0.3u rfmode=1
+M5 outn outp VDD VDD sg13_lv_pmos w=6.0u l=0.13u rfmode=1
+M6 outp outn VDD VDD sg13_lv_pmos w=6.0u l=0.13u rfmode=1
+MS1 p clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+MS2 q clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+MS3 outn clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+MS4 outp clk VDD VDD sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+.ends

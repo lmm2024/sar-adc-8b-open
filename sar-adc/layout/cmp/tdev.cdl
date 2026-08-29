@@ -1,0 +1,3 @@
+.subckt tdev t_vcol t_bar1 t_bar2 t_m2top t_guard
+M1 t_bar1 t_m2top t_bar2 t_guard sg13_lv_nmos w=2.0u l=0.15u ng=2 m=1
+.ends

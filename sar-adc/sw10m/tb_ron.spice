@@ -1,0 +1,41 @@
+* Ron flatness: bootstrap vs plain TG, vin swept across the input range
+.lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.param vdd=1.5
+.include ./bootstrap.cir
+.subckt sw_tg bot vin trk trkb VDD VSS
+XMNT bot trk vin VSS sg13_lv_nmos w=2.0u l=0.13u
+XMPT bot trkb vin VDD sg13_lv_pmos w=4.0u l=0.13u
+.ends
+
+VDDs VDD 0 {vdd}
+VSSs VSS 0 0
+Vck  ck  0 {vdd}
+Vckb ckb 0 0
+
+Vin  vin 0 0.75
+* 5 mV across each switch, read the current
+Vb   outb 0 0.745
+Vt   outt 0 0.745
+Xb vin outb ck ckb VDD VSS bstrap
+Xt outt vin ck ckb VDD VSS sw_tg
+
+.control
+let pts = 15
+let i = 0
+echo "# vin ron_boot ron_tg" > ron.txt
+dowhile i < pts
+  let vv = 0.05 + i * 0.1
+  let vs = vv - 0.005
+  alter Vin dc = $&vv
+  alter Vb  dc = $&vs
+  alter Vt  dc = $&vs
+  op
+  let rb = 0.005 / abs(i(Vb))
+  let rt = 0.005 / abs(i(Vt))
+  echo "$&vv $&rb $&rt" >> ron.txt
+  destroy all
+  let i = i + 1
+end
+quit
+.endc
+.end

@@ -1,0 +1,40 @@
+* which reseed idiom actually re-rolls agauss in ngspice-46?
+.param mtest=agauss(1.0,0.1,1)
+Vt a 0 {mtest}
+Rt a 0 1k
+
+.control
+echo "--- idiom A: setseed + reset"
+let r = 1
+dowhile r <= 3
+  setseed $&r
+  reset
+  op
+  print v(a)
+  destroy all
+  let r = r + 1
+end
+echo "--- idiom B: set rndseed + reset"
+let r = 11
+dowhile r <= 13
+  set rndseed = $&r
+  reset
+  op
+  print v(a)
+  destroy all
+  let r = r + 1
+end
+echo "--- idiom C: alterparam + reset"
+let r = 21
+dowhile r <= 23
+  setseed $&r
+  alterparam mtest = agauss(1.0,0.1,1)
+  reset
+  op
+  print v(a)
+  destroy all
+  let r = r + 1
+end
+quit
+.endc
+.end

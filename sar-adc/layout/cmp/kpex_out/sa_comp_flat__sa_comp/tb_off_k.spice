@@ -1,0 +1,32 @@
+* post-layout offset bracket with the kpex 2.5D netlist (trusted extraction)
+.lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.include sa_comp_k.spice
+.param vdd=1.5
+XDUT VDD VSS clk inn inp outn outp sa_comp
+VDDs VDD 0 {vdd}
+VSSs VSS 0 0
+Vclk clk 0 pulse(0 {vdd} 2n 0.1n 0.1n 8n 20n)
+Vip inp 0 0.9
+Vin inn 0 0.9
+.control
+let dvs = vector(9)
+compose dvs values -50m -20m -10m -5m 0 5m 10m 20m 50m
+let i = 0
+echo "# dv sep(outp-outn)" > off_k.txt
+dowhile i < 9
+  let dv = dvs[i]
+  let vp = 0.9 + dv/2
+  let vn = 0.9 - dv/2
+  alter Vip dc = $&vp
+  alter Vin dc = $&vn
+  tran 20p 10n
+  meas tran so find v(outp) at=9.5n
+  meas tran sn find v(outn) at=9.5n
+  let sep = so - sn
+  echo "$&dv $&sep" >> off_k.txt
+  destroy all
+  let i = i + 1
+end
+quit
+.endc
+.end

@@ -1,0 +1,137 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_fast_1p32V_m40C Corner ===================================
+
+Startpoint: analog_PAD[0] (input port)
+Endpoint: analog_PAD[0] (output port)
+Path Group: unconstrained
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  0.000000    0.000000 ^ input external delay
+     2    1.006000    0.000000    0.000000    0.000000 ^ analog_PAD[0] (inout)
+                                                         analog_PAD[0] (net)
+                      0.000000    0.000000    0.000000 ^ g_analogs[0].analog_pad/pad (sg13g2_IOPadAnalog)
+     2    1.006000  200.000000 1000.000000 1000.000000 ^ g_analogs[0].analog_pad/pad (sg13g2_IOPadAnalog)
+                                                         analog_PAD[0] (net)
+                    150.000015    0.000000 1000.000000 ^ analog_PAD[0] (inout)
+                                           1000.000000   data arrival time
+---------------------------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_fast_1p32V_m40C Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_fast_1p32V_m40C Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 45 unannotated drivers.
+ analog_PAD[0]
+ analog_PAD[1]
+ analog_PAD[2]
+ bidir_PAD
+ clk_PAD
+ input_PAD
+ output_PAD[0]
+ output_PAD[10]
+ output_PAD[11]
+ output_PAD[12]
+ output_PAD[13]
+ output_PAD[14]
+ output_PAD[1]
+ output_PAD[2]
+ output_PAD[3]
+ output_PAD[4]
+ output_PAD[5]
+ output_PAD[6]
+ output_PAD[7]
+ output_PAD[8]
+ output_PAD[9]
+ rst_n_PAD
+ g_analogs\[0\].analog_pad/pad
+ g_analogs\[0\].analog_pad/padbare
+ g_analogs\[1\].analog_pad/pad
+ g_analogs\[1\].analog_pad/padbare
+ g_analogs\[2\].analog_pad/pad
+ g_analogs\[2\].analog_pad/padbare
+ g_bidirs\[0\].bidir_pad/p2c
+ g_bidirs\[0\].bidir_pad/pad
+ g_outputs\[0\].output_pad/pad
+ g_outputs\[10\].output_pad/pad
+ g_outputs\[11\].output_pad/pad
+ g_outputs\[12\].output_pad/pad
+ g_outputs\[13\].output_pad/pad
+ g_outputs\[14\].output_pad/pad
+ g_outputs\[1\].output_pad/pad
+ g_outputs\[2\].output_pad/pad
+ g_outputs\[3\].output_pad/pad
+ g_outputs\[4\].output_pad/pad
+ g_outputs\[5\].output_pad/pad
+ g_outputs\[6\].output_pad/pad
+ g_outputs\[7\].output_pad/pad
+ g_outputs\[8\].output_pad/pad
+ g_outputs\[9\].output_pad/pad
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 16 input ports missing set_input_delay.
+  analog_PAD[0]
+  analog_PAD[1]
+  analog_PAD[2]
+  bidir_PAD
+  clk_PAD
+  input_PAD
+  output_PAD[0]
+  output_PAD[1]
+  output_PAD[2]
+  output_PAD[3]
+  output_PAD[4]
+  output_PAD[5]
+  output_PAD[6]
+  output_PAD[7]
+  output_PAD[8]
+  output_PAD[9]
+Warning: There are 17 unconstrained endpoints.
+  analog_PAD[0]
+  analog_PAD[1]
+  analog_PAD[2]
+  bidir_PAD
+  clk_PAD
+  input_PAD
+  output_PAD[0]
+  output_PAD[1]
+  output_PAD[2]
+  output_PAD[3]
+  output_PAD[4]
+  output_PAD[5]
+  output_PAD[6]
+  output_PAD[7]
+  output_PAD[8]
+  output_PAD[9]
+  rst_n_PAD

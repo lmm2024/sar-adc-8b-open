@@ -1,0 +1,82 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * oa-sar8 strongarm comparator, first cut (ihp sg13g2 lv, tt corner)
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                      0.901
+tail                                  0.808489
+q                                          1.5
+inn                                      0.899
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vin#branch                          7.1157e-13
+vip#branch                         7.04165e-13
+vclk#branch                        2.92534e-10
+vdd#branch                        -7.09647e-10
+
+
+No. of Data Rows : 1220
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                      0.899
+tail                                  0.808489
+q                                          1.5
+inn                                      0.901
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vin#branch                         7.04165e-13
+vip#branch                          7.1157e-13
+vclk#branch                        2.92534e-10
+vdd#branch                        -7.09647e-10
+
+
+No. of Data Rows : 1220
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                     0.9001
+tail                                  0.808476
+q                                          1.5
+inn                                     0.8999
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vin#branch                          7.0822e-13
+vip#branch                         7.07485e-13
+vclk#branch                        2.92534e-10
+vdd#branch                        -7.09643e-10
+
+
+No. of Data Rows : 1220
+ngspice-46 done

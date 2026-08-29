@@ -1,0 +1,74 @@
+GDS input file passed, running in LVS mode
+Found cell sa_comp in GDS sa_comp_flat.gds (only top cell)
+Cache hit: Reusing cached LVSDB
+kpex_out/.kpex_cache/ihp-sg13g2/foss/designs/sar-adc/layout/cmp/sa_comp_flat.gds/sa_comp.lvsdb.gz
+Unable to find info about extracted LVS layer 'cont_drw'
+(19, 0) -> (via1_drw)
+(29, 0) -> (via2_drw)
+(31, 0) -> (nwell_drw)
+(46, 0) -> (pwell pwell_sub)
+(5, 0) -> (poly_con)
+(8, 0) -> (metal1_con)
+(10, 0) -> (metal2_con)
+(30, 0) -> (metal3_con)
+(7, 0) -> (nsd_fet)
+(14, 0) -> (psd_fet)
+(65, 144) -> (ntap)
+(65, 244) -> (ptap)
+(6, 4402) -> (cont_psd_con)
+(6, 4401) -> (cont_nsd_con)
+(6, 4403) -> (cont_poly_con)
+(8, 2) -> (metal1_pin_con)
+(10, 2) -> (metal2_pin_con)
+(30, 2) -> (metal3_pin_con)
+Device;Net1;Net2;Capacitance [fF];Resistance [Ω]
+C1;$16;$4;0.713;
+C2;$16;clk;0.877;
+C3;$16;inn;0.44;
+C4;$16;outn;1.165;
+C5;$16;outp;2.317;
+C6;$16;VDD;0.683;
+C7;$16;VSS;0.407;
+C8;$16;VSUBS;1.253;
+C9;$4;$9;0.713;
+C10;$4;clk;0.878;
+C11;$4;inn;0.823;
+C12;$4;inp;0.824;
+C13;$4;outn;0.004;
+C14;$4;outp;0.004;
+C15;$4;VSS;1.008;
+C16;$4;VSUBS;1.515;
+C17;$9;clk;0.884;
+C18;$9;inp;0.44;
+C19;$9;outn;1.945;
+C20;$9;outp;1.167;
+C21;$9;VDD;0.683;
+C22;$9;VSS;0.407;
+C23;$9;VSUBS;1.284;
+C24;clk;inn;0.026;
+C25;clk;inp;0.026;
+C26;clk;outn;1.008;
+C27;clk;outp;0.968;
+C28;inn;outn;0.008;
+C29;inn;outp;0.001;
+C30;inp;outn;0.001;
+C31;inp;outp;0.007;
+C32;outn;outp;2.657;
+C33;VDD;clk;6.979;
+C34;VDD;outn;5.993;
+C35;VDD;outp;6.017;
+C36;VDD;VSS;0.076;
+C37;VDD;VSUBS;13.795;
+C38;VSS;clk;2.464;
+C39;VSS;inn;1.017;
+C40;VSS;inp;1.017;
+C41;VSS;outn;1.369;
+C42;VSS;outp;1.321;
+C43;VSS;VSUBS;13.53;
+C44;VSUBS;clk;11.311;
+C45;VSUBS;inn;0.781;
+C46;VSUBS;inp;0.781;
+C47;VSUBS;outn;4.47;
+C48;VSUBS;outp;4.411;
+/foss/designs/sar-adc/layout/cmp/kpex_out/sa_comp_flat__sa_comp/sa_comp_k25d_pex_netlist.csv
+Wrote expanded netlist to: /foss/designs/sar-adc/layout/cmp/kpex_out/sa_comp_flat__sa_comp/sa_comp_k25d_pex_netlist.spice

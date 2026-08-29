@@ -1,0 +1,5 @@
+* plain transmission gate
+.subckt sw_tg bot vin trk trkb VDD VSS
+MNT bot trk vin VSS sg13_lv_nmos w=2.0u l=0.13u rfmode=1
+MPT bot trkb vin VDD sg13_lv_pmos w=4.0u l=0.13u rfmode=1
+.ends

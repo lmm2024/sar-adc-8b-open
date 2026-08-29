@@ -1,0 +1,25 @@
+meta:
+  version: 3
+  flow: Classic
+
+DESIGN_NAME: sar_ctrl
+VERILOG_FILES: ["dir::../rtl/sar_ctrl.sv"]
+
+DIE_AREA: [0, 0, 50, 100]
+CORE_AREA: [5, 5, 45, 95]
+FP_SIZING: absolute
+PL_TARGET_DENSITY_PCT: 65
+GRT_ALLOW_CONGESTION: true
+RUN_MAGIC_DRC: true
+RUN_CTS: true
+FP_PDN_MULTILAYER: false
+FP_PIN_ORDER_CFG: dir::pin_order.cfg
+LINTER_INCLUDE_PDK_MODELS: true
+
+VDD_NETS: ["VDD"]
+GND_NETS: ["VSS"]
+
+CLOCK_PORT: clk
+CLOCK_NET: clk
+PNR_SDC_FILE: dir::impl.sdc
+SIGNOFF_SDC_FILE: dir::impl.sdc

@@ -1,0 +1,89 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * oa-sar8 real core: cdac + switches + strongarm (generated)
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                        1.5
+vcm                                        0.9
+vin                                     1.3857
+top                                        0.9
+xc0.1                                      0.9
+bot0                                    1.3857
+xc1.1                                      0.9
+bot1                                    1.3857
+xc2.1                                      0.9
+bot2                                    1.3857
+xc3.1                                      0.9
+bot3                                    1.3857
+xc4.1                                      0.9
+bot4                                    1.3857
+xc5.1                                      0.9
+bot5                                    1.3857
+xc6.1                                      0.9
+bot6                                    1.3857
+xc7.1                                      0.9
+bot7                                    1.3857
+xcd.1                                      0.9
+botd                                    1.3857
+ctrk                                       1.5
+cr0                                          0
+cg0                                          0
+cr1                                          0
+cg1                                          0
+cr2                                          0
+cg2                                          0
+cr3                                          0
+cg3                                          0
+cr4                                          0
+cg4                                          0
+cr5                                          0
+cg5                                          0
+cr6                                          0
+cg6                                          0
+cr7                                          0
+cg7                                          0
+cinv                                         0
+topr                                       0.9
+xcrep.1                                    0.9
+p                                          1.5
+tail                                  0.758955
+q                                          1.5
+outn                                       1.5
+outp                                       1.5
+clk                                          0
+vcg7#branch                                  0
+vcr7#branch                                  0
+vcg6#branch                                  0
+vcr6#branch                                  0
+vcg5#branch                                  0
+vcr5#branch                                  0
+vcg4#branch                                  0
+vcr4#branch                                  0
+vcg3#branch                                  0
+vcr3#branch                                  0
+vcg2#branch                                  0
+vcr2#branch                                  0
+vcg1#branch                                  0
+vcr1#branch                                  0
+vcg0#branch                                  0
+vcr0#branch                                  0
+vclk#branch                        2.92393e-10
+vcinv#branch                                 0
+vctrk#branch                                 0
+vin#branch                        -1.15569e-11
+vcms#branch                       -1.43397e-13
+vdd#branch                        -6.94312e-10
+
+
+No. of Data Rows : 1353
+ngspice-46 done

@@ -1,0 +1,39 @@
+* OA-SAR8: .noise calibration of the integration-phase replica.
+* P/Q hard-clamped at 1.0V (mid-integration OP); drain current noise sensed
+* through a CCCS into 1Meg (F/R sense: R thermal negligible vs scaled signal).
+* Yields gm (AC) and gamma (noise plateau) -> calibrated sigma_n.
+.lib cornerMOSlv.lib mos_tt
+
+.param vdd=1.5
+.param vcm=0.9
+
+XM1 psen inp tail 0 sg13_lv_nmos w=8u l=0.15u ng=4
+XM2 qsen inn tail 0 sg13_lv_nmos w=8u l=0.15u ng=4
+XMt tail clkh 0 0   sg13_lv_nmos w=3u l=0.3u ng=2
+
+Vclkh clkh 0 {vdd}
+VDD   vdd  0 {vdd}
+Vip   inp 0 dc {vcm} ac 1
+Vin   inn 0 dc {vcm}
+
+* hard clamps at mid-integration voltage + current sense
+Vp psen 0 1.0
+Vq qsen 0 1.0
+F1 0 np Vp 1
+Rn np 0 1meg
+
+.control
+op
+print i(Vp) i(Vq) i(Vclkh)
+* gm: AC drain-current response to input (v(np) = i(Vp) * 1e6)
+ac lin 1 1G 1G
+let gm_ac = abs(v(np))/1e6
+print gm_ac
+* drain current noise PSD: onoise density / (1e6)^2, read plateau at 2GHz
+noise v(np) Vip dec 10 1Meg 20G
+setplot noise1
+let sid = onoise_spectrum / 1e12
+print sid[70] sid[80] sid[90]
+wrdata sa_noise_spec.csv onoise_spectrum
+.endc
+.end

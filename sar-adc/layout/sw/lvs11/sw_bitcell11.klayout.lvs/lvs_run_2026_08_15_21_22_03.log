@@ -1,0 +1,16 @@
+15-Aug-2026 23:22:03 | INFO    | Your Klayout version is: KLayout 0.30.9 (required >= 0.30.5)
+15-Aug-2026 23:22:03 | INFO    | Running SG13G2 LVS checks on design /foss/designs/sar-adc/layout/sw/sw_bitcell11.gds on cell sw_bitcell11
+15-Aug-2026 23:22:06 | INFO    | ==============================================================================
+15-Aug-2026 23:22:06 | INFO    | Important Summary
+15-Aug-2026 23:22:06 | INFO    | +------------------+----------------------------------------------------------------+
+15-Aug-2026 23:22:06 | INFO    | | Status           | PASS                                                           |
+15-Aug-2026 23:22:06 | INFO    | | Mode             | COMPARE                                                        |
+15-Aug-2026 23:22:06 | INFO    | | Outcome          | Comparison mode: PASS (netlists match).                        |
+15-Aug-2026 23:22:06 | INFO    | | Layout           | sw_bitcell11.gds                                               |
+15-Aug-2026 23:22:06 | INFO    | | Top Cell         | sw_bitcell11                                                   |
+15-Aug-2026 23:22:06 | INFO    | | Results Dir      | /foss/designs/sar-adc/layout/sw/lvs11/sw_bitcell11.klayout.lvs |
+15-Aug-2026 23:22:06 | INFO    | | Warnings         | 0                                                              |
+15-Aug-2026 23:22:06 | INFO    | | Errors           | 0                                                              |
+15-Aug-2026 23:22:06 | INFO    | | Run Time (s)     | 3.204                                                          |
+15-Aug-2026 23:22:06 | INFO    | +------------------+----------------------------------------------------------------+
+15-Aug-2026 23:22:06 | INFO    | ==============================================================================

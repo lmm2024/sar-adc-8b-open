@@ -1,0 +1,11 @@
+* bootstrapped sampling switch reference
+.subckt bstrap vin out ckb gb VDD VSS
+Msw  out gb  vin VSS sg13_lv_nmos w=4.0u l=0.13u rfmode=1
+MN_c gb  VDD x   VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+MN_g x   ckb VSS VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+MN_cb cb ckb VSS VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+MP_ct ct gb  VDD ct  sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+MN_bt cb gb  vin VSS sg13_lv_nmos w=2.0u l=0.15u rfmode=1
+MP_gt gb ckb ct  ct  sg13_lv_pmos w=2.0u l=0.13u rfmode=1
+Cb   ct  cb  cap_cmim w=9.94u l=9.94u
+.ends

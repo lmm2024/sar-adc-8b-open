@@ -1,0 +1,58 @@
+
+Magic 8.3 revision 678 - Compiled on Mon Jul 27 09:07:23 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "/foss/designs/sar-adc/layout/pex_a13/pex_oa_sar8_acore13.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "rfnmos$7".
+CIF file read warning: CIF style sg13g2(): units rescaled by factor of 5 / 1
+Reading "rfnmos$1$1".
+Reading "rfpmos$6".
+Reading "cmim$1".
+Reading "via_stack$3".
+Reading "via_stack$1$1".
+Reading "rfnmos$6".
+Reading "rfpmos$5".
+Reading "rfnmos$5".
+Reading "rfpmos$4".
+Reading "rfnmos$3".
+Reading "rfpmos$2".
+Reading "rfnmos".
+Reading "rfnmos$1".
+Reading "rfnmos$2".
+Reading "rfpmos".
+Reading "rfpmos$1".
+Reading "cmim".
+Reading "via_stack".
+Reading "via_stack$1".
+Reading "via_stack$2".
+Reading "via_stack$4".
+Reading "bstrap40".
+Reading "sw_tg".
+Reading "sw_bitcell11".
+Reading "rfnmos$4".
+Reading "rfpmos$3".
+Reading "sw_bitcell".
+Reading "sa_comp".
+Reading "cdac_array".
+Reading "sw_bitcell10".
+Reading "oa_sar8_acore13".
+Extracting oa_sar8_acore13 into /foss/designs/sar-adc/layout/pex_a13/oa_sar8_acore13.ext:
+Processing oa_sar8_acore13
+exttospice finished.

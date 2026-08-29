@@ -1,0 +1,94 @@
+*********************************************************
+*** NGSPICE file created by KLayout-PEX 0.3.12
+*** -----------------------------------------------------
+***     Extraction Engine: KPEX/2.5D
+***     Technology: ihp_sg13g2
+***     Date: 2026-08-15 08:26:26
+*********************************************************
+
+.SUBCKT sa_comp VDD VSS clk inn inp outn outp
+XM_1 outp outn _16 VSS sg13_lv_nmos L=0.13U W=2U AS=0.7P AD=0.39P PS=4.7U
++ PD=2.39U 
+XM_2 _16 outn outp VSS sg13_lv_nmos L=0.13U W=2U AS=0.39P AD=0.7P PS=2.39U
++ PD=4.7U 
+XM_3 _4 clk VSS VSS sg13_lv_nmos L=0.3U W=1.5U AS=0.5175P AD=0.285P PS=3.69U
++ PD=1.88U 
+XM_4 VSS clk _4 VSS sg13_lv_nmos L=0.3U W=1.5U AS=0.285P AD=0.5175P PS=1.88U
++ PD=3.69U 
+XM_5 outn outp _9 VSS sg13_lv_nmos L=0.13U W=2U AS=0.7P AD=0.39P PS=4.7U
++ PD=2.39U 
+XM_6 _9 outp outn VSS sg13_lv_nmos L=0.13U W=2U AS=0.39P AD=0.7P PS=2.39U
++ PD=4.7U 
+XM_7 _16 inn _4 VSS sg13_lv_nmos L=0.15U W=1U AS=0.345P AD=0.19P PS=2.69U
++ PD=1.38U 
+XM_8 _4 inn _16 VSS sg13_lv_nmos L=0.15U W=1U AS=0.19P AD=0.345P PS=1.38U
++ PD=2.69U 
+XM_9 _9 inp _4 VSS sg13_lv_nmos L=0.15U W=1U AS=0.345P AD=0.19P PS=2.69U
++ PD=1.38U 
+XM_10 _4 inp _9 VSS sg13_lv_nmos L=0.15U W=1U AS=0.19P AD=0.345P PS=1.38U
++ PD=2.69U 
+XM_11 outp outn VDD VDD sg13_lv_pmos L=0.13U W=3U AS=1.05P AD=0.585P PS=6.7U
++ PD=3.39U 
+XM_12 VDD outn outp VDD sg13_lv_pmos L=0.13U W=3U AS=0.585P AD=1.05P PS=3.39U
++ PD=6.7U 
+XM_13 VDD clk outp VDD sg13_lv_pmos L=0.13U W=2U AS=0.7P AD=0.7P PS=4.7U PD=4.7U
++ 
+XM_14 VDD clk _9 VDD sg13_lv_pmos L=0.13U W=2U AS=0.7P AD=0.7P PS=4.7U PD=4.7U
++ 
+XM_15 outn outp VDD VDD sg13_lv_pmos L=0.13U W=3U AS=1.05P AD=0.585P PS=6.7U
++ PD=3.39U 
+XM_16 VDD outp outn VDD sg13_lv_pmos L=0.13U W=3U AS=0.585P AD=1.05P PS=3.39U
++ PD=6.7U 
+XM_17 VDD clk outn VDD sg13_lv_pmos L=0.13U W=2U AS=0.7P AD=0.7P PS=4.7U PD=4.7U
++ 
+XM_18 VDD clk _16 VDD sg13_lv_pmos L=0.13U W=2U AS=0.7P AD=0.7P PS=4.7U PD=4.7U
++ 
+Cext_1 _16 _4 713.257a
+Cext_2 _16 clk 877.485a
+Cext_3 _16 inn 439.538a
+Cext_4 _16 outn 1.16501f
+Cext_5 _16 outp 2.31714f
+Cext_6 _16 VDD 682.981a
+Cext_7 _16 VSS 407.142a
+Cext_8 _16 VSS 1.25269f
+Cext_9 _4 _9 713.257a
+Cext_10 _4 clk 877.636a
+Cext_11 _4 inn 823.454a
+Cext_12 _4 inp 823.602a
+Cext_13 _4 outn 4.0054a
+Cext_14 _4 outp 3.78621a
+Cext_15 _4 VSS 1.00766f
+Cext_16 _4 VSS 1.5146f
+Cext_17 _9 clk 883.641a
+Cext_18 _9 inp 439.538a
+Cext_19 _9 outn 1.94516f
+Cext_20 _9 outp 1.16668f
+Cext_21 _9 VDD 682.981a
+Cext_22 _9 VSS 406.981a
+Cext_23 _9 VSS 1.28358f
+Cext_24 clk inn 26.0176a
+Cext_25 clk inp 26.0176a
+Cext_26 clk outn 1.00768f
+Cext_27 clk outp 968.073a
+Cext_28 inn outn 7.52437a
+Cext_29 inn outp 1.06569a
+Cext_30 inp outn 1.17372a
+Cext_31 inp outp 7.33684a
+Cext_32 outn outp 2.65699f
+Cext_33 VDD clk 6.9787f
+Cext_34 VDD outn 5.99287f
+Cext_35 VDD outp 6.01745f
+Cext_36 VDD VSS 76.1553a
+Cext_37 VDD VSS 13.7947f
+Cext_38 VSS clk 2.46416f
+Cext_39 VSS inn 1.01724f
+Cext_40 VSS inp 1.01732f
+Cext_41 VSS outn 1.36917f
+Cext_42 VSS outp 1.32135f
+Cext_43 VSS VSS 13.53f
+Cext_44 VSS clk 11.3105f
+Cext_45 VSS inn 780.515a
+Cext_46 VSS inp 780.515a
+Cext_47 VSS outn 4.47022f
+Cext_48 VSS outp 4.41077f
+.ENDS sa_comp

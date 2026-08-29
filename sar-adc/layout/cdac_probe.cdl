@@ -1,0 +1,12 @@
+* CDAC reference netlist (auto-generated)
+.subckt cdac_probe b7 b6 b5 b4 b3 b2 b1 b0 term topp
+XCb7 topp b7 cap_cmim w=2.14u l=2.14u m=128
+XCb6 topp b6 cap_cmim w=2.14u l=2.14u m=64
+XCb5 topp b5 cap_cmim w=2.14u l=2.14u m=32
+XCb4 topp b4 cap_cmim w=2.14u l=2.14u m=16
+XCb3 topp b3 cap_cmim w=2.14u l=2.14u m=8
+XCb2 topp b2 cap_cmim w=2.14u l=2.14u m=4
+XCb1 topp b1 cap_cmim w=2.14u l=2.14u m=2
+XCb0 topp b0 cap_cmim w=2.14u l=2.14u m=1
+XCterm topp term cap_cmim w=2.14u l=2.14u m=1
+.ends

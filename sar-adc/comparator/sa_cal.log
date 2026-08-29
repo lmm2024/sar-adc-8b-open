@@ -1,0 +1,37 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * oa-sar8: .noise calibration of the integration-phase replica.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+i(vp) = -3.31081e-04
+i(vq) = -3.31081e-04
+i(vclkh) = -1.16829e-09
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+gm_ac = 1.641302e-03
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 44
+
+No. of Data Rows : 1
+Warning: upper limit 70 should be 43
+Warning: lower limit 70 should be 43
+Warning: upper limit 80 should be 43
+Warning: lower limit 80 should be 43
+Warning: upper limit 90 should be 43
+Warning: lower limit 90 should be 43
+sid[70] = 5.239945e-18
+sid[80] = 5.239945e-18
+sid[90] = 5.239945e-18
+Note: Simulation executed from .control section 

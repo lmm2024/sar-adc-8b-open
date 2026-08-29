@@ -1,0 +1,19 @@
+* OA-SAR8 bootstrapped NMOS sampling switch (Abo-Gray style, 1.5V LV)
+* track: ck=VDD  ->  G = vin + VDD (via C_b), constant Vgs on Msw
+* hold : ck=0    ->  G = 0, C_b recharges to VDD
+* nodes: vin out ck ckb VDD VSS
+* device sizes matched to decoded pcell variants (xnmos 4/0.13, inpair 2/0.15,
+* presw 2/0.13 pmos) so the layout reuses the verified T geometry table
+.subckt bstrap vin out ck ckb VDD VSS
+XMsw  out g    vin  VSS sg13_lv_nmos w=4.0u l=0.13u
+* gate pulldown path with protection cascode (limits MN_g Vds)
+XMN_c g    VDD  x    VSS sg13_lv_nmos w=2.0u l=0.15u
+XMN_g x    ckb  VSS  VSS sg13_lv_nmos w=2.0u l=0.15u
+* boot cap charge path (hold): CB->VSS, CT->VDD (gate of MP_ct = g: off in track)
+XMN_cb cb  ckb  VSS  VSS sg13_lv_nmos w=2.0u l=0.15u
+XMP_ct ct  g    VDD  ct  sg13_lv_pmos w=2.0u l=0.13u
+* track path: CB->vin (gate=g), CT->G (pmos, gate=ckb, well on ct)
+XMN_bt cb  g    vin  VSS sg13_lv_nmos w=2.0u l=0.15u
+XMP_gt g   ckb  ct   ct  sg13_lv_pmos w=2.0u l=0.13u
+Cb    ct  cb  150f
+.ends

@@ -1,0 +1,74 @@
+[2026-08-15 08:26:20,551] [INFO]    GDS input file passed, running in LVS mode
+[2026-08-15 08:26:20,561] [INFO]    Found cell sa_comp in GDS sa_comp_flat.gds (only top cell)
+[2026-08-15 08:26:20,593] [WARNING]    Cache hit: Reusing cached LVSDB
+[2026-08-15 08:26:20,595] [SUBPROCESS]    kpex_out/.kpex_cache/ihp-sg13g2/foss/designs/sar-adc/layout/cmp/sa_comp_flat.gds/sa_comp.lvsdb.gz
+[2026-08-15 08:26:20,610] [WARNING]    Unable to find info about extracted LVS layer 'cont_drw'
+[2026-08-15 08:26:20,613] [INFO]    (19, 0) -> (via1_drw)
+[2026-08-15 08:26:20,614] [INFO]    (29, 0) -> (via2_drw)
+[2026-08-15 08:26:20,616] [INFO]    (31, 0) -> (nwell_drw)
+[2026-08-15 08:26:20,618] [INFO]    (46, 0) -> (pwell pwell_sub)
+[2026-08-15 08:26:20,620] [INFO]    (5, 0) -> (poly_con)
+[2026-08-15 08:26:20,621] [INFO]    (8, 0) -> (metal1_con)
+[2026-08-15 08:26:20,622] [INFO]    (10, 0) -> (metal2_con)
+[2026-08-15 08:26:20,623] [INFO]    (30, 0) -> (metal3_con)
+[2026-08-15 08:26:20,625] [INFO]    (7, 0) -> (nsd_fet)
+[2026-08-15 08:26:20,626] [INFO]    (14, 0) -> (psd_fet)
+[2026-08-15 08:26:20,627] [INFO]    (65, 144) -> (ntap)
+[2026-08-15 08:26:20,628] [INFO]    (65, 244) -> (ptap)
+[2026-08-15 08:26:20,629] [INFO]    (6, 4402) -> (cont_psd_con)
+[2026-08-15 08:26:20,631] [INFO]    (6, 4401) -> (cont_nsd_con)
+[2026-08-15 08:26:20,632] [INFO]    (6, 4403) -> (cont_poly_con)
+[2026-08-15 08:26:20,634] [INFO]    (8, 2) -> (metal1_pin_con)
+[2026-08-15 08:26:20,636] [INFO]    (10, 2) -> (metal2_pin_con)
+[2026-08-15 08:26:20,637] [INFO]    (30, 2) -> (metal3_pin_con)
+[2026-08-15 08:26:26,327] [SUBPROCESS]    Device;Net1;Net2;Capacitance [fF];Resistance [Ω]
+[2026-08-15 08:26:26,333] [SUBPROCESS]    C1;$16;$4;0.713;
+[2026-08-15 08:26:26,334] [SUBPROCESS]    C2;$16;clk;0.877;
+[2026-08-15 08:26:26,336] [SUBPROCESS]    C3;$16;inn;0.44;
+[2026-08-15 08:26:26,337] [SUBPROCESS]    C4;$16;outn;1.165;
+[2026-08-15 08:26:26,338] [SUBPROCESS]    C5;$16;outp;2.317;
+[2026-08-15 08:26:26,342] [SUBPROCESS]    C6;$16;VDD;0.683;
+[2026-08-15 08:26:26,343] [SUBPROCESS]    C7;$16;VSS;0.407;
+[2026-08-15 08:26:26,345] [SUBPROCESS]    C8;$16;VSUBS;1.253;
+[2026-08-15 08:26:26,346] [SUBPROCESS]    C9;$4;$9;0.713;
+[2026-08-15 08:26:26,347] [SUBPROCESS]    C10;$4;clk;0.878;
+[2026-08-15 08:26:26,348] [SUBPROCESS]    C11;$4;inn;0.823;
+[2026-08-15 08:26:26,349] [SUBPROCESS]    C12;$4;inp;0.824;
+[2026-08-15 08:26:26,350] [SUBPROCESS]    C13;$4;outn;0.004;
+[2026-08-15 08:26:26,351] [SUBPROCESS]    C14;$4;outp;0.004;
+[2026-08-15 08:26:26,353] [SUBPROCESS]    C15;$4;VSS;1.008;
+[2026-08-15 08:26:26,354] [SUBPROCESS]    C16;$4;VSUBS;1.515;
+[2026-08-15 08:26:26,355] [SUBPROCESS]    C17;$9;clk;0.884;
+[2026-08-15 08:26:26,356] [SUBPROCESS]    C18;$9;inp;0.44;
+[2026-08-15 08:26:26,357] [SUBPROCESS]    C19;$9;outn;1.945;
+[2026-08-15 08:26:26,360] [SUBPROCESS]    C20;$9;outp;1.167;
+[2026-08-15 08:26:26,362] [SUBPROCESS]    C21;$9;VDD;0.683;
+[2026-08-15 08:26:26,363] [SUBPROCESS]    C22;$9;VSS;0.407;
+[2026-08-15 08:26:26,364] [SUBPROCESS]    C23;$9;VSUBS;1.284;
+[2026-08-15 08:26:26,366] [SUBPROCESS]    C24;clk;inn;0.026;
+[2026-08-15 08:26:26,367] [SUBPROCESS]    C25;clk;inp;0.026;
+[2026-08-15 08:26:26,368] [SUBPROCESS]    C26;clk;outn;1.008;
+[2026-08-15 08:26:26,369] [SUBPROCESS]    C27;clk;outp;0.968;
+[2026-08-15 08:26:26,371] [SUBPROCESS]    C28;inn;outn;0.008;
+[2026-08-15 08:26:26,372] [SUBPROCESS]    C29;inn;outp;0.001;
+[2026-08-15 08:26:26,374] [SUBPROCESS]    C30;inp;outn;0.001;
+[2026-08-15 08:26:26,377] [SUBPROCESS]    C31;inp;outp;0.007;
+[2026-08-15 08:26:26,379] [SUBPROCESS]    C32;outn;outp;2.657;
+[2026-08-15 08:26:26,380] [SUBPROCESS]    C33;VDD;clk;6.979;
+[2026-08-15 08:26:26,382] [SUBPROCESS]    C34;VDD;outn;5.993;
+[2026-08-15 08:26:26,384] [SUBPROCESS]    C35;VDD;outp;6.017;
+[2026-08-15 08:26:26,385] [SUBPROCESS]    C36;VDD;VSS;0.076;
+[2026-08-15 08:26:26,386] [SUBPROCESS]    C37;VDD;VSUBS;13.795;
+[2026-08-15 08:26:26,387] [SUBPROCESS]    C38;VSS;clk;2.464;
+[2026-08-15 08:26:26,389] [SUBPROCESS]    C39;VSS;inn;1.017;
+[2026-08-15 08:26:26,391] [SUBPROCESS]    C40;VSS;inp;1.017;
+[2026-08-15 08:26:26,396] [SUBPROCESS]    C41;VSS;outn;1.369;
+[2026-08-15 08:26:26,398] [SUBPROCESS]    C42;VSS;outp;1.321;
+[2026-08-15 08:26:26,399] [SUBPROCESS]    C43;VSS;VSUBS;13.53;
+[2026-08-15 08:26:26,400] [SUBPROCESS]    C44;VSUBS;clk;11.311;
+[2026-08-15 08:26:26,401] [SUBPROCESS]    C45;VSUBS;inn;0.781;
+[2026-08-15 08:26:26,402] [SUBPROCESS]    C46;VSUBS;inp;0.781;
+[2026-08-15 08:26:26,403] [SUBPROCESS]    C47;VSUBS;outn;4.47;
+[2026-08-15 08:26:26,404] [SUBPROCESS]    C48;VSUBS;outp;4.411;
+[2026-08-15 08:26:26,405] [SUBPROCESS]    /foss/designs/sar-adc/layout/cmp/kpex_out/sa_comp_flat__sa_comp/sa_comp_k25d_pex_netlist.csv
+[2026-08-15 08:26:26,421] [SUBPROCESS]    Wrote expanded netlist to: /foss/designs/sar-adc/layout/cmp/kpex_out/sa_comp_flat__sa_comp/sa_comp_k25d_pex_netlist.spice

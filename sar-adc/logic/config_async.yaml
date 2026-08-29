@@ -1,0 +1,44 @@
+meta:
+  version: 3
+  flow: Classic
+
+# Physical self-timed variant.  This is separate from config.yaml so the
+# signed-off synchronous baseline remains reproducible.
+DESIGN_NAME: sar_ctrl_async_phys
+VERILOG_FILES:
+  - dir::../rtl/sar_async_delay_cells.sv
+  - dir::../rtl/sar_ctrl_async_phys.sv
+
+DIE_AREA: [0, 0, 65, 100]
+CORE_AREA: [5, 5, 60, 95]
+FP_SIZING: absolute
+PL_TARGET_DENSITY_PCT: 68
+GRT_ALLOW_CONGESTION: true
+RUN_MAGIC_DRC: true
+PDN_MULTILAYER: false
+IO_PIN_ORDER_CFG: dir::pin_order_async.cfg
+LINTER_INCLUDE_PDK_MODELS: true
+
+VDD_NETS: ["VDD"]
+GND_NETS: ["VSS"]
+
+# track is exposed to LibreLane as the external cadence reference because this
+# release's STA reporter cannot handle a macro with zero launch/capture paths.
+# It is not used by CTS, and async I/O-to-state checks are cut in impl_async.sdc.
+CLOCK_PORT: track
+CLOCK_NET: track
+CLOCK_PERIOD: 47.619
+RUN_CTS: false
+PNR_SDC_FILE: dir::impl_async.sdc
+SIGNOFF_SDC_FILE: dir::impl_async.sdc
+
+# The intentional cross-coupled-NOR storage loops are explicit physical
+# SR latches, not accidental combinational loops.
+ERROR_ON_SYNTH_CHECKS: false
+# Yosys already honors keep/dont_touch during synthesis.  Strip source and
+# string-valued attributes from the emitted gate netlist because OpenROAD's
+# Verilog reader in the current IIC-OSIC image cannot parse one of them.
+SYNTH_WRITE_NOATTR: true
+
+# Do not let OpenROAD repair away or resize the calibrated delay chains.
+RSZ_DONT_TOUCH_RX: ".*(u_hold_delay|u_launch_width|u_interbit_delay|u_event_clock_delay|u_decision_hold).*"

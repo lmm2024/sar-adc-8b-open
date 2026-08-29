@@ -1,0 +1,27 @@
+* 10MS/s sampling distortion: bootstrap vs TG, fin=29/64*fs=4.531MHz, A=0.65V
+.lib /foss/pdks/ihp-sg13g2/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
+.param vdd=1.5
+.include ./bootstrap.cir
+.subckt sw_tg bot vin trk trkb VDD VSS
+XMNT bot trk vin VSS sg13_lv_nmos w=2.0u l=0.13u
+XMPT bot trkb vin VDD sg13_lv_pmos w=4.0u l=0.13u
+.ends
+
+VDDs VDD 0 {vdd}
+VSSs VSS 0 0
+* track 5..35ns of each 100ns period
+Vck  ck  0 pulse(0 {vdd} 5n 0.2n 0.2n 30n 100n)
+Vckb ckb 0 pulse({vdd} 0 5n 0.2n 0.2n 30n 100n)
+
+Vin vin 0 sin(0.75 0.65 4.53125meg 0 0)
+Xb vin outb ck ckb VDD VSS bstrap
+Xt outt vin ck ckb VDD VSS sw_tg
+Cb2 outb 0 1.9p
+Ct2 outt 0 1.9p
+
+.control
+tran 0.05n 6.55u
+wrdata thd.csv v(outb) v(outt)
+quit
+.endc
+.end

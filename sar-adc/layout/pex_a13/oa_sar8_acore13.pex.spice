@@ -1,0 +1,1335 @@
+* PEX produced on Sun Aug 16 09:02:53 AM CEST 2026 using /foss/tools/sak/sak-pex.sh with m=2 and s=1
+* NGSPICE file created from oa_sar8_acore13.ext - technology: ihp-sg13g2
+
+.subckt oa_sar8_acore13 vinp vinn ctl0 ctl1 ctl2 ctl3 ctl4 ctl5 ctl6 ctl7 vcm trk
++ clk_cmp outp outn ctl0n ctl1n ctl2n ctl3n ctl4n ctl5n ctl6n ctl7n hold VSS VDD
+X0 VDD ctl6 sw_bitcell11_10.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X1 bstrap40_0.out bstrap40_1.ckb sw_bitcell11_4.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X2 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X3 cdac_array_1.topp sw_bitcell11_13.bot cap_cmim l=2.14u w=2.14u
+X4 outp outn a_26184_21025# VSS sg13_lv_nmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X5 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X6 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X7 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X8 sw_bitcell11_8.bot ctl7n sw_bitcell11_8.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X9 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X10 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X11 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X12 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X13 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X14 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X15 VSS bstrap40_1.ckb a_8368_n9612# VSS sg13_lv_nmos ad=0.345p pd=2.69u as=0.19p ps=1.38u w=1u l=0.15u
+X16 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X17 cdac_array_1.topp sw_bitcell11_13.bot cap_cmim l=2.14u w=2.14u
+X18 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X19 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X20 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X21 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X22 VDD ctl2 sw_bitcell11_14.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X23 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X24 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X25 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X26 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X27 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X28 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X29 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X30 sw_bitcell11_8.VSS ctl5n sw_bitcell11_6.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X31 bstrap40_0.out bstrap40_0.gb cdac_array_0.b0 VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X32 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X33 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X34 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X35 cdac_array_0.term VDD VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X36 a_8368_n9612# bstrap40_1.ckb VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.345p ps=2.69u w=1u l=0.15u
+X37 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X38 bstrap40_1.out bstrap40_1.gb sw_bitcell11_11.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X39 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X40 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X41 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X42 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X43 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X44 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X45 a_26184_21025# outn outp VSS sg13_lv_nmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X46 sw_bitcell11_10.bot ctl6 VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X47 sw_bitcell11_4.bot bstrap40_1.ckb bstrap40_0.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X48 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X49 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X50 a_26184_21025# cdac_array_1.topp a_28008_23477# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.345p ps=2.69u w=1u l=0.15u
+X51 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X52 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X53 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X54 sw_tg_0.bot cdac_array_0.b1 cap_cmim l=2.14u w=2.14u
+X55 cdac_array_1.topp sw_bitcell11_15.bot cap_cmim l=2.14u w=2.14u
+X56 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X57 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X58 bstrap40_1.out bstrap40_1.gb sw_bitcell11_15.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X59 sw_bitcell11_8.VSS ctl2n cdac_array_0.b2 VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X60 w_41352_n9960# a_45072_n9612# cap_cmim l=9.94u w=39.8u
+X61 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X62 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X63 sw_tg_0.bot trk vcm VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X64 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X65 sw_bitcell11_14.bot ctl2 VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X66 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X67 sw_bitcell11_17.bot VDD sw_bitcell11_17.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X68 sw_bitcell11_8.VSS VDD cdac_array_0.term VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X69 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X70 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X71 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X72 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X73 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X74 a_28008_23477# cdac_array_1.topp a_26184_21025# VSS sg13_lv_nmos ad=0.345p pd=2.69u as=0.19p ps=1.38u w=1u l=0.15u
+X75 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X76 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X77 sw_bitcell11_6.bot bstrap40_0.gb bstrap40_0.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X78 bstrap40_0.out bstrap40_0.gb cdac_array_0.b2 VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X79 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X80 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X81 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X82 bstrap40_1.out bstrap40_1.gb sw_bitcell11_13.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X83 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X84 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X85 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X86 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X87 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X88 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X89 bstrap40_1.ckb trk VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X90 VSS bstrap40_1.ckb a_45072_n9612# VSS sg13_lv_nmos ad=0.345p pd=2.69u as=0.19p ps=1.38u w=1u l=0.15u
+X91 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X92 sw_bitcell11_17.VSS hold VSS VSS sg13_lv_nmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X93 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X94 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X95 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X96 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X97 sw_bitcell11_17.VSS ctl2 sw_bitcell11_14.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X98 bstrap40_0.out bstrap40_0.gb sw_bitcell11_7.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X99 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X100 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X101 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X102 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X103 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X104 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X105 sw_tg_0.bot sw_bitcell11_4.bot cap_cmim l=2.14u w=2.14u
+X106 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X107 sw_bitcell11_5.bot ctl4n sw_bitcell11_8.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X108 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X109 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X110 bstrap40_1.out bstrap40_1.gb sw_bitcell11_10.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X111 cdac_array_0.term bstrap40_0.gb bstrap40_0.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X112 sw_bitcell11_17.VSS hold VSS VSS sg13_lv_nmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X113 a_45072_n9612# bstrap40_1.ckb VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.345p ps=2.69u w=1u l=0.15u
+X114 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X115 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X116 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X117 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X118 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X119 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X120 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X121 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X122 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X123 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X124 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X125 cdac_array_1.topp sw_bitcell11_14.bot cap_cmim l=2.14u w=2.14u
+X126 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X127 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X128 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X129 VDD ctl1n cdac_array_0.b1 VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X130 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X131 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X132 sw_bitcell11_14.bot bstrap40_1.gb bstrap40_1.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X133 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X134 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X135 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X136 VDD ctl4 sw_bitcell11_12.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X137 bstrap40_0.out bstrap40_1.ckb sw_bitcell11_6.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X138 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X139 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X140 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X141 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X142 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X143 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X144 bstrap40_0.out bstrap40_1.ckb cdac_array_0.b2 VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X145 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X146 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X147 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X148 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X149 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X150 bstrap40_1.out bstrap40_1.gb sw_bitcell11_12.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X151 a_45992_n9711# VDD bstrap40_0.gb VSS sg13_lv_nmos ad=0.345p pd=2.69u as=0.19p ps=1.38u w=1u l=0.15u
+X152 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X153 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X154 VDD ctl0 sw_bitcell11_16.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X155 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X156 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X157 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X158 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X159 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X160 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X161 bstrap40_1.out bstrap40_1.gb sw_bitcell11_17.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X162 outn clk_cmp VDD VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.7p ps=4.7u w=2u l=0.13u
+X163 vcm bstrap40_1.ckb sw_tg_0.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X164 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X165 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X166 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X167 cdac_array_0.b1 ctl1n VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X168 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X169 bstrap40_0.out bstrap40_1.ckb cdac_array_0.term VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X170 vcm trk cdac_array_1.topp VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X171 bstrap40_0.gb VDD a_45992_n9711# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.345p ps=2.69u w=1u l=0.15u
+X172 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X173 sw_bitcell11_16.bot bstrap40_1.gb bstrap40_1.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X174 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X175 sw_bitcell11_12.bot ctl4 VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X176 sw_bitcell11_6.bot bstrap40_1.ckb bstrap40_0.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X177 sw_bitcell11_4.bot ctl3n sw_bitcell11_8.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X178 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X179 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X180 outn outp VDD VDD sg13_lv_pmos ad=0.585p pd=3.39u as=1.05p ps=6.7u w=3u l=0.13u
+X181 vinp bstrap40_1.gb bstrap40_1.out VSS sg13_lv_nmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X182 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X183 cdac_array_1.topp sw_bitcell11_17.bot cap_cmim l=2.14u w=2.14u
+X184 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X185 cdac_array_1.topp sw_bitcell11_13.bot cap_cmim l=2.14u w=2.14u
+X186 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X187 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X188 cdac_array_0.b2 bstrap40_1.ckb bstrap40_0.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X189 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X190 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X191 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X192 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X193 VDD ctl7n sw_bitcell11_8.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X194 sw_bitcell11_16.bot ctl0 VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X195 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X196 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X197 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X198 bstrap40_1.out bstrap40_1.ckb sw_bitcell11_14.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X199 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X200 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X201 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X202 sw_bitcell11_8.VSS ctl1n cdac_array_0.b1 VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X203 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X204 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X205 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X206 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X207 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X208 sw_tg_0.bot bstrap40_1.ckb vcm VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X209 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X210 VDD ctl5 sw_bitcell11_11.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X211 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X212 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X213 sw_tg_0.bot sw_bitcell11_4.bot cap_cmim l=2.14u w=2.14u
+X214 cdac_array_0.term bstrap40_1.ckb bstrap40_0.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X215 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X216 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X217 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X218 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X219 VDD outp outn VDD sg13_lv_pmos ad=1.05p pd=6.7u as=0.585p ps=3.39u w=3u l=0.13u
+X220 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X221 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X222 bstrap40_1.out bstrap40_1.ckb sw_bitcell11_12.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X223 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X224 sw_bitcell11_17.VSS ctl0 sw_bitcell11_16.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X225 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X226 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X227 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X228 sw_bitcell11_8.bot ctl7n VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X229 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X230 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X231 sw_tg_0.bot sw_bitcell11_4.bot cap_cmim l=2.14u w=2.14u
+X232 bstrap40_1.out bstrap40_1.ckb sw_bitcell11_17.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X233 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X234 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X235 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X236 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X237 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X238 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X239 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X240 sw_bitcell11_14.bot bstrap40_1.ckb bstrap40_1.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X241 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X242 bstrap40_1.out bstrap40_1.ckb sw_bitcell11_16.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X243 cdac_array_0.b1 bstrap40_0.gb bstrap40_0.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X244 vinp bstrap40_1.gb a_9288_n9612# VSS sg13_lv_nmos ad=0.345p pd=2.69u as=0.19p ps=1.38u w=1u l=0.15u
+X245 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X246 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X247 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X248 sw_bitcell11_11.bot ctl5 VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X249 VDD ctl3 sw_bitcell11_13.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X250 bstrap40_1.out bstrap40_1.gb sw_bitcell11_9.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X251 sw_tg_0.bot cdac_array_0.term cap_cmim l=2.14u w=2.14u
+X252 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X253 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X254 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X255 sw_bitcell11_8.VSS hold VSS VSS sg13_lv_nmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X256 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X257 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X258 sw_bitcell11_12.bot bstrap40_1.ckb bstrap40_1.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X259 a_9288_n9612# bstrap40_1.gb vinp VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.345p ps=2.69u w=1u l=0.15u
+X260 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X261 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X262 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X263 sw_tg_0.bot cdac_array_0.b0 cap_cmim l=2.14u w=2.14u
+X264 w_12940_n9960# a_9288_n9612# cap_cmim l=9.94u w=39.8u
+X265 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X266 sw_bitcell11_8.VSS ctl0n cdac_array_0.b0 VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X267 sw_bitcell11_17.bot bstrap40_1.ckb bstrap40_1.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X268 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X269 sw_bitcell11_8.VSS hold VSS VSS sg13_lv_nmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X270 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X271 sw_bitcell11_17.VSS ctl5 sw_bitcell11_11.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X272 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X273 sw_bitcell11_16.bot bstrap40_1.ckb bstrap40_1.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X274 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X275 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X276 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X277 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X278 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X279 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X280 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X281 sw_bitcell11_13.bot ctl3 VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X282 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X283 cdac_array_1.topp sw_bitcell11_15.bot cap_cmim l=2.14u w=2.14u
+X284 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X285 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X286 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X287 sw_bitcell11_17.VSS ctl1 sw_bitcell11_15.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X288 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X289 bstrap40_0.out bstrap40_0.gb sw_bitcell11_8.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X290 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X291 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X292 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X293 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X294 bstrap40_0.out bstrap40_1.ckb cdac_array_0.b1 VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X295 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X296 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X297 sw_bitcell11_6.bot ctl5n sw_bitcell11_8.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X298 cdac_array_0.b0 bstrap40_0.gb bstrap40_0.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X299 VDD trk bstrap40_1.ckb VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X300 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X301 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X302 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X303 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X304 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X305 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X306 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X307 sw_bitcell11_17.VSS ctl3 sw_bitcell11_13.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X308 sw_bitcell11_11.bot bstrap40_1.gb bstrap40_1.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X309 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X310 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X311 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X312 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X313 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X314 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X315 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X316 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X317 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X318 sw_bitcell11_15.bot bstrap40_1.gb bstrap40_1.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X319 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X320 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X321 cdac_array_0.b2 ctl2n sw_bitcell11_8.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X322 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X323 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X324 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X325 cdac_array_0.b1 bstrap40_1.ckb bstrap40_0.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X326 sw_bitcell11_17.VSS ctl6 sw_bitcell11_10.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X327 cdac_array_0.term VDD sw_bitcell11_8.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X328 VDD bstrap40_1.gb w_12940_n9960# w_12940_n9960# sg13_lv_pmos ad=0.7p pd=4.7u as=0.7p ps=4.7u w=2u l=0.13u
+X329 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X330 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X331 bstrap40_1.ckb trk VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X332 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X333 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X334 VDD ctl6n sw_bitcell11_7.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X335 cdac_array_0.b2 bstrap40_0.gb bstrap40_0.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X336 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X337 sw_tg_0.bot sw_bitcell11_4.bot cap_cmim l=2.14u w=2.14u
+X338 sw_bitcell11_13.bot bstrap40_1.gb bstrap40_1.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X339 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X340 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X341 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X342 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X343 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X344 bstrap40_0.out bstrap40_1.ckb sw_bitcell11_8.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X345 sw_bitcell11_14.bot ctl2 sw_bitcell11_17.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X346 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X347 sw_bitcell11_7.bot bstrap40_0.gb bstrap40_0.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X348 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X349 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X350 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X351 sw_tg_0.bot sw_bitcell11_4.bot cap_cmim l=2.14u w=2.14u
+X352 bstrap40_0.out bstrap40_1.ckb cdac_array_0.b0 VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X353 VSS trk bstrap40_1.ckb VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X354 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X355 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X356 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X357 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X358 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X359 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X360 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X361 bstrap40_1.out bstrap40_1.ckb sw_bitcell11_11.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X362 sw_bitcell11_10.bot bstrap40_1.gb bstrap40_1.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X363 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X364 sw_bitcell11_7.bot ctl6n VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X365 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X366 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X367 bstrap40_0.out bstrap40_0.gb sw_bitcell11_5.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X368 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X369 vinn bstrap40_0.gb a_45072_n9612# VSS sg13_lv_nmos ad=0.345p pd=2.69u as=0.19p ps=1.38u w=1u l=0.15u
+X370 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X371 bstrap40_1.out bstrap40_1.ckb sw_bitcell11_15.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X372 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X373 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X374 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X375 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X376 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X377 sw_bitcell11_8.bot bstrap40_1.ckb bstrap40_0.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X378 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X379 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X380 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X381 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X382 cdac_array_0.b0 bstrap40_1.ckb bstrap40_0.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X383 w_12940_n9960# bstrap40_1.ckb bstrap40_1.gb w_12940_n9960# sg13_lv_pmos ad=0.7p pd=4.7u as=0.7p ps=4.7u w=2u l=0.13u
+X384 VDD ctl7 sw_bitcell11_9.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X385 a_45072_n9612# bstrap40_0.gb vinn VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.345p ps=2.69u w=1u l=0.15u
+X386 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X387 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X388 sw_bitcell11_8.VSS ctl6n sw_bitcell11_7.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X389 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X390 sw_bitcell11_11.bot bstrap40_1.ckb bstrap40_1.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X391 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X392 bstrap40_1.out bstrap40_1.ckb sw_bitcell11_13.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X393 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X394 sw_tg_0.bot cdac_array_0.b1 cap_cmim l=2.14u w=2.14u
+X395 sw_bitcell11_12.bot bstrap40_1.gb bstrap40_1.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X396 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X397 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X398 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X399 bstrap40_0.out bstrap40_1.ckb sw_bitcell11_7.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X400 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X401 cdac_array_1.topp sw_bitcell11_13.bot cap_cmim l=2.14u w=2.14u
+X402 vinn bstrap40_0.gb bstrap40_0.out VSS sg13_lv_nmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X403 outp clk_cmp VDD VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.7p ps=4.7u w=2u l=0.13u
+X404 sw_bitcell11_17.bot bstrap40_1.gb bstrap40_1.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X405 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X406 sw_bitcell11_15.bot bstrap40_1.ckb bstrap40_1.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X407 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X408 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X409 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X410 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X411 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X412 bstrap40_1.out bstrap40_1.ckb sw_bitcell11_10.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X413 cdac_array_1.topp trk vcm VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X414 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X415 sw_bitcell11_9.bot ctl7 VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X416 bstrap40_1.out bstrap40_1.gb vinp VSS sg13_lv_nmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X417 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X418 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X419 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X420 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X421 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X422 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X423 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X424 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X425 sw_bitcell11_13.bot bstrap40_1.ckb bstrap40_1.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X426 bstrap40_0.out bstrap40_0.gb sw_bitcell11_4.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X427 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X428 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X429 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X430 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X431 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X432 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X433 cdac_array_1.topp sw_bitcell11_13.bot cap_cmim l=2.14u w=2.14u
+X434 sw_bitcell11_7.bot bstrap40_1.ckb bstrap40_0.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X435 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X436 sw_bitcell11_17.VSS ctl4 sw_bitcell11_12.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X437 cdac_array_0.b1 ctl1n sw_bitcell11_8.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X438 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X439 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X440 VSS bstrap40_1.ckb a_9288_n9612# VSS sg13_lv_nmos ad=0.345p pd=2.69u as=0.19p ps=1.38u w=1u l=0.15u
+X441 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X442 sw_bitcell11_17.VSS ctl7 sw_bitcell11_9.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X443 VSS bstrap40_1.ckb bstrap40_1.ckb VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X444 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X445 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X446 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X447 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X448 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X449 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X450 sw_bitcell11_10.bot bstrap40_1.ckb bstrap40_1.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X451 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X452 outn outp a_30632_22281# VSS sg13_lv_nmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X453 outp outn VDD VDD sg13_lv_pmos ad=0.585p pd=3.39u as=1.05p ps=6.7u w=3u l=0.13u
+X454 VDD ctl5n sw_bitcell11_6.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X455 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X456 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X457 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X458 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X459 sw_bitcell11_16.bot ctl0 sw_bitcell11_17.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X460 a_9288_n9612# bstrap40_1.ckb VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.345p ps=2.69u w=1u l=0.15u
+X461 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X462 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X463 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X464 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X465 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X466 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X467 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X468 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X469 VDD ctl2n cdac_array_0.b2 VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X470 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X471 VDD VDD sw_bitcell11_17.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X472 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X473 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X474 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X475 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X476 sw_tg_0.bot cdac_array_0.b2 cap_cmim l=2.14u w=2.14u
+X477 a_26184_21025# clk_cmp VDD VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.7p ps=4.7u w=2u l=0.13u
+X478 bstrap40_1.ckb bstrap40_1.ckb VSS VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X479 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X480 sw_bitcell11_9.bot bstrap40_1.gb bstrap40_1.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X481 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X482 VDD outn outp VDD sg13_lv_pmos ad=1.05p pd=6.7u as=0.585p ps=3.39u w=3u l=0.13u
+X483 sw_bitcell11_6.bot ctl5n VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X484 a_30632_22281# outp outn VSS sg13_lv_nmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X485 sw_bitcell11_8.VSS ctl7n sw_bitcell11_8.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X486 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X487 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X488 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X489 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X490 sw_tg_0.bot sw_bitcell11_4.bot cap_cmim l=2.14u w=2.14u
+X491 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X492 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X493 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X494 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X495 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X496 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X497 cdac_array_0.b0 ctl0n sw_bitcell11_8.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X498 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X499 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X500 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X501 cdac_array_1.topp sw_bitcell11_13.bot cap_cmim l=2.14u w=2.14u
+X502 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X503 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X504 sw_bitcell11_11.bot ctl5 sw_bitcell11_17.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X505 vcm bstrap40_1.ckb cdac_array_1.topp VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X506 VSS bstrap40_1.ckb a_45992_n9711# VSS sg13_lv_nmos ad=0.345p pd=2.69u as=0.19p ps=1.38u w=1u l=0.15u
+X507 cdac_array_0.b2 ctl2n VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X508 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X509 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X510 sw_bitcell11_17.bot VDD VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X511 VDD ctl4n sw_bitcell11_5.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X512 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X513 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X514 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X515 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X516 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X517 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X518 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X519 sw_bitcell11_15.bot ctl1 sw_bitcell11_17.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X520 sw_bitcell11_8.bot bstrap40_0.gb bstrap40_0.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X521 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X522 a_8368_n9612# VDD bstrap40_1.gb VSS sg13_lv_nmos ad=0.345p pd=2.69u as=0.19p ps=1.38u w=1u l=0.15u
+X523 a_45992_n9711# bstrap40_1.ckb VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.345p ps=2.69u w=1u l=0.15u
+X524 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X525 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X526 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X527 vcm trk sw_tg_0.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X528 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X529 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X530 sw_bitcell11_17.VSS VDD sw_bitcell11_17.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X531 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X532 bstrap40_1.out bstrap40_1.ckb sw_bitcell11_9.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X533 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X534 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X535 sw_tg_0.bot cdac_array_0.b2 cap_cmim l=2.14u w=2.14u
+X536 cdac_array_1.topp bstrap40_1.ckb vcm VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X537 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X538 sw_bitcell11_13.bot ctl3 sw_bitcell11_17.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X539 bstrap40_0.out bstrap40_0.gb sw_bitcell11_6.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X540 bstrap40_1.gb VDD a_8368_n9612# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.345p ps=2.69u w=1u l=0.15u
+X541 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X542 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X543 cdac_array_1.topp sw_bitcell11_13.bot cap_cmim l=2.14u w=2.14u
+X544 sw_bitcell11_5.bot ctl4n VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X545 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X546 cdac_array_1.topp sw_bitcell11_14.bot cap_cmim l=2.14u w=2.14u
+X547 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X548 cdac_array_1.topp sw_bitcell11_16.bot cap_cmim l=2.14u w=2.14u
+X549 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X550 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X551 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X552 VSS trk bstrap40_1.ckb VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X553 VSS hold sw_bitcell11_17.VSS VSS sg13_lv_nmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X554 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X555 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X556 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X557 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X558 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X559 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X560 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X561 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X562 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X563 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X564 sw_bitcell11_10.bot ctl6 sw_bitcell11_17.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X565 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X566 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X567 VDD ctl3n sw_bitcell11_4.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X568 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X569 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X570 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X571 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X572 sw_bitcell11_9.bot bstrap40_1.ckb bstrap40_1.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X573 sw_bitcell11_8.VSS ctl4n sw_bitcell11_5.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X574 bstrap40_0.out bstrap40_0.gb cdac_array_0.term VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X575 VSS hold sw_bitcell11_17.VSS VSS sg13_lv_nmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X576 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X577 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X578 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X579 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X580 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X581 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X582 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X583 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X584 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X585 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X586 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X587 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X588 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X589 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X590 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X591 sw_tg_0.bot cdac_array_0.b2 cap_cmim l=2.14u w=2.14u
+X592 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X593 bstrap40_1.ckb trk VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X594 a_28008_23477# clk_cmp VSS VSS sg13_lv_nmos ad=0.285p pd=1.88u as=0.5175p ps=3.69u w=1.5u l=0.3u
+X595 bstrap40_1.out bstrap40_1.gb sw_bitcell11_14.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X596 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X597 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X598 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X599 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X600 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X601 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X602 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X603 sw_bitcell11_4.bot ctl3n VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X604 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X605 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X606 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X607 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X608 sw_bitcell11_5.bot bstrap40_0.gb bstrap40_0.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X609 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X610 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X611 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X612 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X613 cdac_array_1.topp sw_bitcell11_13.bot cap_cmim l=2.14u w=2.14u
+X614 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X615 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X616 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X617 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X618 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X619 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X620 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X621 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X622 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X623 bstrap40_1.out bstrap40_1.gb sw_bitcell11_16.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X624 sw_bitcell11_7.bot ctl6n sw_bitcell11_8.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X625 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X626 sw_bitcell11_8.VSS ctl3n sw_bitcell11_4.bot VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X627 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X628 sw_tg_0.bot sw_bitcell11_4.bot cap_cmim l=2.14u w=2.14u
+X629 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X630 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X631 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X632 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X633 w_41352_n9960# bstrap40_1.ckb bstrap40_0.gb w_41352_n9960# sg13_lv_pmos ad=0.7p pd=4.7u as=0.7p ps=4.7u w=2u l=0.13u
+X634 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X635 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X636 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X637 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X638 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X639 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X640 bstrap40_0.out bstrap40_0.gb vinn VSS sg13_lv_nmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X641 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X642 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X643 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X644 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X645 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X646 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X647 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X648 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X649 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X650 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X651 VDD ctl0n cdac_array_0.b0 VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X652 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X653 cdac_array_1.topp sw_bitcell11_14.bot cap_cmim l=2.14u w=2.14u
+X654 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X655 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X656 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X657 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X658 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X659 bstrap40_0.out bstrap40_1.ckb sw_bitcell11_5.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X660 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X661 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X662 VSS clk_cmp a_28008_23477# VSS sg13_lv_nmos ad=0.5175p pd=3.69u as=0.285p ps=1.88u w=1.5u l=0.3u
+X663 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X664 sw_bitcell11_4.bot bstrap40_0.gb bstrap40_0.out VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X665 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X666 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X667 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X668 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X669 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X670 cdac_array_1.topp sw_bitcell11_12.bot cap_cmim l=2.14u w=2.14u
+X671 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X672 VDD ctl1 sw_bitcell11_15.bot VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X673 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X674 sw_bitcell11_12.bot ctl4 sw_bitcell11_17.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X675 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X676 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X677 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X678 sw_tg_0.bot cdac_array_0.b2 cap_cmim l=2.14u w=2.14u
+X679 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X680 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X681 cdac_array_1.topp sw_bitcell11_14.bot cap_cmim l=2.14u w=2.14u
+X682 sw_bitcell11_9.bot ctl7 sw_bitcell11_17.VSS VSS sg13_lv_nmos ad=0.195p pd=1.39u as=0.35p ps=2.7u w=1u l=0.13u
+X683 bstrap40_0.out bstrap40_0.gb cdac_array_0.b1 VSS sg13_lv_nmos ad=0.35p pd=2.7u as=0.195p ps=1.39u w=1u l=0.13u
+X684 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X685 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X686 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X687 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X688 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X689 cdac_array_0.b0 ctl0n VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X690 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X691 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X692 a_30632_22281# sw_tg_0.bot a_28008_23477# VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.345p ps=2.69u w=1u l=0.15u
+X693 VDD bstrap40_0.gb w_41352_n9960# w_41352_n9960# sg13_lv_pmos ad=0.7p pd=4.7u as=0.7p ps=4.7u w=2u l=0.13u
+X694 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X695 sw_tg_0.bot sw_bitcell11_5.bot cap_cmim l=2.14u w=2.14u
+X696 sw_bitcell11_5.bot bstrap40_1.ckb bstrap40_0.out VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X697 sw_tg_0.bot sw_bitcell11_4.bot cap_cmim l=2.14u w=2.14u
+X698 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X699 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X700 VSS hold sw_bitcell11_8.VSS VSS sg13_lv_nmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X701 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X702 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+X703 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X704 cdac_array_1.topp sw_bitcell11_11.bot cap_cmim l=2.14u w=2.14u
+X705 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X706 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X707 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X708 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X709 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X710 a_30632_22281# clk_cmp VDD VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.7p ps=4.7u w=2u l=0.13u
+X711 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X712 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X713 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X714 sw_bitcell11_15.bot ctl1 VDD VDD sg13_lv_pmos ad=0.39p pd=2.39u as=0.7p ps=4.7u w=2u l=0.13u
+X715 a_28008_23477# sw_tg_0.bot a_30632_22281# VSS sg13_lv_nmos ad=0.345p pd=2.69u as=0.19p ps=1.38u w=1u l=0.15u
+X716 cdac_array_1.topp sw_bitcell11_10.bot cap_cmim l=2.14u w=2.14u
+X717 VSS hold sw_bitcell11_8.VSS VSS sg13_lv_nmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X718 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X719 sw_tg_0.bot sw_bitcell11_8.bot cap_cmim l=2.14u w=2.14u
+X720 sw_tg_0.bot sw_bitcell11_6.bot cap_cmim l=2.14u w=2.14u
+X721 VDD VDD cdac_array_0.term VDD sg13_lv_pmos ad=0.7p pd=4.7u as=0.39p ps=2.39u w=2u l=0.13u
+X722 cdac_array_1.topp sw_bitcell11_9.bot cap_cmim l=2.14u w=2.14u
+X723 sw_tg_0.bot sw_bitcell11_7.bot cap_cmim l=2.14u w=2.14u
+C0 a_26184_21025# outp 2.28697f
+C1 VDD a_9288_n9612# 0.94099f
+C2 sw_bitcell11_12.bot sw_bitcell11_17.bot 0.78783f
+C3 bstrap40_1.ckb sw_bitcell11_14.bot 1.74531f
+C4 w_12940_n9960# bstrap40_1.gb 3.52472f
+C5 w_12940_n9960# sw_bitcell11_16.bot 0.04542f
+C6 bstrap40_1.ckb a_9288_n9612# 2.25778f
+C7 ctl1 VDD 2.921f
+C8 ctl5n sw_bitcell11_6.bot 1.1163f
+C9 sw_bitcell11_17.VSS sw_bitcell11_15.bot 1.11284f
+C10 sw_bitcell11_6.bot sw_bitcell11_8.bot 1.05231f
+C11 bstrap40_1.ckb ctl1 1.49638f
+C12 m3_53900_n2380# bstrap40_0.out 0.05064f
+C13 outp outn 2.49565f
+C14 bstrap40_0.gb cdac_array_0.b0 0.57245f
+C15 a_45072_n9612# sw_bitcell11_4.bot 0.01295f
+C16 bstrap40_1.out ctl0 1.48398f
+C17 sw_bitcell11_8.VSS sw_bitcell11_6.bot 1.06377f
+C18 ctl3 ctl4 0.02691f
+C19 w_41352_n9960# a_45072_n9612# 3.34238f
+C20 m3_42860_n2380# VDD 0.01516f
+C21 sw_bitcell11_10.bot sw_bitcell11_15.bot 0.52222f
+C22 m3_53900_n2380# m3_51140_n2380# 0.02691f
+C23 ctl7 sw_bitcell11_9.bot 1.11813f
+C24 bstrap40_1.out ctl5 1.48398f
+C25 VDD sw_bitcell11_15.bot 1.7105f
+C26 bstrap40_1.ckb m3_42860_n2380# 0.03222f
+C27 sw_tg_0.bot a_28008_23477# 0.84269f
+C28 ctl3n sw_bitcell11_5.bot 0.0247f
+C29 ctl2 bstrap40_1.gb 0.10895f
+C30 cdac_array_0.b0 sw_bitcell11_8.bot 0.94181f
+C31 bstrap40_1.ckb sw_bitcell11_15.bot 1.7522f
+C32 clk_cmp cdac_array_1.topp 0.18013f
+C33 a_45992_n9711# bstrap40_0.gb 0.83573f
+C34 bstrap40_0.gb vinn 2.04716f
+C35 bstrap40_1.out cdac_array_1.topp 6.55755f
+C36 ctl2n bstrap40_0.out 1.48398f
+C37 m3_56660_n2380# bstrap40_0.gb 1.34934f
+C38 sw_bitcell11_13.bot cdac_array_1.topp 3.20261f
+C39 ctl7 bstrap40_1.gb 0.11086f
+C40 sw_bitcell11_17.VSS sw_bitcell11_17.bot 1.0785f
+C41 ctl7 sw_bitcell11_16.bot 0.01438f
+C42 VDD sw_bitcell11_4.bot 1.64175f
+C43 ctl2n ctl1n 0.02691f
+C44 sw_tg_0.bot bstrap40_0.gb 0.05632f
+C45 trk ctl6 0.04463f
+C46 bstrap40_1.ckb sw_bitcell11_4.bot 1.72872f
+C47 sw_bitcell11_8.VSS cdac_array_0.b0 1.07545f
+C48 bstrap40_0.gb cdac_array_0.b1 0.5852f
+C49 m3_48380_n2380# bstrap40_0.out 0.05064f
+C50 w_41352_n9960# VDD 1.22829f
+C51 ctl4n m3_42860_n2380# 0.04425f
+C52 w_12940_n9960# cdac_array_1.topp 0.0106f
+C53 cdac_array_0.term sw_bitcell11_4.bot 0.48801f
+C54 bstrap40_0.gb sw_bitcell11_7.bot 0.59133f
+C55 ctl2n cdac_array_0.b2 1.1163f
+C56 ctl7n VDD 2.91906f
+C57 bstrap40_1.ckb w_41352_n9960# 2.49494f
+C58 hold sw_bitcell11_5.bot 0.10625f
+C59 sw_bitcell11_10.bot sw_bitcell11_17.bot 0.86226f
+C60 bstrap40_1.ckb ctl7n 1.49329f
+C61 sw_tg_0.bot sw_bitcell11_8.bot 59.4553f
+C62 m3_40100_n2380# m3_37340_n2380# 0.02691f
+C63 VDD sw_bitcell11_17.bot 3.02064f
+C64 bstrap40_0.gb bstrap40_0.out 12.1802f
+C65 ctl0n m3_53900_n2380# 0.04425f
+C66 m3_48380_n2380# m3_51140_n2380# 0.02691f
+C67 bstrap40_1.out sw_bitcell11_13.bot 3.80886f
+C68 m3_48380_n2380# cdac_array_0.b2 1.46717f
+C69 cdac_array_0.b1 sw_bitcell11_8.bot 0.92278f
+C70 ctl6n bstrap40_0.gb 0.10895f
+C71 bstrap40_1.ckb sw_bitcell11_17.bot 1.80139f
+C72 ctl1n bstrap40_0.gb 0.10895f
+C73 ctl5n sw_bitcell11_7.bot 0.0247f
+C74 ctl3 sw_bitcell11_17.VSS 0.70214f
+C75 a_9288_n9612# vinp 0.98999f
+C76 sw_bitcell11_7.bot sw_bitcell11_8.bot 11.9602f
+C77 m3_53900_n2380# VDD 0.01884f
+C78 trk sw_bitcell11_14.bot 1.52305f
+C79 sw_tg_0.bot sw_bitcell11_8.VSS 0.04366f
+C80 bstrap40_1.out w_12940_n9960# 0.18959f
+C81 w_12940_n9960# sw_bitcell11_13.bot 0.01804f
+C82 trk a_9288_n9612# 0.15886f
+C83 a_26184_21025# outn 1.10481f
+C84 m3_51140_n2380# bstrap40_0.gb 1.34934f
+C85 bstrap40_0.gb cdac_array_0.b2 0.66903f
+C86 sw_bitcell11_8.VSS cdac_array_0.b1 1.1038f
+C87 bstrap40_1.ckb m3_53900_n2380# 0.03222f
+C88 ctl5n bstrap40_0.out 1.48398f
+C89 sw_bitcell11_8.bot bstrap40_0.out 3.77645f
+C90 ctl6n ctl5n 0.02691f
+C91 trk ctl1 0.04463f
+C92 sw_bitcell11_9.bot sw_bitcell11_11.bot 1.206f
+C93 ctl6n sw_bitcell11_8.bot 0.0247f
+C94 sw_bitcell11_8.VSS sw_bitcell11_7.bot 1.06911f
+C95 ctl3 VDD 2.921f
+C96 ctl3n m3_45620_n2380# 0.04425f
+C97 sw_bitcell11_8.VSS bstrap40_0.out 0.08043f
+C98 bstrap40_1.gb sw_bitcell11_11.bot 0.65904f
+C99 a_9288_n9612# sw_bitcell11_14.bot 0.01876f
+C100 cdac_array_0.b2 sw_bitcell11_8.bot 0.93559f
+C101 sw_bitcell11_11.bot sw_bitcell11_16.bot 0.36922f
+C102 bstrap40_1.ckb ctl3 1.49638f
+C103 ctl6n sw_bitcell11_8.VSS 0.70214f
+C104 ctl1n sw_bitcell11_8.VSS 0.70214f
+C105 a_30632_22281# clk_cmp 0.85224f
+C106 a_45072_n9612# bstrap40_0.gb 3.83159f
+C107 ctl2n VDD 2.921f
+C108 bstrap40_1.ckb ctl2n 1.49638f
+C109 trk sw_bitcell11_15.bot 1.52305f
+C110 bstrap40_1.out ctl2 1.48398f
+C111 sw_bitcell11_8.VSS cdac_array_0.b2 1.07887f
+C112 m3_34580_n2380# sw_bitcell11_5.bot 0.02484f
+C113 m3_40100_n2380# sw_bitcell11_6.bot 1.46717f
+C114 m3_48380_n2380# VDD 0.01516f
+C115 sw_bitcell11_9.bot sw_bitcell11_12.bot 1.06244f
+C116 bstrap40_1.out ctl7 1.49036f
+C117 ctl0n bstrap40_0.gb 0.10895f
+C118 ctl7 sw_bitcell11_13.bot 0.07047f
+C119 bstrap40_1.ckb m3_48380_n2380# 0.03222f
+C120 vcm cdac_array_1.topp 3.47081f
+C121 ctl4 bstrap40_1.gb 0.10895f
+C122 hold sw_bitcell11_6.bot 0.08996f
+C123 m3_37340_n2380# m3_34580_n2380# 0.02691f
+C124 sw_bitcell11_14.bot sw_bitcell11_15.bot 13.6338f
+C125 VDD bstrap40_0.gb 3.12784f
+C126 a_9288_n9612# sw_bitcell11_15.bot 0.02855f
+C127 bstrap40_1.gb sw_bitcell11_12.bot 0.63943f
+C128 sw_bitcell11_12.bot sw_bitcell11_16.bot 1.25674f
+C129 w_41352_n9960# trk 0.02374f
+C130 ctl6 sw_bitcell11_17.bot 0.05963f
+C131 sw_bitcell11_5.bot sw_bitcell11_6.bot 6.16375f
+C132 bstrap40_1.ckb bstrap40_0.gb 11.9168f
+C133 ctl1 sw_bitcell11_15.bot 1.1163f
+C134 ctl5 sw_bitcell11_11.bot 1.1163f
+C135 bstrap40_0.gb cdac_array_0.term 0.59295f
+C136 bstrap40_1.gb a_8368_n9612# 0.83573f
+C137 trk sw_bitcell11_17.bot 1.52682f
+C138 ctl5n VDD 2.921f
+C139 VDD sw_bitcell11_8.bot 2.16376f
+C140 hold cdac_array_0.b0 0.13669f
+C141 sw_bitcell11_11.bot cdac_array_1.topp 15.0257f
+C142 bstrap40_1.ckb ctl5n 1.49638f
+C143 ctl0n sw_bitcell11_8.VSS 0.70214f
+C144 bstrap40_1.ckb sw_bitcell11_8.bot 1.72951f
+C145 ctl4n bstrap40_0.gb 0.10895f
+C146 cdac_array_0.b0 sw_bitcell11_5.bot 1.25066f
+C147 cdac_array_0.term sw_bitcell11_8.bot 1.17779f
+C148 sw_bitcell11_17.VSS sw_bitcell11_9.bot 1.08357f
+C149 sw_tg_0.bot cdac_array_1.topp 0.10151f
+C150 VDD sw_bitcell11_8.VSS 0.82931f
+C151 sw_bitcell11_14.bot sw_bitcell11_17.bot 0.36514f
+C152 ctl5 ctl4 0.02691f
+C153 a_9288_n9612# sw_bitcell11_17.bot 0.08165f
+C154 bstrap40_1.ckb sw_bitcell11_8.VSS 0.37758f
+C155 ctl3n bstrap40_0.out 1.48398f
+C156 ctl5 sw_bitcell11_12.bot 0.0247f
+C157 sw_bitcell11_17.VSS sw_bitcell11_16.bot 1.07987f
+C158 sw_bitcell11_8.VSS cdac_array_0.term 1.08248f
+C159 bstrap40_1.gb sw_bitcell11_17.VSS 0.06395f
+C160 m3_37340_n2380# cdac_array_0.b0 0.01914f
+C161 ctl4n ctl5n 0.02691f
+C162 trk ctl3 0.04463f
+C163 bstrap40_1.out sw_bitcell11_11.bot 3.86086f
+C164 sw_bitcell11_11.bot sw_bitcell11_13.bot 0.83733f
+C165 sw_bitcell11_9.bot sw_bitcell11_10.bot 10.861f
+C166 sw_tg_0.bot hold 9.4272f
+C167 sw_tg_0.bot clk_cmp 0.17887f
+C168 VDD sw_bitcell11_9.bot 6.00658f
+C169 hold cdac_array_0.b1 0.11752f
+C170 sw_bitcell11_12.bot cdac_array_1.topp 6.42317f
+C171 bstrap40_1.ckb sw_bitcell11_9.bot 1.79489f
+C172 sw_tg_0.bot sw_bitcell11_5.bot 6.50453f
+C173 m3_40100_n2380# bstrap40_0.out 0.05064f
+C174 ctl4n sw_bitcell11_8.VSS 0.70214f
+C175 hold sw_bitcell11_7.bot 0.13371f
+C176 cdac_array_0.b1 sw_bitcell11_5.bot 1.11512f
+C177 sw_bitcell11_10.bot sw_bitcell11_16.bot 0.61286f
+C178 bstrap40_1.gb sw_bitcell11_10.bot 0.66046f
+C179 VDD bstrap40_1.gb 3.09683f
+C180 ctl3 sw_bitcell11_14.bot 0.0247f
+C181 VDD sw_bitcell11_16.bot 1.64512f
+C182 sw_bitcell11_15.bot sw_bitcell11_17.bot 0.39061f
+C183 sw_bitcell11_5.bot sw_bitcell11_7.bot 0.72613f
+C184 hold bstrap40_0.out 0.05699f
+C185 bstrap40_1.ckb bstrap40_1.gb 9.56461f
+C186 a_26184_21025# a_28008_23477# 0.69491f
+C187 bstrap40_1.ckb sw_bitcell11_16.bot 1.76468f
+C188 w_41352_n9960# sw_bitcell11_4.bot 0.01307f
+C189 bstrap40_1.out ctl4 1.48398f
+C190 ctl4 sw_bitcell11_13.bot 0.0247f
+C191 ctl7n sw_bitcell11_4.bot 0.01697f
+C192 ctl0 sw_bitcell11_17.VSS 0.70214f
+C193 m3_37340_n2380# cdac_array_0.b1 0.01914f
+C194 sw_bitcell11_5.bot bstrap40_0.out 3.82558f
+C195 bstrap40_1.out sw_bitcell11_12.bot 3.87803f
+C196 sw_bitcell11_12.bot sw_bitcell11_13.bot 14.3188f
+C197 m3_37340_n2380# sw_bitcell11_7.bot 1.46717f
+C198 ctl5 sw_bitcell11_17.VSS 0.70214f
+C199 hold cdac_array_0.b2 0.10875f
+C200 bstrap40_1.out a_8368_n9612# 0.03694f
+C201 m3_37340_n2380# bstrap40_0.out 0.05064f
+C202 cdac_array_0.b2 sw_bitcell11_5.bot 1.44374f
+C203 cdac_array_0.b0 sw_bitcell11_6.bot 0.36258f
+C204 ctl6n m3_37340_n2380# 0.04425f
+C205 sw_bitcell11_17.VSS cdac_array_1.topp 0.07463f
+C206 ctl0 VDD 2.94791f
+C207 sw_tg_0.bot a_30632_22281# 0.8059f
+C208 ctl7 sw_bitcell11_11.bot 0.05056f
+C209 bstrap40_1.ckb ctl0 1.49638f
+C210 ctl5 VDD 2.921f
+C211 ctl3n VDD 2.921f
+C212 m3_37340_n2380# cdac_array_0.b2 0.01303f
+C213 bstrap40_1.ckb ctl5 1.49638f
+C214 bstrap40_1.ckb ctl3n 1.49638f
+C215 hold sw_bitcell11_17.VSS 1.93637f
+C216 sw_bitcell11_10.bot cdac_array_1.topp 29.8359f
+C217 a_45072_n9612# sw_bitcell11_5.bot 0.01776f
+C218 VDD cdac_array_1.topp 1.10555f
+C219 bstrap40_1.out sw_bitcell11_17.VSS 0.14818f
+C220 sw_bitcell11_17.VSS sw_bitcell11_13.bot 1.08042f
+C221 ctl2n sw_bitcell11_4.bot 0.0247f
+C222 bstrap40_1.ckb cdac_array_1.topp 2.52876f
+C223 sw_tg_0.bot sw_bitcell11_6.bot 15.1038f
+C224 m3_34580_n2380# bstrap40_0.out 0.05064f
+C225 VDD m3_40100_n2380# 0.01516f
+C226 cdac_array_0.b1 sw_bitcell11_6.bot 0.42516f
+C227 bstrap40_1.ckb m3_40100_n2380# 0.03222f
+C228 m3_42860_n2380# bstrap40_0.gb 1.34934f
+C229 trk sw_bitcell11_9.bot 1.66892f
+C230 hold sw_bitcell11_10.bot 0.01138f
+C231 ctl7 sw_bitcell11_12.bot 0.05068f
+C232 sw_bitcell11_6.bot sw_bitcell11_7.bot 13.4536f
+C233 ctl6 bstrap40_1.gb 0.10895f
+C234 outp cdac_array_1.topp 0.13241f
+C235 ctl6 sw_bitcell11_16.bot 0.02398f
+C236 hold VDD 0.0715f
+C237 ctl4n ctl3n 0.02691f
+C238 clk_cmp VDD 8.22879f
+C239 bstrap40_1.out sw_bitcell11_10.bot 3.87175f
+C240 bstrap40_1.gb vinp 2.04722f
+C241 sw_tg_0.bot vcm 3.46927f
+C242 bstrap40_1.ckb hold 0.11405f
+C243 sw_bitcell11_10.bot sw_bitcell11_13.bot 0.52491f
+C244 bstrap40_1.out VDD 4.02538f
+C245 m3_45620_n2380# bstrap40_0.out 0.05064f
+C246 VDD sw_bitcell11_13.bot 1.64921f
+C247 VDD sw_bitcell11_5.bot 1.67704f
+C248 sw_bitcell11_6.bot bstrap40_0.out 3.80008f
+C249 trk bstrap40_1.gb 16.3339f
+C250 hold cdac_array_0.term 5.29853f
+C251 trk sw_bitcell11_16.bot 1.52704f
+C252 bstrap40_1.ckb bstrap40_1.out 10.8308f
+C253 bstrap40_0.gb sw_bitcell11_4.bot 0.68696f
+C254 bstrap40_1.ckb sw_bitcell11_5.bot 1.74111f
+C255 bstrap40_1.ckb sw_bitcell11_13.bot 1.74552f
+C256 sw_tg_0.bot cdac_array_0.b0 0.78539f
+C257 sw_bitcell11_9.bot sw_bitcell11_14.bot 1.15795f
+C258 cdac_array_0.b0 cdac_array_0.b1 16.7776f
+C259 outp clk_cmp 0.93481f
+C260 cdac_array_0.term sw_bitcell11_5.bot 0.78075f
+C261 w_12940_n9960# VDD 1.25405f
+C262 w_41352_n9960# bstrap40_0.gb 3.5074f
+C263 VDD m3_37340_n2380# 0.01516f
+C264 bstrap40_1.ckb w_12940_n9960# 2.48215f
+C265 ctl7n bstrap40_0.gb 0.1203f
+C266 cdac_array_0.b2 sw_bitcell11_6.bot 0.56024f
+C267 cdac_array_0.b0 sw_bitcell11_7.bot 0.56139f
+C268 bstrap40_1.ckb m3_37340_n2380# 0.03222f
+C269 a_45992_n9711# vinn 0.80795f
+C270 sw_bitcell11_14.bot sw_bitcell11_16.bot 0.33518f
+C271 sw_bitcell11_4.bot sw_bitcell11_8.bot 1.0141f
+C272 bstrap40_1.gb sw_bitcell11_14.bot 0.63012f
+C273 ctl2 sw_bitcell11_17.VSS 0.70214f
+C274 a_9288_n9612# bstrap40_1.gb 3.69654f
+C275 a_9288_n9612# sw_bitcell11_16.bot 0.04708f
+C276 m3_37340_n2380# cdac_array_0.term 0.02418f
+C277 cdac_array_0.b0 bstrap40_0.out 3.76399f
+C278 ctl4n sw_bitcell11_5.bot 1.1163f
+C279 ctl6n cdac_array_0.b0 0.06269f
+C280 ctl1 sw_bitcell11_16.bot 0.0247f
+C281 ctl1 bstrap40_1.gb 0.10895f
+C282 ctl7 sw_bitcell11_17.VSS 0.70214f
+C283 ctl5 ctl6 0.02691f
+C284 trk ctl0 0.04463f
+C285 ctl7n sw_bitcell11_8.bot 1.15919f
+C286 sw_bitcell11_8.VSS sw_bitcell11_4.bot 1.07503f
+C287 m3_53900_n2380# bstrap40_0.gb 1.34934f
+C288 a_45072_n9612# sw_bitcell11_6.bot 0.06409f
+C289 sw_tg_0.bot cdac_array_0.b1 1.10011f
+C290 sw_bitcell11_9.bot sw_bitcell11_15.bot 1.09377f
+C291 a_30632_22281# VDD 0.75713f
+C292 cdac_array_0.b0 cdac_array_0.b2 0.33088f
+C293 trk ctl5 0.04463f
+C294 ctl2 VDD 2.921f
+C295 sw_tg_0.bot sw_bitcell11_7.bot 29.8992f
+C296 sw_bitcell11_11.bot sw_bitcell11_12.bot 8.11603f
+C297 a_45992_n9711# bstrap40_0.out 0.03694f
+C298 VDD m3_34580_n2380# 0.01516f
+C299 ctl7 sw_bitcell11_10.bot 0.06522f
+C300 bstrap40_1.ckb ctl2 1.49638f
+C301 ctl7n sw_bitcell11_8.VSS 0.70214f
+C302 cdac_array_0.b1 sw_bitcell11_7.bot 0.54218f
+C303 bstrap40_0.out vinn 1.50431f
+C304 m3_56660_n2380# bstrap40_0.out 0.05064f
+C305 ctl2n m3_48380_n2380# 0.04425f
+C306 bstrap40_1.ckb m3_34580_n2380# 0.03222f
+C307 ctl7 VDD 2.921f
+C308 vcm a_45072_n9612# 0.01948f
+C309 trk cdac_array_1.topp 1.99866f
+C310 sw_bitcell11_15.bot sw_bitcell11_16.bot 13.8989f
+C311 bstrap40_1.gb sw_bitcell11_15.bot 0.64813f
+C312 sw_tg_0.bot bstrap40_0.out 0.06069f
+C313 bstrap40_1.ckb ctl7 1.49638f
+C314 a_26184_21025# cdac_array_1.topp 0.80196f
+C315 cdac_array_0.b1 bstrap40_0.out 3.76676f
+C316 a_30632_22281# outp 1.10635f
+C317 ctl6n cdac_array_0.b1 0.04734f
+C318 ctl1 ctl0 0.02691f
+C319 ctl1n cdac_array_0.b1 1.1163f
+C320 ctl2n bstrap40_0.gb 0.10895f
+C321 VDD m3_45620_n2380# 0.01516f
+C322 VDD sw_bitcell11_6.bot 1.75057f
+C323 sw_bitcell11_7.bot bstrap40_0.out 3.75973f
+C324 bstrap40_1.out ctl6 1.48398f
+C325 ctl6n sw_bitcell11_7.bot 1.1163f
+C326 bstrap40_1.ckb sw_bitcell11_6.bot 1.74926f
+C327 bstrap40_1.ckb m3_45620_n2380# 0.03222f
+C328 sw_tg_0.bot cdac_array_0.b2 1.84583f
+C329 trk hold 0.07748f
+C330 ctl4 sw_bitcell11_12.bot 1.1163f
+C331 bstrap40_1.out vinp 1.50431f
+C332 outn cdac_array_1.topp 0.01647f
+C333 sw_bitcell11_14.bot cdac_array_1.topp 1.76733f
+C334 m3_51140_n2380# cdac_array_0.b1 1.46717f
+C335 cdac_array_0.b1 cdac_array_0.b2 15.9302f
+C336 sw_bitcell11_9.bot sw_bitcell11_17.bot 1.1783f
+C337 cdac_array_0.term sw_bitcell11_6.bot 0.45064f
+C338 m3_48380_n2380# bstrap40_0.gb 1.34934f
+C339 a_9288_n9612# cdac_array_1.topp 0.67115f
+C340 a_26184_21025# clk_cmp 0.84644f
+C341 ctl6n bstrap40_0.out 1.48398f
+C342 bstrap40_1.out trk 0.63565f
+C343 ctl1n bstrap40_0.out 1.48398f
+C344 trk sw_bitcell11_13.bot 1.52305f
+C345 ctl0n cdac_array_0.b0 1.1163f
+C346 cdac_array_0.b2 sw_bitcell11_7.bot 0.57802f
+C347 vcm VDD 0.50306f
+C348 a_45992_n9711# a_45072_n9612# 0.23797f
+C349 w_12940_n9960# vinp 0.01233f
+C350 bstrap40_1.ckb vcm 3.2628f
+C351 a_45072_n9612# vinn 0.98999f
+C352 sw_bitcell11_17.VSS sw_bitcell11_11.bot 1.07937f
+C353 sw_bitcell11_16.bot sw_bitcell11_17.bot 14.2205f
+C354 bstrap40_1.gb sw_bitcell11_17.bot 7.08078f
+C355 m3_51140_n2380# bstrap40_0.out 0.05064f
+C356 cdac_array_0.b2 bstrap40_0.out 3.7711f
+C357 VDD cdac_array_0.b0 1.82709f
+C358 sw_tg_0.bot a_45072_n9612# 0.02907f
+C359 w_12940_n9960# trk 0.03349f
+C360 clk_cmp outn 0.97369f
+C361 ctl4n sw_bitcell11_6.bot 0.0247f
+C362 ctl6n cdac_array_0.b2 0.01524f
+C363 ctl1n m3_51140_n2380# 0.04425f
+C364 ctl1n cdac_array_0.b2 0.0247f
+C365 bstrap40_1.ckb cdac_array_0.b0 1.71168f
+C366 ctl2n sw_bitcell11_8.VSS 0.70214f
+C367 bstrap40_1.out sw_bitcell11_14.bot 3.79862f
+C368 sw_bitcell11_14.bot sw_bitcell11_13.bot 13.3533f
+C369 bstrap40_1.out a_9288_n9612# 1.41698f
+C370 cdac_array_0.term cdac_array_0.b0 17.6283f
+C371 a_45072_n9612# sw_bitcell11_7.bot 0.02826f
+C372 a_9288_n9612# sw_bitcell11_13.bot 0.01315f
+C373 bstrap40_1.out ctl1 1.48398f
+C374 sw_bitcell11_15.bot cdac_array_1.topp 1.02168f
+C375 sw_bitcell11_10.bot sw_bitcell11_11.bot 10.3331f
+C376 ctl5n bstrap40_0.gb 0.10895f
+C377 bstrap40_0.gb sw_bitcell11_8.bot 0.8682f
+C378 VDD sw_bitcell11_11.bot 1.74911f
+C379 ctl3n sw_bitcell11_4.bot 1.1163f
+C380 m3_42860_n2380# m3_40100_n2380# 0.02691f
+C381 w_12940_n9960# sw_bitcell11_14.bot 0.02594f
+C382 a_45072_n9612# bstrap40_0.out 1.42085f
+C383 VDD a_45992_n9711# 0.8295f
+C384 ctl4 sw_bitcell11_17.VSS 0.70214f
+C385 ctl0n cdac_array_0.b1 0.0247f
+C386 bstrap40_1.ckb sw_bitcell11_11.bot 1.78428f
+C387 w_12940_n9960# a_9288_n9612# 3.34238f
+C388 VDD vinn 0.29989f
+C389 VDD m3_56660_n2380# 0.09693f
+C390 bstrap40_1.ckb a_45992_n9711# 0.70727f
+C391 bstrap40_1.ckb vinn 0.17013f
+C392 sw_bitcell11_17.VSS sw_bitcell11_12.bot 1.07675f
+C393 sw_tg_0.bot VDD 0.67094f
+C394 bstrap40_1.ckb m3_56660_n2380# 0.03222f
+C395 ctl3 bstrap40_1.gb 0.10895f
+C396 ctl7 ctl6 0.02691f
+C397 ctl0 sw_bitcell11_17.bot 0.0247f
+C398 bstrap40_0.gb sw_bitcell11_8.VSS 0.02101f
+C399 sw_tg_0.bot bstrap40_1.ckb 1.56724f
+C400 VDD cdac_array_0.b1 1.68303f
+C401 trk ctl2 0.04463f
+C402 m3_56660_n2380# cdac_array_0.term 1.46717f
+C403 bstrap40_1.ckb cdac_array_0.b1 1.71771f
+C404 m3_42860_n2380# sw_bitcell11_5.bot 1.46717f
+C405 sw_tg_0.bot cdac_array_0.term 0.80927f
+C406 ctl0n bstrap40_0.out 1.48398f
+C407 bstrap40_1.out sw_bitcell11_15.bot 3.79853f
+C408 VDD sw_bitcell11_7.bot 1.62685f
+C409 trk ctl7 0.04554f
+C410 sw_bitcell11_15.bot sw_bitcell11_13.bot 0.43214f
+C411 cdac_array_0.term cdac_array_0.b1 0.38559f
+C412 ctl0n ctl1n 0.02691f
+C413 ctl4 VDD 2.921f
+C414 bstrap40_1.ckb sw_bitcell11_7.bot 1.71088f
+C415 sw_tg_0.bot outp 0.01619f
+C416 hold sw_bitcell11_4.bot 0.10376f
+C417 sw_bitcell11_10.bot sw_bitcell11_12.bot 0.53583f
+C418 ctl5n sw_bitcell11_8.VSS 0.70214f
+C419 bstrap40_1.ckb ctl4 1.49638f
+C420 VDD bstrap40_0.out 4.00661f
+C421 cdac_array_0.term sw_bitcell11_7.bot 0.67927f
+C422 a_30632_22281# outn 1.92064f
+C423 sw_bitcell11_17.bot cdac_array_1.topp 2.30484f
+C424 sw_bitcell11_8.VSS sw_bitcell11_8.bot 1.08531f
+C425 ctl6n VDD 2.921f
+C426 VDD sw_bitcell11_12.bot 1.71671f
+C427 w_12940_n9960# sw_bitcell11_15.bot 0.03428f
+C428 ctl2 sw_bitcell11_14.bot 1.1163f
+C429 ctl1n VDD 2.921f
+C430 bstrap40_1.ckb bstrap40_0.out 13.2851f
+C431 sw_bitcell11_4.bot sw_bitcell11_5.bot 15.4507f
+C432 bstrap40_1.ckb sw_bitcell11_12.bot 1.76269f
+C433 bstrap40_1.ckb ctl6n 1.49638f
+C434 bstrap40_1.ckb ctl1n 1.49638f
+C435 cdac_array_0.term bstrap40_0.out 3.78172f
+C436 ctl7 sw_bitcell11_14.bot 0.12097f
+C437 ctl1 ctl2 0.02691f
+C438 ctl6n cdac_array_0.term 0.02588f
+C439 VDD a_8368_n9612# 0.8295f
+C440 VDD m3_51140_n2380# 0.01516f
+C441 VDD cdac_array_0.b2 1.63997f
+C442 w_41352_n9960# sw_bitcell11_5.bot 0.01962f
+C443 bstrap40_1.ckb a_8368_n9612# 0.70727f
+C444 bstrap40_1.ckb m3_51140_n2380# 0.03222f
+C445 ctl7n sw_bitcell11_5.bot 0.03439f
+C446 bstrap40_1.ckb cdac_array_0.b2 1.71788f
+C447 trk vcm 1.90298f
+C448 bstrap40_1.out sw_bitcell11_17.bot 3.82885f
+C449 cdac_array_0.term cdac_array_0.b2 0.35898f
+C450 ctl4n bstrap40_0.out 1.48398f
+C451 sw_bitcell11_13.bot sw_bitcell11_17.bot 0.49482f
+C452 ctl2n ctl3n 0.02691f
+C453 ctl2 sw_bitcell11_15.bot 0.0247f
+C454 VDD a_45072_n9612# 0.868f
+C455 w_12940_n9960# sw_bitcell11_17.bot 0.05981f
+C456 ctl6 sw_bitcell11_11.bot 0.0247f
+C457 sw_bitcell11_17.VSS sw_bitcell11_10.bot 1.07841f
+C458 bstrap40_1.ckb a_45072_n9612# 2.62374f
+C459 VDD sw_bitcell11_17.VSS 0.83153f
+C460 ctl7 sw_bitcell11_15.bot 0.06611f
+C461 bstrap40_1.ckb sw_bitcell11_17.VSS 0.48407f
+C462 trk sw_bitcell11_11.bot 1.52432f
+C463 m3_34580_n2380# sw_bitcell11_4.bot 0.01703f
+C464 a_28008_23477# cdac_array_1.topp 0.84801f
+C465 m3_42860_n2380# m3_45620_n2380# 0.02691f
+C466 ctl0n VDD 2.94854f
+C467 bstrap40_1.out ctl3 1.48398f
+C468 ctl3n bstrap40_0.gb 0.10895f
+C469 ctl3 sw_bitcell11_13.bot 1.1163f
+C470 bstrap40_1.ckb ctl0n 1.49638f
+C471 sw_tg_0.bot trk 1.98254f
+C472 VDD sw_bitcell11_10.bot 1.9191f
+C473 bstrap40_1.gb sw_bitcell11_9.bot 0.75556f
+C474 sw_bitcell11_9.bot sw_bitcell11_16.bot 1.00088f
+C475 bstrap40_1.ckb sw_bitcell11_10.bot 1.76463f
+C476 ctl7n m3_34580_n2380# 0.04425f
+C477 sw_bitcell11_11.bot sw_bitcell11_14.bot 0.56612f
+C478 bstrap40_1.ckb VDD 44.4753f
+C479 m3_45620_n2380# sw_bitcell11_4.bot 1.46717f
+C480 sw_bitcell11_4.bot sw_bitcell11_6.bot 0.83214f
+C481 a_28008_23477# clk_cmp 0.83464f
+C482 trk ctl4 0.04463f
+C483 m3_40100_n2380# bstrap40_0.gb 1.34934f
+C484 VDD cdac_array_0.term 2.95344f
+C485 sw_tg_0.bot outn 0.44362f
+C486 bstrap40_1.ckb cdac_array_0.term 1.71888f
+C487 bstrap40_1.gb sw_bitcell11_16.bot 0.67129f
+C488 w_41352_n9960# sw_bitcell11_6.bot 0.04996f
+C489 trk sw_bitcell11_12.bot 1.52367f
+C490 outp VDD 6.61858f
+C491 hold bstrap40_0.gb 0.05514f
+C492 a_8368_n9612# vinp 0.80795f
+C493 ctl3n sw_bitcell11_8.VSS 0.70214f
+C494 ctl5n m3_40100_n2380# 0.04425f
+C495 ctl4n VDD 2.921f
+C496 bstrap40_0.gb sw_bitcell11_5.bot 0.72575f
+C497 bstrap40_1.ckb ctl4n 1.49638f
+C498 cdac_array_0.b0 sw_bitcell11_4.bot 0.41571f
+C499 w_41352_n9960# vcm 0.0139f
+C500 sw_bitcell11_12.bot sw_bitcell11_14.bot 1.44803f
+C501 sw_bitcell11_11.bot sw_bitcell11_15.bot 0.43173f
+C502 ctl3 ctl2 0.02691f
+C503 hold sw_bitcell11_8.bot 0.09707f
+C504 m3_37340_n2380# bstrap40_0.gb 1.34934f
+C505 ctl0 sw_bitcell11_16.bot 1.1163f
+C506 ctl0 bstrap40_1.gb 0.10895f
+C507 ctl6 sw_bitcell11_17.VSS 0.70214f
+C508 sw_bitcell11_5.bot sw_bitcell11_8.bot 1.20208f
+C509 a_9288_n9612# a_8368_n9612# 0.23797f
+C510 trk a_45072_n9612# 0.06619f
+C511 hold sw_bitcell11_8.VSS 1.935f
+C512 sw_bitcell11_9.bot cdac_array_1.topp 59.3946f
+C513 ctl5 bstrap40_1.gb 0.10895f
+C514 a_30632_22281# a_28008_23477# 0.69494f
+C515 trk sw_bitcell11_17.VSS 0.16682f
+C516 sw_tg_0.bot sw_bitcell11_4.bot 3.28113f
+C517 sw_bitcell11_8.VSS sw_bitcell11_5.bot 1.08337f
+C518 m3_42860_n2380# bstrap40_0.out 0.05064f
+C519 m3_53900_n2380# cdac_array_0.b0 1.46717f
+C520 cdac_array_0.b1 sw_bitcell11_4.bot 0.42785f
+C521 w_41352_n9960# vinn 0.01233f
+C522 ctl6 sw_bitcell11_10.bot 1.1163f
+C523 bstrap40_1.gb cdac_array_1.topp 6.56461f
+C524 sw_bitcell11_16.bot cdac_array_1.topp 0.70993f
+C525 sw_bitcell11_12.bot sw_bitcell11_15.bot 1.12054f
+C526 ctl6 VDD 2.921f
+C527 sw_tg_0.bot w_41352_n9960# 0.01461f
+C528 hold sw_bitcell11_9.bot 0.0209f
+C529 sw_bitcell11_11.bot sw_bitcell11_17.bot 0.4533f
+C530 sw_bitcell11_4.bot sw_bitcell11_7.bot 0.5276f
+C531 bstrap40_1.ckb ctl6 1.49638f
+C532 VDD vinp 0.29752f
+C533 m3_34580_n2380# bstrap40_0.gb 1.35363f
+C534 trk sw_bitcell11_10.bot 1.52503f
+C535 bstrap40_1.out sw_bitcell11_9.bot 4.32751f
+C536 sw_bitcell11_17.VSS sw_bitcell11_14.bot 1.10388f
+C537 bstrap40_1.ckb vinp 0.17013f
+C538 m3_48380_n2380# m3_45620_n2380# 0.02691f
+C539 sw_bitcell11_9.bot sw_bitcell11_13.bot 1.15311f
+C540 trk VDD 3.90878f
+C541 sw_bitcell11_4.bot bstrap40_0.out 3.77143f
+C542 w_41352_n9960# sw_bitcell11_7.bot 0.02171f
+C543 a_26184_21025# VDD 0.75713f
+C544 bstrap40_1.ckb trk 12.6138f
+C545 ctl7n sw_bitcell11_7.bot 0.01211f
+C546 ctl1 sw_bitcell11_17.VSS 0.70214f
+C547 m3_53900_n2380# m3_56660_n2380# 0.02691f
+C548 bstrap40_1.out bstrap40_1.gb 12.5163f
+C549 w_41352_n9960# bstrap40_0.out 0.18961f
+C550 bstrap40_1.out sw_bitcell11_16.bot 3.80725f
+C551 sw_bitcell11_13.bot sw_bitcell11_16.bot 0.42113f
+C552 bstrap40_1.gb sw_bitcell11_13.bot 0.63135f
+C553 m3_45620_n2380# bstrap40_0.gb 1.34934f
+C554 bstrap40_0.gb sw_bitcell11_6.bot 1.29531f
+C555 m3_34580_n2380# sw_bitcell11_8.bot 1.48842f
+C556 ctl7n bstrap40_0.out 1.4845f
+C557 sw_bitcell11_10.bot sw_bitcell11_14.bot 0.51985f
+C558 ctl6n ctl7n 0.02691f
+C559 cdac_array_0.b2 sw_bitcell11_4.bot 15.0674f
+C560 outn VDD 6.56947f
+C561 VDD sw_bitcell11_14.bot 1.70939f
+C562 vinn VSS 1.50737f
+C563 vinp VSS 1.49722f
+C564 vcm VSS 8.86928f
+C565 outn VSS 2.46518f
+C566 m3_56660_n2380# VSS 0.10922f ; **FLOATING
+C567 m3_53900_n2380# VSS 0.10131f ; **FLOATING
+C568 m3_51140_n2380# VSS 0.10131f ; **FLOATING
+C569 m3_48380_n2380# VSS 0.10131f ; **FLOATING
+C570 m3_45620_n2380# VSS 0.10131f ; **FLOATING
+C571 m3_42860_n2380# VSS 0.10131f ; **FLOATING
+C572 m3_40100_n2380# VSS 0.10131f ; **FLOATING
+C573 m3_37340_n2380# VSS 0.10131f ; **FLOATING
+C574 m3_34580_n2380# VSS 0.11205f ; **FLOATING
+C575 a_45992_n9711# VSS 5.41046f
+C576 a_45072_n9612# VSS 12.74065f
+C577 a_9288_n9612# VSS 12.59027f
+C578 a_8368_n9612# VSS 1.42827f
+C579 sw_bitcell11_8.VSS VSS 38.19001f
+C580 sw_bitcell11_17.VSS VSS 39.06339f
+C581 cdac_array_0.term VSS 67.1073f
+C582 cdac_array_0.b0 VSS 22.00978f
+C583 cdac_array_0.b1 VSS 12.43337f
+C584 cdac_array_0.b2 VSS 10.96024f
+C585 sw_bitcell11_4.bot VSS 30.0901f
+C586 sw_bitcell11_5.bot VSS 18.40244f
+C587 sw_bitcell11_6.bot VSS 25.17889f
+C588 sw_bitcell11_7.bot VSS 23.22054f
+C589 bstrap40_0.out VSS 43.34215f
+C590 sw_bitcell11_8.bot VSS 0.12606p
+C591 sw_bitcell11_9.bot VSS 46.91959f
+C592 sw_bitcell11_10.bot VSS 23.05454f
+C593 sw_bitcell11_11.bot VSS 28.01085f
+C594 sw_bitcell11_12.bot VSS 18.44395f
+C595 sw_bitcell11_13.bot VSS 89.38837f
+C596 sw_bitcell11_14.bot VSS 11.72954f
+C597 sw_bitcell11_15.bot VSS 11.38795f
+C598 sw_bitcell11_16.bot VSS 11.34754f
+C599 bstrap40_1.out VSS 22.4105f
+C600 sw_bitcell11_17.bot VSS 20.0229f
+C601 a_30632_22281# VSS 3.73368f
+C602 a_26184_21025# VSS 5.94128f
+C603 a_28008_23477# VSS 2.35462f
+.ends
+

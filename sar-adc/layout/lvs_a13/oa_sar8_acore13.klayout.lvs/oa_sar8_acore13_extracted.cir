@@ -1,0 +1,120 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 16/08/2026 09:02
+
+.SUBCKT oa_sar8_acore13 VDD VSS clk_cmp ctl0 ctl0n ctl1 ctl1n ctl2 ctl2n ctl3
++ ctl3n ctl4 ctl4n ctl5 ctl5n ctl6 ctl6n ctl7 ctl7n hold outn outp trk vcm vinn
++ vinp
+X$1 VSS VDD trk \$4 \$14 vcm sw_tg
+X$2 VSS \$4 \$4 trk trk VSS VDD sw_bitcell
+X$3 VSS VDD trk \$4 \$7 vcm sw_tg
+X$4 VSS \$3 \$4 \$5 VDD vinp bstrap40
+X$5 VSS \$11 \$4 \$15 VDD vinn bstrap40
+X$6 VSS \$27 \$16 \$4 VDD \$5 \$3 VDD sw_bitcell11
+X$8 VSS \$27 \$32 \$4 ctl4 \$5 \$3 VDD sw_bitcell11
+X$9 VSS \$27 \$36 \$4 ctl5 \$5 \$3 VDD sw_bitcell11
+X$10 VSS \$27 \$37 \$4 ctl6 \$5 \$3 VDD sw_bitcell11
+X$11 VSS \$27 \$38 \$4 ctl7 \$5 \$3 VDD sw_bitcell11
+X$12 VSS \$27 \$31 \$4 ctl3 \$5 \$3 VDD sw_bitcell11
+X$13 VSS \$25 \$24 \$4 ctl6n \$15 \$11 VDD sw_bitcell11
+X$14 VSS \$25 \$22 \$4 ctl5n \$15 \$11 VDD sw_bitcell11
+X$15 VSS \$25 \$30 \$4 ctl4n \$15 \$11 VDD sw_bitcell11
+X$16 VSS \$25 \$33 \$4 ctl3n \$15 \$11 VDD sw_bitcell11
+X$17 VSS \$25 \$34 \$4 ctl2n \$15 \$11 VDD sw_bitcell11
+X$18 VSS \$25 \$35 \$4 ctl1n \$15 \$11 VDD sw_bitcell11
+X$19 VSS \$25 \$39 \$4 ctl0n \$15 \$11 VDD sw_bitcell11
+X$20 VSS \$25 \$40 \$4 VDD \$15 \$11 VDD sw_bitcell11
+X$21 VSS \$27 \$26 \$4 ctl2 \$5 \$3 VDD sw_bitcell11
+X$22 VSS \$27 \$23 \$4 ctl1 \$5 \$3 VDD sw_bitcell11
+X$23 VSS \$27 \$21 \$4 ctl0 \$5 \$3 VDD sw_bitcell11
+X$24 VSS \$25 \$29 \$4 ctl7n \$15 \$11 VDD sw_bitcell11
+X$25 \$38 \$14 \$37 \$36 \$32 \$31 \$26 \$23 \$21 \$16 cdac_array
+X$26 VSS clk_cmp \$7 \$14 outn outp VDD sa_comp
+X$27 \$29 \$7 \$24 \$22 \$30 \$33 \$34 \$35 \$39 \$40 cdac_array
+M$1 VSS hold \$27 VSS sg13_lv_nmos L=0.13u W=8u AS=2.18p AD=2.18p PS=14.18u
++ PD=14.18u rfmode=1
+M$5 VSS hold \$25 VSS sg13_lv_nmos L=0.13u W=8u AS=2.18p AD=2.18p PS=14.18u
++ PD=14.18u rfmode=1
+.ENDS oa_sar8_acore13
+
+.SUBCKT bstrap40 VSS out ckb gb VDD vin
+C$1 \$6 \$7 cap_cmim w=39.8u l=9.94u A=395.612p P=99.48u m=1
+M$2 gb ckb \$6 \$6 sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$3 \$6 gb VDD \$6 sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$4 vin gb out VSS sg13_lv_nmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$6 VSS ckb \$8 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$8 VSS ckb \$7 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$10 vin gb \$7 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$12 \$8 VDD gb VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+.ENDS bstrap40
+
+.SUBCKT sw_tg VSS VDD trk trkb bot vin
+M$1 vin trkb bot VDD sg13_lv_pmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$3 vin trk bot VSS sg13_lv_nmos L=0.13u W=2u AS=0.545p AD=0.545p PS=4.09u
++ PD=4.09u rfmode=1
+.ENDS sw_tg
+
+.SUBCKT sw_bitcell VSS bot trkb ctl trk vin VDD
+M$1 VDD ctl bot VDD sg13_lv_pmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$3 vin trkb bot VDD sg13_lv_pmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$5 VSS ctl bot VSS sg13_lv_nmos L=0.13u W=2u AS=0.545p AD=0.545p PS=4.09u
++ PD=4.09u rfmode=1
+M$7 vin trk bot VSS sg13_lv_nmos L=0.13u W=2u AS=0.545p AD=0.545p PS=4.09u
++ PD=4.09u rfmode=1
+.ENDS sw_bitcell
+
+.SUBCKT sw_bitcell11 VSSB VSS bot trkb ctl gb vin VDD
+M$1 VDD ctl bot VDD sg13_lv_pmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$3 vin trkb bot VDD sg13_lv_pmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$5 VSS ctl bot VSSB sg13_lv_nmos L=0.13u W=2u AS=0.545p AD=0.545p PS=4.09u
++ PD=4.09u rfmode=1
+M$7 vin gb bot VSSB sg13_lv_nmos L=0.13u W=2u AS=0.545p AD=0.545p PS=4.09u
++ PD=4.09u rfmode=1
+.ENDS sw_bitcell11
+
+.SUBCKT sa_comp VSS clk inp inn outn outp VDD
+M$1 \$5 clk VDD VDD sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$2 outp clk VDD VDD sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$3 \$8 clk VDD VDD sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$4 outn clk VDD VDD sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$5 VDD outp outn VDD sg13_lv_pmos L=0.13u W=6u AS=1.635p AD=1.635p PS=10.09u
++ PD=10.09u rfmode=1
+M$7 VDD outn outp VDD sg13_lv_pmos L=0.13u W=6u AS=1.635p AD=1.635p PS=10.09u
++ PD=10.09u rfmode=1
+M$9 \$5 outp outn VSS sg13_lv_nmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$11 \$8 outn outp VSS sg13_lv_nmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$13 \$3 inp \$5 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$15 \$3 inn \$8 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$17 VSS clk \$3 VSS sg13_lv_nmos L=0.3u W=3u AS=0.8025p AD=0.8025p PS=5.57u
++ PD=5.57u rfmode=1
+.ENDS sa_comp
+
+.SUBCKT cdac_array b7 topp b6 b5 b4 b3 b2 b1 b0 term
+C$1 topp b7 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=128
+C$2 topp b6 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=64
+C$3 topp b5 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=32
+C$14 topp b3 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=8
+C$16 topp term cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=1
+C$17 topp b1 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=2
+C$18 topp b2 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=4
+C$68 topp b4 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=16
+C$161 topp b0 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=1
+.ENDS cdac_array

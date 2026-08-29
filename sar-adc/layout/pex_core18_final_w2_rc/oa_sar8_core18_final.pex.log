@@ -1,0 +1,199 @@
+
+Magic 8.3 revision 678 - Compiled on Mon Jul 27 03:07:22 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "/foss/designs/sar-adc/layout/pex_core18_final_w2_rc/pex_oa_sar8_core18_final.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "via_stack$2".
+Reading "via_stack$1".
+Reading "via_stack".
+Reading "cmim".
+Reading "rfpmos$1".
+Reading "rfpmos".
+Reading "rfnmos$2".
+CIF file read warning: CIF style sg13g2(): units rescaled by factor of 5 / 1
+Reading "rfnmos$1".
+Reading "rfnmos".
+Reading "rfpmos$2".
+Reading "rfnmos$3".
+Reading "rfpmos$1$1".
+Reading "rfpmos$4".
+Reading "rfnmos$1$1".
+Reading "rfnmos$5".
+Reading "rfpmos$1$2".
+Reading "rfpmos$5".
+Reading "rfnmos$1$2".
+Reading "rfnmos$6".
+Reading "rfpmos$1$3".
+Reading "rfpmos$6".
+Reading "rfnmos$1$3".
+Reading "rfnmos$7".
+Reading "rfpmos$1$4".
+Reading "rfpmos$7".
+Reading "rfnmos$1$4".
+Reading "rfnmos$8".
+Reading "rfpmos$1$5".
+Reading "rfpmos$8".
+Reading "rfnmos$1$5".
+Reading "rfnmos$9".
+Reading "rfpmos$1$6".
+Reading "rfpmos$9".
+Reading "rfnmos$1$6".
+Reading "rfnmos$10".
+Reading "rfpmos$1$7".
+Reading "rfpmos$10".
+Reading "rfnmos$1$7".
+Reading "rfnmos$11".
+Reading "rfpmos$1$8".
+Reading "rfpmos$11".
+Reading "rfnmos$1$8".
+Reading "rfnmos$12".
+Reading "rfpmos$1$9".
+Reading "rfpmos$12".
+Reading "rfnmos$1$9".
+Reading "rfnmos$13".
+Reading "rfpmos$13".
+Reading "rfnmos$14".
+Reading "via_stack$1$1".
+Reading "via_stack$3".
+Reading "cmim$1".
+Reading "rfpmos$14".
+Reading "rfnmos$1$10".
+Reading "rfnmos$15".
+Reading "sg13g2_decap_8".
+Reading "sg13g2_fill_2".
+Reading "sg13g2_decap_4".
+Reading "sg13g2_fill_1".
+Reading "sg13g2_inv_1".
+Reading "sg13g2_a21oi_1".
+Reading "sg13g2_nor2_1".
+Reading "sg13g2_and2_1".
+Reading "sg13g2_nor2b_1".
+Reading "sg13g2_nand2b_1".
+Reading "sg13g2_o21ai_1".
+Reading "sg13g2_nand3b_1".
+Reading "sg13g2_nand3_1".
+Reading "sg13g2_nand2_1".
+Reading "sg13g2_nor4_1".
+Reading "sg13g2_a22oi_1".
+Reading "sg13g2_mux2_1".
+Reading "sg13g2_dfrbpq_1".
+Reading "sg13g2_buf_1".
+Reading "sg13g2_dlygate4sd3_1".
+Reading "VIA_via5_6_2200_440_1_2_840_840".
+Reading "VIA_via4_5_2200_440_1_5_410_410".
+Reading "VIA_via3_4_2200_440_1_5_410_410".
+Reading "VIA_via2_3_2200_440_1_5_410_410".
+Reading "VIA_via1_2_2200_440_1_5_410_410".
+Reading "VIA_Via1_YY".
+Reading "VIA_Via2_YX".
+Reading "VIA_Via1_XY".
+Reading "VIA_Via3_XY".
+Reading "cdac_array".
+Reading "sa_comp".
+Reading "sw_bitcell".
+Reading "sw_bitcell_opt_term".
+Reading "sw_bitcell_opt_b0".
+Reading "sw_bitcell_opt_b1".
+Reading "sw_bitcell_opt_b2".
+Reading "sw_bitcell_opt_b3".
+Reading "sw_bitcell_opt_b4".
+Reading "sw_bitcell_opt_b5".
+Reading "sw_bitcell_opt_b6".
+Reading "sw_bitcell_opt_b7".
+Reading "sw_tg_opt".
+Reading "bstrap_opt_w2_c1200".
+Reading "via_stack$4".
+Reading "via_stack$6".
+Reading "via_stack$5".
+Reading "sar_ctrl_async_phys".
+Reading "oa_sar8_acore18_opt".
+Reading "rfpmos$3".
+Reading "rfnmos$4".
+Reading "sw_bitcell10".
+Reading "oa_sar8_core18_final".
+Extracting oa_sar8_core18_final into /foss/designs/sar-adc/layout/pex_core18_final_w2_rc/oa_sar8_core18_final.ext:
+Processing oa_sar8_core18_final
+oa_sar8_core18_final: 606 warnings
+Processing cell oa_sar8_core18_final for resistance extraction.
+Extracting sar_ctrl_async_phys_0.hold_req
+Extracting sar_ctrl_async_phys_0.dac_code_n[0]
+Extracting sar_ctrl_async_phys_0.dac_code_n[2]
+Extracting sar_ctrl_async_phys_0.dac_code_n[4]
+Extracting sar_ctrl_async_phys_0.dac_code_n[5]
+Extracting sar_ctrl_async_phys_0.sg13g2_dfrbpq_1_9.RESET_B
+Extracting sar_ctrl_async_phys_0.sg13g2_dfrbpq_1_0.CLK
+Extracting sar_ctrl_async_phys_0.sg13g2_buf_1_3.A
+Extracting sar_ctrl_async_phys_0.dac_code_n[1]
+Extracting sar_ctrl_async_phys_0.dac_code_n[3]
+Extracting sar_ctrl_async_phys_0.dac_code_n[6]
+Extracting sar_ctrl_async_phys_0.dac_code[0]
+Extracting sar_ctrl_async_phys_0.sg13g2_buf_1_13.X
+Extracting sar_ctrl_async_phys_0.sg13g2_o21ai_1_1.B1
+Extracting sar_ctrl_async_phys_0.sample
+Extracting sar_ctrl_async_phys_0.sg13g2_nor2b_1_0.A
+Extracting sar_ctrl_async_phys_0.sg13g2_a21oi_1_0.A1
+Extracting sar_ctrl_async_phys_0.dac_code[1]
+Extracting sar_ctrl_async_phys_0.dac_code[2]
+Extracting sar_ctrl_async_phys_0.dac_code[3]
+Extracting sar_ctrl_async_phys_0.dac_code_n[7]
+Extracting sar_ctrl_async_phys_0.dac_code[4]
+Extracting sar_ctrl_async_phys_0.cmp_fire
+Extracting sar_ctrl_async_phys_0.dac_code[6]
+Extracting sar_ctrl_async_phys_0.dac_code[5]
+Extracting sar_ctrl_async_phys_0.sg13g2_a22oi_1_0.A1
+Extracting sar_ctrl_async_phys_0.dac_code[7]
+Extracting sar_ctrl_async_phys_0.sg13g2_buf_1_2.A
+Extracting sar_ctrl_async_phys_0.sg13g2_buf_1_2.X
+Extracting sar_ctrl_async_phys_0.cmp_n
+Extracting oa_sar8_acore18_opt_0.sw_tg_opt_1.bot
+Extracting oa_sar8_acore18_opt_0.sw_tg_opt_0.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_term_1.bot
+Extracting oa_sar8_acore18_opt_0.bstrap_opt_w2_c1200_1.out
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_term_0.trkb
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b0_1.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b1_1.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b2_1.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b3_1.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b4_1.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b5_1.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b6_1.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b7_1.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b7_0.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_term_0.vin
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b6_0.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b5_0.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b4_0.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b3_0.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b2_0.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b1_0.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b0_0.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_term_0.bot
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_b7_1.VSS
+Extracting oa_sar8_acore18_opt_0.bstrap_opt_w2_c1200_1.gb
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_term_0.VSS
+Extracting oa_sar8_acore18_opt_0.sw_bitcell_opt_term_0.gb
+Extracting VSS
+Extracting VDD
+Total Nets: 930
+Nets extracted: 59 (0.063441)
+Nets output: 34 (0.036559)
+Total of 606 warnings.
+exttospice finished.

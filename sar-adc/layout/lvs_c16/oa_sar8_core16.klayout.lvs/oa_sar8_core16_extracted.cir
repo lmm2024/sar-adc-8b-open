@@ -1,0 +1,785 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 16/08/2026 09:06
+
+.SUBCKT oa_sar8_core16 VDD VSS busy clk done result[0] result[1] result[2]
++ result[3] result[4] result[5] result[6] result[7] rst_n start vcm vinn vinp
+X$5 VSS \$32 vcm vinp VDD vinn \$26 \$21 \$22 \$23 \$24 \$16 \$17 \$18 \$19
++ \$15 \$14 \$13 \$12 \$7 \$11 \$9 \$10 \$31 \$38 \$37 oa_sar8_acore13
+X$6 VSS rst_n start result[0] result[1] result[2] result[3] result[4] result[5]
++ result[6] result[7] done busy \$7 \$9 \$10 \$11 \$12 \$13 \$14 \$15 \$19 \$18
++ \$17 \$16 \$24 \$23 \$22 \$21 \$26 VDD \$31 \$32 \$37 clk \$38 sar_ctrl
+.ENDS oa_sar8_core16
+
+.SUBCKT sar_ctrl VSS rst_n start result[0] result[1] result[2] result[3]
++ result[4] result[5] result[6] result[7] done busy dac_code[7] dac_code[6]
++ dac_code[5] dac_code[4] dac_code[3] dac_code[2] dac_code[1] dac_code[0]
++ dac_code_n[7] dac_code_n[6] dac_code_n[5] dac_code_n[4] dac_code_n[3]
++ dac_code_n[2] dac_code_n[1] dac_code_n[0] hold VDD cmp sample cmp_n clk
++ clk_cmp
+X$1 VDD VSS \$898 \$888 \$802 \$866 sg13g2_nand3b_1
+X$2 \$637 VSS VDD \$817 \$736 \$707 \$801 sg13g2_a22oi_1
+X$3 \$903 VSS VDD \$866 \$843 \$634 \$867 sg13g2_a22oi_1
+X$4 \$874 VSS VDD \$817 \$790 \$888 \$851 sg13g2_a22oi_1
+X$5 VDD VSS \$645 \$790 \$783 \$698 sg13g2_or3_1
+X$6 VSS VDD \$684 \$707 \$645 \$736 sg13g2_nand3_1
+X$7 VSS VDD \$816 \$870 \$898 \$684 sg13g2_nand3_1
+X$8 VDD VSS \$867 \$802 \$888 sg13g2_and2_1
+X$9 VDD VSS \$699 \$153 \$431 sg13g2_and2_1
+X$10 VDD VSS \$684 \$918 \$870 \$919 sg13g2_and3_1
+X$11 \$537 \$440 \$557 VDD VSS sg13g2_or2_1
+X$12 \$807 \$783 \$801 VDD VSS sg13g2_or2_1
+X$13 VDD VSS sg13g2_decap_4
+X$14 VDD VSS sg13g2_decap_4
+X$15 VDD VSS sg13g2_decap_4
+X$16 VDD VSS sg13g2_decap_4
+X$17 VDD VSS sg13g2_decap_4
+X$18 VDD VSS sg13g2_decap_4
+X$19 VDD VSS sg13g2_decap_4
+X$20 VDD VSS sg13g2_decap_8
+X$21 VDD VSS sg13g2_decap_8
+X$22 VDD VSS sg13g2_decap_8
+X$23 VDD VSS sg13g2_decap_8
+X$24 VDD VSS sg13g2_decap_8
+X$25 VDD VSS sg13g2_decap_8
+X$26 VDD VSS sg13g2_decap_8
+X$27 VDD VSS sg13g2_decap_8
+X$28 VDD VSS sg13g2_decap_8
+X$29 VDD VSS sg13g2_decap_8
+X$30 VDD VSS sg13g2_decap_8
+X$31 VDD VSS sg13g2_decap_8
+X$32 VDD VSS sg13g2_decap_8
+X$33 VDD VSS sg13g2_decap_8
+X$34 VDD VSS sg13g2_decap_8
+X$35 VDD VSS sg13g2_decap_8
+X$36 VSS VDD \$933 \$934 \$857 sg13g2_nor2b_1
+X$37 VSS VDD \$817 \$736 \$807 sg13g2_nor2b_1
+X$38 VSS VDD \$888 \$807 \$801 sg13g2_nor2b_1
+X$39 VDD VSS \$556 \$539 \$516 sg13g2_nor2_1
+X$40 VDD VSS \$537 \$555 \$536 sg13g2_nor2_1
+X$41 VDD VSS \$780 \$252 \$444 sg13g2_nor2_1
+X$42 VDD VSS \$557 \$555 \$550 sg13g2_nor2_1
+X$43 VDD VSS \$672 \$209 \$682 sg13g2_nor2_1
+X$44 VDD VSS \$801 \$807 \$707 sg13g2_nor2_1
+X$45 VDD VSS \$934 \$449 \$866 sg13g2_nor2_1
+X$46 VDD VSS \$431 \$862 \$867 \$857 sg13g2_nor3_1
+X$47 VDD VSS \$736 \$857 \$801 \$807 sg13g2_nor3_1
+X$48 VDD VSS \$933 \$937 \$866 \$867 sg13g2_nor3_1
+X$49 VSS \$704 \$537 \$424 \$699 VDD sg13g2_mux2_1
+X$50 \$752 VSS VDD \$370 \$705 \$699 \$601 sg13g2_a22oi_1
+X$51 VSS \$672 VDD \$697 \$385 \$682 \$684 \$425 sg13g2_a221oi_1
+X$52 VDD VSS \$857 \$449 \$870 sg13g2_nand2b_1
+X$53 VDD \$371 VSS \$436 \$434 \$424 sg13g2_a21oi_1
+X$54 VDD VSS sg13g2_decap_8
+X$55 VDD \$436 VSS \$440 \$66 \$493 sg13g2_a21oi_1
+X$56 VSS \$441 \$516 \$366 \$73 VDD sg13g2_mux2_1
+X$57 VDD VSS sg13g2_decap_4
+X$58 VDD \$571 VSS \$556 \$440 \$555 sg13g2_a21oi_1
+X$59 VDD \$547 VSS \$549 \$594 \$424 sg13g2_a21oi_1
+X$60 VDD \$549 VSS \$550 \$385 \$536 sg13g2_a21oi_1
+X$61 VDD \$672 VSS \$634 \$637 \$466 sg13g2_a21oi_1
+X$62 VSS VDD \$466 \$537 \$557 \$555 sg13g2_nand3_1
+X$63 VDD VSS \$557 \$555 \$537 \$645 sg13g2_or3_1
+X$64 VDD \$918 VSS \$802 \$807 \$801 sg13g2_a21oi_1
+X$65 VDD \$448 VSS \$441 \$440 \$424 sg13g2_a21oi_1
+X$66 VDD \$509 VSS \$536 \$557 \$216 sg13g2_a21oi_1
+X$67 VDD VSS \$571 \$511 \$510 \$509 sg13g2_nor3_1
+X$68 VDD \$493 VSS \$366 \$539 \$440 sg13g2_a21oi_1
+X$69 VSS \$100 \$174 VDD sg13g2_buf_16
+X$70 VSS \$174 clk VDD sg13g2_buf_16
+X$71 VSS \$687 \$174 VDD sg13g2_buf_16
+X$72 VSS \$681 \$174 VDD sg13g2_buf_16
+X$800 VSS \$142 VDD \$166 \$147 \$102 sg13g2_o21ai_1
+X$801 VSS \$353 VDD \$378 \$448 \$370 sg13g2_o21ai_1
+X$802 VSS \$222 VDD \$259 \$147 \$216 sg13g2_o21ai_1
+X$803 VSS \$199 VDD \$270 \$72 \$241 sg13g2_o21ai_1
+X$804 VSS \$554 VDD \$555 \$601 \$537 sg13g2_o21ai_1
+X$805 VSS \$171 VDD \$211 \$147 \$209 sg13g2_o21ai_1
+X$806 VSS \$825 VDD \$840 \$816 \$783 sg13g2_o21ai_1
+X$807 VSS \$422 VDD \$487 \$425 \$167 sg13g2_o21ai_1
+X$808 VSS \$840 VDD \$842 \$862 \$816 sg13g2_o21ai_1
+X$809 VSS \$334 VDD \$360 \$371 \$370 sg13g2_o21ai_1
+X$810 VSS \$361 VDD \$338 \$348 \$370 sg13g2_o21ai_1
+X$811 VSS \$427 VDD \$431 \$504 \$424 sg13g2_o21ai_1
+X$812 VSS \$514 VDD \$504 \$515 \$433 \$96 \$434 sg13g2_a221oi_1
+X$813 VSS \$731 VDD \$425 \$637 \$550 sg13g2_o21ai_1
+X$814 VSS \$487 VDD \$431 \$511 \$424 sg13g2_o21ai_1
+X$815 VDD VSS \$554 \$366 \$514 sg13g2_nor2_1
+X$816 VSS \$606 VDD \$545 \$547 \$370 sg13g2_o21ai_1
+X$817 VSS \$330 VDD \$290 \$72 \$366 sg13g2_o21ai_1
+X$818 VSS \$220 VDD \$246 \$72 \$281 sg13g2_o21ai_1
+X$819 VSS \$473 VDD \$368 \$433 \$68 sg13g2_o21ai_1
+X$820 VSS \$603 VDD \$684 \$699 \$555 sg13g2_o21ai_1
+X$821 VSS \$203 VDD \$202 \$153 \$247 sg13g2_o21ai_1
+X$822 VSS \$244 VDD \$427 \$425 \$96 sg13g2_o21ai_1
+X$823 VDD VSS \$366 \$430 \$368 sg13g2_nand2b_1
+X$824 VSS \$433 VDD \$645 \$430 \$537 sg13g2_o21ai_1
+X$825 VDD VSS \$247 \$96 sg13g2_inv_1
+X$826 VDD VSS \$370 \$431 sg13g2_inv_1
+X$827 VDD VSS \$100 \$I3720 sg13g2_inv_1
+X$828 VDD VSS \$736 \$790 sg13g2_inv_1
+X$829 VDD VSS \$173 \$I3718 sg13g2_inv_1
+X$830 VDD VSS \$216 \$167 sg13g2_inv_1
+X$831 VDD VSS \$102 \$123 sg13g2_inv_1
+X$832 VDD VSS \$687 \$I3715 sg13g2_inv_1
+X$833 VDD VSS \$681 \$800 sg13g2_inv_1
+X$834 VDD VSS \$681 \$713 sg13g2_inv_1
+X$835 VDD VSS \$801 \$851 sg13g2_inv_1
+X$836 VDD VSS \$842 \$252 sg13g2_inv_1
+X$837 VDD VSS \$385 \$366 sg13g2_inv_1
+X$838 VDD VSS \$281 \$66 sg13g2_inv_1
+X$839 VDD VSS \$752 \$733 sg13g2_inv_1
+X$840 VDD VSS \$809 \$799 sg13g2_inv_1
+X$841 VDD VSS \$341 \$843 sg13g2_inv_1
+X$842 VDD VSS \$763 \$110 sg13g2_inv_1
+X$843 VDD VSS \$147 \$78 sg13g2_inv_1
+X$844 VDD VSS \$241 \$68 sg13g2_inv_1
+X$845 VDD VSS \$209 \$428 sg13g2_inv_1
+X$846 VSS dac_code_n[5] VDD \$71 sg13g2_buf_1
+X$847 VDD VSS \$73 \$90 sg13g2_inv_1
+X$848 VSS \$131 VDD \$40 \$72 \$73 sg13g2_o21ai_1
+X$849 VSS \$346 VDD rst_n sg13g2_buf_1
+X$850 VSS \$537 VDD \$648 sg13g2_buf_1
+X$851 VSS \$79 VDD \$176 sg13g2_buf_1
+X$852 VSS dac_code_n[4] VDD \$70 sg13g2_buf_1
+X$853 VSS dac_code_n[3] VDD \$53 sg13g2_buf_1
+X$854 VSS \$811 VDD \$346 sg13g2_buf_1
+X$855 VSS busy VDD \$341 sg13g2_buf_1
+X$856 VSS result[7] VDD \$172 sg13g2_buf_1
+X$857 VSS result[5] VDD \$152 sg13g2_buf_1
+X$858 VSS sample VDD \$444 sg13g2_buf_1
+X$859 VSS result[0] VDD \$278 sg13g2_buf_1
+X$860 VSS \$51 VDD \$252 sg13g2_buf_1
+X$861 VSS dac_code_n[2] VDD \$155 sg13g2_buf_1
+X$862 VSS \$557 VDD \$601 sg13g2_buf_1
+X$863 VSS result[2] VDD \$200 sg13g2_buf_1
+X$864 VSS result[4] VDD \$219 sg13g2_buf_1
+X$865 VSS \$153 VDD \$698 sg13g2_buf_1
+X$866 VSS dac_code[6] VDD \$68 sg13g2_buf_1
+X$867 VSS dac_code[4] VDD \$66 sg13g2_buf_1
+X$868 VSS \$72 VDD \$153 sg13g2_buf_1
+X$869 VSS dac_code_n[7] VDD \$107 sg13g2_buf_1
+X$870 VSS dac_code[5] VDD \$96 sg13g2_buf_1
+X$871 VSS \$394 VDD cmp sg13g2_buf_1
+X$872 VSS done VDD \$62 sg13g2_buf_1
+X$873 VSS result[6] VDD \$239 sg13g2_buf_1
+X$874 VSS result[3] VDD \$75 sg13g2_buf_1
+X$875 VSS result[1] VDD \$132 sg13g2_buf_1
+X$876 VSS dac_code_n[1] VDD \$31 sg13g2_buf_1
+X$877 VSS dac_code[3] VDD \$90 sg13g2_buf_1
+X$878 VSS dac_code[0] VDD \$110 sg13g2_buf_1
+X$879 VSS \$632 VDD \$346 sg13g2_buf_1
+X$880 VSS \$370 VDD \$637 sg13g2_buf_1
+X$881 VSS dac_code[7] VDD \$428 sg13g2_buf_1
+X$882 VSS hold VDD \$252 sg13g2_buf_1
+X$883 VSS \$736 VDD \$802 sg13g2_buf_1
+X$884 VSS dac_code_n[0] VDD \$254 sg13g2_buf_1
+X$885 VSS \$562 VDD cmp_n sg13g2_buf_1
+X$886 VSS \$555 VDD \$539 sg13g2_buf_1
+X$887 VSS \$147 VDD \$72 sg13g2_buf_1
+X$888 VSS clk_cmp VDD \$713 sg13g2_buf_1
+X$889 VSS dac_code[2] VDD \$167 sg13g2_buf_1
+X$890 VSS dac_code[1] VDD \$123 sg13g2_buf_1
+X$891 VSS \$449 VDD start sg13g2_buf_1
+X$892 VSS \$176 VDD \$346 sg13g2_buf_1
+X$966 VSS \$632 \$341 \$903 \$681 VDD sg13g2_dfrbpq_1
+X$967 VSS \$632 \$209 \$697 \$681 VDD sg13g2_dfrbpq_1
+X$968 VDD VSS \$710 \$799 \$763 \$731 sg13g2_a21o_1
+X$969 VSS \$811 \$780 \$799 \$800 VDD sg13g2_dfrbpq_1
+X$970 VDD VSS \$809 \$801 \$807 \$736 sg13g2_nand3b_1
+X$971 VSS \$79 \$200 \$222 \$100 VDD sg13g2_dfrbpq_1
+X$972 VSS \$79 \$75 \$131 \$173 VDD sg13g2_dfrbpq_1
+X$973 VSS \$811 \$934 \$937 \$681 VDD sg13g2_dfrbpq_1
+X$974 VSS \$811 \$807 \$947 \$687 VDD sg13g2_dfrbpq_1
+X$975 VSS \$176 \$241 \$361 \$100 VDD sg13g2_dfrbpq_1
+X$976 VDD \$348 VSS \$473 \$466 \$424 sg13g2_a21oi_1
+X$977 VSS \$811 \$802 \$431 \$687 VDD sg13g2_dfrbpq_1
+X$978 VSS \$79 \$247 \$244 \$173 VDD sg13g2_dfrbpq_1
+X$979 VSS \$632 \$539 \$646 \$687 VDD sg13g2_dfrbpq_1
+X$980 VSS \$176 \$152 \$203 \$173 VDD sg13g2_dfrbpq_1
+X$981 VSS \$176 \$73 \$353 \$173 VDD sg13g2_dfrbpq_1
+X$982 VSS \$176 \$216 \$422 \$100 VDD sg13g2_dfrbpq_1
+X$983 VSS \$79 \$132 \$142 \$100 VDD sg13g2_dfrbpq_1
+X$984 VSS \$79 \$239 \$199 \$173 VDD sg13g2_dfrbpq_1
+X$985 VSS \$632 \$763 \$710 \$681 VDD sg13g2_dfrbpq_1
+X$986 VSS \$632 \$102 \$606 \$681 VDD sg13g2_dfrbpq_1
+X$987 VDD VSS \$325 \$370 \$634 sg13g2_and2_1
+X$988 VSS \$176 \$278 \$330 \$100 VDD sg13g2_dfrbpq_1
+X$989 VSS \$632 \$601 \$733 \$687 VDD sg13g2_dfrbpq_1
+X$990 VSS \$632 \$648 \$704 \$687 VDD sg13g2_dfrbpq_1
+X$991 VDD \$736 VSS \$705 \$707 \$440 \$556 sg13g2_nand4_1
+X$992 VSS \$811 \$842 \$825 \$687 VDD sg13g2_dfrbpq_1
+X$993 VSS \$632 \$801 \$919 \$687 VDD sg13g2_dfrbpq_1
+X$994 VSS \$79 \$172 \$171 \$100 VDD sg13g2_dfrbpq_1
+X$995 VSS \$176 \$281 \$334 \$173 VDD sg13g2_dfrbpq_1
+X$996 VSS \$79 \$219 \$220 \$173 VDD sg13g2_dfrbpq_1
+X$997 VDD VSS \$31 \$123 \$51 sg13g2_nand2_1
+X$999 VSS \$79 \$62 \$78 \$100 VDD sg13g2_dfrbpq_1
+X$1017 VSS VDD \$515 \$601 \$537 sg13g2_nor2b_1
+X$1020 VDD VSS \$557 \$536 \$385 \$510 sg13g2_and3_1
+X$1033 VDD VSS \$71 \$96 \$51 sg13g2_nand2_1
+X$1034 VDD VSS \$338 \$241 \$325 sg13g2_nand2_1
+X$1035 VDD VSS \$545 \$102 \$325 sg13g2_nand2_1
+X$1036 VDD VSS \$202 \$152 \$153 sg13g2_nand2_1
+X$1037 VSS \$173 \$174 VDD sg13g2_buf_16
+X$1038 VDD VSS \$646 \$554 \$603 sg13g2_nand2_1
+X$1039 VDD VSS \$254 \$110 \$51 sg13g2_nand2_1
+X$1040 VDD VSS \$417 \$394 \$385 sg13g2_nand2_1
+X$1041 VDD VSS \$166 \$132 \$147 sg13g2_nand2_1
+X$1042 VDD VSS \$425 \$370 \$634 sg13g2_nand2_1
+X$1043 VDD VSS \$290 \$278 \$72 sg13g2_nand2_1
+X$1044 VDD VSS \$378 \$73 \$325 sg13g2_nand2_1
+X$1045 VDD VSS \$556 \$648 \$557 sg13g2_nand2_1
+X$1046 VDD VSS \$424 \$736 \$707 sg13g2_nand2_1
+X$1047 VDD VSS \$947 \$898 \$874 sg13g2_nand2_1
+X$1048 VDD VSS \$270 \$239 \$147 sg13g2_nand2_1
+X$1049 VDD VSS \$634 \$449 \$857 sg13g2_nand2_1
+X$1050 VDD VSS \$70 \$66 \$51 sg13g2_nand2_1
+X$1054 VDD VSS \$211 \$172 \$147 sg13g2_nand2_1
+X$1055 VDD VSS \$259 \$200 \$147 sg13g2_nand2_1
+X$1056 VDD VSS \$385 \$562 \$417 sg13g2_nand2_1
+X$1057 \$102 \$594 \$550 VDD VSS sg13g2_or2_1
+X$1058 VDD VSS \$430 \$555 \$557 sg13g2_nand2_1
+X$1059 VDD VSS \$434 \$539 \$515 sg13g2_nand2_1
+X$1060 VDD VSS \$40 \$75 \$72 sg13g2_nand2_1
+X$1061 VDD VSS \$93 \$68 \$51 sg13g2_nand2_1
+X$1062 VSS dac_code_n[6] VDD \$93 sg13g2_buf_1
+X$1064 VDD VSS \$360 \$281 \$325 sg13g2_nand2_1
+X$1065 VDD VSS \$107 \$428 \$51 sg13g2_nand2_1
+X$1066 VDD VSS \$155 \$167 \$51 sg13g2_nand2_1
+X$1067 VDD VSS \$246 \$219 \$72 sg13g2_nand2_1
+X$1068 VDD VSS \$53 \$90 \$51 sg13g2_nand2_1
+.ENDS sar_ctrl
+
+.SUBCKT oa_sar8_acore13 VSS trk vcm vinp VDD vinn hold ctl0 ctl1 ctl2 ctl3 ctl4
++ ctl5 ctl6 ctl7 ctl0n ctl1n ctl2n ctl3n ctl7n ctl4n ctl6n ctl5n outp clk_cmp
++ outn
+X$1 VSS VDD trk \$3 \$12 vcm sw_tg
+X$2 VSS \$3 \$3 trk trk VSS VDD sw_bitcell
+X$3 VSS VDD trk \$3 \$6 vcm sw_tg
+X$4 VSS \$2 \$3 \$4 VDD vinp bstrap40
+X$5 VSS \$13 \$3 \$14 VDD vinn bstrap40
+X$6 VSS \$24 \$15 \$3 VDD \$4 \$2 VDD sw_bitcell11
+X$8 VSS \$24 \$32 \$3 ctl4 \$4 \$2 VDD sw_bitcell11
+X$9 VSS \$24 \$33 \$3 ctl5 \$4 \$2 VDD sw_bitcell11
+X$10 VSS \$24 \$38 \$3 ctl6 \$4 \$2 VDD sw_bitcell11
+X$11 VSS \$24 \$39 \$3 ctl7 \$4 \$2 VDD sw_bitcell11
+X$12 VSS \$24 \$31 \$3 ctl3 \$4 \$2 VDD sw_bitcell11
+X$13 VSS \$25 \$22 \$3 ctl6n \$14 \$13 VDD sw_bitcell11
+X$14 VSS \$25 \$21 \$3 ctl5n \$14 \$13 VDD sw_bitcell11
+X$15 VSS \$25 \$29 \$3 ctl4n \$14 \$13 VDD sw_bitcell11
+X$16 VSS \$25 \$30 \$3 ctl3n \$14 \$13 VDD sw_bitcell11
+X$17 VSS \$25 \$34 \$3 ctl2n \$14 \$13 VDD sw_bitcell11
+X$18 VSS \$25 \$35 \$3 ctl1n \$14 \$13 VDD sw_bitcell11
+X$19 VSS \$25 \$36 \$3 ctl0n \$14 \$13 VDD sw_bitcell11
+X$20 VSS \$25 \$40 \$3 VDD \$14 \$13 VDD sw_bitcell11
+X$21 VSS \$24 \$26 \$3 ctl2 \$4 \$2 VDD sw_bitcell11
+X$22 VSS \$24 \$23 \$3 ctl1 \$4 \$2 VDD sw_bitcell11
+X$23 VSS \$24 \$20 \$3 ctl0 \$4 \$2 VDD sw_bitcell11
+X$24 VSS \$25 \$28 \$3 ctl7n \$14 \$13 VDD sw_bitcell11
+X$25 \$39 \$12 \$38 \$33 \$32 \$31 \$26 \$23 \$20 \$15 cdac_array
+X$26 VSS clk_cmp \$6 \$12 outn outp VDD sa_comp
+X$27 \$28 \$6 \$22 \$21 \$29 \$30 \$34 \$35 \$36 \$40 cdac_array
+M$1 VSS hold \$24 VSS sg13_lv_nmos L=0.13u W=8u AS=2.18p AD=2.18p PS=14.18u
++ PD=14.18u rfmode=1
+M$5 VSS hold \$25 VSS sg13_lv_nmos L=0.13u W=8u AS=2.18p AD=2.18p PS=14.18u
++ PD=14.18u rfmode=1
+.ENDS oa_sar8_acore13
+
+.SUBCKT sg13g2_a221oi_1 VSS B1 VDD Y B2 C1 A1 A2
+M$1 Y A1 \$11 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 \$11 A2 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$3 Y C1 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$4 VSS B2 \$12 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$5 \$12 B1 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$6 VDD A1 \$9 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$7 \$9 A2 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+M$8 Y C1 \$6 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$9 \$6 B2 \$9 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$10 \$9 B1 \$6 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_a221oi_1
+
+.SUBCKT sg13g2_a21o_1 VDD VSS X B1 A1 A2
+M$1 X \$4 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2351p AD=0.15745p PS=2.16u
++ PD=1.175u rfmode=0
+M$2 VSS B1 \$4 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.15745p AD=0.1216p
++ PS=1.175u PD=1.02u rfmode=0
+M$3 \$4 A1 \$9 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.1216p AD=0.0816p PS=1.02u
++ PD=0.895u rfmode=0
+M$4 \$9 A2 VSS VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.0816p AD=0.2176p PS=0.895u
++ PD=1.96u rfmode=0
+M$5 \$4 B1 \$6 VDD sg13_lv_pmos L=0.13u W=1u AS=0.35p AD=0.2125p PS=2.7u
++ PD=1.425u rfmode=0
+M$6 \$6 A1 VDD VDD sg13_lv_pmos L=0.13u W=1u AS=0.2125p AD=0.19p PS=1.425u
++ PD=1.38u rfmode=0
+M$7 VDD A2 \$6 VDD sg13_lv_pmos L=0.13u W=1u AS=0.19p AD=0.34p PS=1.38u
++ PD=2.68u rfmode=0
+M$8 X \$4 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.3808p PS=2.92u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_a21o_1
+
+.SUBCKT sg13g2_nand2b_1 VDD VSS B A_N Y
+M$1 VSS A_N \$6 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.14505p AD=0.187p PS=1.15u
++ PD=1.78u rfmode=0
+M$2 VSS B \$7 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.14505p AD=0.1406p PS=1.15u
++ PD=1.12u rfmode=0
+M$3 \$7 \$6 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.333p PS=1.12u
++ PD=2.38u rfmode=0
+M$4 \$6 A_N VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.2198p PS=2.36u
++ PD=1.53u rfmode=0
+M$5 VDD B Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2198p AD=0.2128p PS=1.53u
++ PD=1.5u rfmode=0
+M$6 Y \$6 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_nand2b_1
+
+.SUBCKT sg13g2_nand4_1 VDD A VSS Y B C D
+M$1 VSS D \$10 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 \$10 C \$9 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$3 \$9 B \$8 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$4 \$8 A Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$5 VDD D Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$6 Y C VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$7 VDD B Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$8 Y A VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_nand4_1
+
+.SUBCKT sg13g2_and2_1 VDD VSS X A B
+M$1 \$4 A \$7 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.2176p AD=0.1216p PS=1.96u
++ PD=1.02u rfmode=0
+M$2 VSS B \$7 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.1331p AD=0.1216p PS=1.12u
++ PD=1.02u rfmode=0
+M$3 VSS \$4 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1331p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$4 VDD A \$4 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.1596p PS=2.36u
++ PD=1.22u rfmode=0
+M$5 VDD B \$4 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.1918p AD=0.1596p PS=1.5u
++ PD=1.22u rfmode=0
+M$6 VDD \$4 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.1918p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_and2_1
+
+.SUBCKT sg13g2_mux2_1 VSS X S A1 A0 VDD
+M$1 VSS S \$2 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.18945p AD=0.187p PS=1.27u
++ PD=1.78u rfmode=0
+M$2 VSS S \$8 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.18945p AD=0.13135p PS=1.27u
++ PD=1.095u rfmode=0
+M$3 \$8 A1 \$3 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.13135p AD=0.1628p
++ PS=1.095u PD=1.18u rfmode=0
+M$4 \$3 A0 \$9 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1628p AD=0.3367p PS=1.18u
++ PD=1.65u rfmode=0
+M$5 \$9 \$2 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.3367p AD=0.148p PS=1.65u
++ PD=1.14u rfmode=0
+M$6 VSS \$3 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.148p AD=0.4033p PS=1.14u
++ PD=2.57u rfmode=0
+M$7 \$2 S VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.253p PS=2.36u
++ PD=1.53u rfmode=0
+M$8 VDD S \$10 VDD sg13_lv_pmos L=0.13u W=1u AS=0.253p AD=0.3325p PS=1.53u
++ PD=1.665u rfmode=0
+M$9 \$10 A0 \$3 VDD sg13_lv_pmos L=0.13u W=1u AS=0.3325p AD=0.2225p PS=1.665u
++ PD=1.445u rfmode=0
+M$10 \$3 A1 \$11 VDD sg13_lv_pmos L=0.13u W=1u AS=0.2225p AD=0.2975p PS=1.445u
++ PD=1.595u rfmode=0
+M$11 \$11 \$2 VDD VDD sg13_lv_pmos L=0.13u W=1u AS=0.2975p AD=0.2198p PS=1.595u
++ PD=1.52u rfmode=0
+M$12 VDD \$3 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2198p AD=0.6048p PS=1.52u
++ PD=3.32u rfmode=0
+.ENDS sg13g2_mux2_1
+
+.SUBCKT sg13g2_nand3_1 VSS VDD Y B C A
+M$1 VSS C \$8 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2886p AD=0.1406p PS=2.26u
++ PD=1.12u rfmode=0
+M$2 \$8 B \$7 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$3 \$7 A Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$4 VDD C Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$5 Y B VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$6 VDD A Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_nand3_1
+
+.SUBCKT sg13g2_buf_1 VSS X VDD A
+M$1 VSS A \$1 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.14875p AD=0.187p PS=1.16u
++ PD=1.78u rfmode=0
+M$2 VSS \$1 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.14875p AD=0.2886p PS=1.16u
++ PD=2.26u rfmode=0
+M$3 VDD A \$1 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2114p AD=0.2856p PS=1.54u
++ PD=2.36u rfmode=0
+M$4 VDD \$1 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2114p AD=0.42p PS=1.54u
++ PD=2.99u rfmode=0
+.ENDS sg13g2_buf_1
+
+.SUBCKT sg13g2_buf_16 VSS X A VDD
+M$1 VSS \$3 X VSS sg13_lv_nmos L=0.13u W=11.84u AS=2.3606p AD=2.2496p PS=18.96u
++ PD=17.92u rfmode=0
+M$17 VSS A \$3 VSS sg13_lv_nmos L=0.13u W=4.44u AS=0.8436p AD=0.9546p PS=6.72u
++ PD=7.76u rfmode=0
+M$23 VDD \$3 X VDD sg13_lv_pmos L=0.13u W=17.92u AS=3.5896p AD=3.4048p
++ PS=25.45u PD=24u rfmode=0
+M$39 VDD A \$3 VDD sg13_lv_pmos L=0.13u W=6.72u AS=1.2768p AD=1.4448p PS=9u
++ PD=10.42u rfmode=0
+.ENDS sg13g2_buf_16
+
+.SUBCKT sg13g2_dfrbpq_1 VSS RESET_B Q D CLK VDD
+M$1 VSS \$4 \$19 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.317325p AD=0.2516p
++ PS=1.805u PD=2.16u rfmode=0
+M$2 VSS CLK \$4 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.317325p AD=0.2516p
++ PS=1.805u PD=2.16u rfmode=0
+M$3 \$14 \$4 \$7 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.12665p AD=0.1428p
++ PS=1.145u PD=1.52u rfmode=0
+M$4 \$3 \$19 \$14 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.3473p AD=0.12665p
++ PS=2.71u PD=1.145u rfmode=0
+M$5 \$7 \$8 VSS VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.1428p AD=0.0798p PS=1.52u
++ PD=0.8u rfmode=0
+M$6 VSS RESET_B \$17 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.0798p AD=0.0378p
++ PS=0.8u PD=0.6u rfmode=0
+M$7 \$17 \$14 \$8 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.0378p AD=0.1428p
++ PS=0.6u PD=1.52u rfmode=0
+M$8 \$9 \$14 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p
++ PS=2.16u PD=1.12u rfmode=0
+M$9 VSS \$9 Q VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$10 \$5 D \$15 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.1428p AD=0.0609p PS=1.52u
++ PD=0.71u rfmode=0
+M$11 \$15 RESET_B VSS VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.0609p AD=0.1626p
++ PS=0.71u PD=1.415u rfmode=0
+M$12 VSS \$12 \$3 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1626p AD=0.2516p
++ PS=1.415u PD=2.16u rfmode=0
+M$13 \$5 \$4 \$12 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.1296p AD=0.0798p
++ PS=1.52u PD=0.8u rfmode=0
+M$14 \$12 \$19 \$6 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.0798p AD=0.2373p
++ PS=0.8u PD=1.97u rfmode=0
+M$15 VSS RESET_B \$16 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.1701p AD=0.0378p
++ PS=1.65u PD=0.6u rfmode=0
+M$16 \$16 \$3 \$6 VSS sg13_lv_nmos L=0.13u W=0.42u AS=0.0378p AD=0.1428p
++ PS=0.6u PD=1.52u rfmode=0
+M$17 \$14 \$19 \$21 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.2048p AD=0.09345p
++ PS=1.63u PD=0.865u rfmode=0
+M$18 \$21 \$8 VDD VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.09345p AD=0.204p
++ PS=0.865u PD=1.835u rfmode=0
+M$19 VDD RESET_B \$8 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.204p AD=0.0798p
++ PS=1.835u PD=0.8u rfmode=0
+M$20 \$8 \$14 VDD VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.0798p AD=0.4659p
++ PS=0.8u PD=3.65u rfmode=0
+M$21 \$3 \$4 \$14 VDD sg13_lv_pmos L=0.13u W=1u AS=0.34p AD=0.2048p PS=2.68u
++ PD=1.63u rfmode=0
+M$22 \$9 \$14 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3864p AD=0.2128p
++ PS=2.93u PD=1.5u rfmode=0
+M$23 VDD \$9 Q VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+M$24 VDD D \$5 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.1428p AD=0.0798p PS=1.52u
++ PD=0.8u rfmode=0
+M$25 VDD RESET_B \$5 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.3623875p AD=0.0798p
++ PS=2.605u PD=0.8u rfmode=0
+M$26 VDD \$12 \$3 VDD sg13_lv_pmos L=0.13u W=1u AS=0.3623875p AD=0.34p
++ PS=2.605u PD=2.68u rfmode=0
+M$27 \$19 \$4 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3864p AD=0.41165p
++ PS=2.93u PD=2.12u rfmode=0
+M$28 VDD CLK \$4 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.41165p AD=0.4088p
++ PS=2.12u PD=2.97u rfmode=0
+M$29 \$12 RESET_B VDD VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.147p AD=0.1563p
++ PS=1.54u PD=1.22u rfmode=0
+M$30 VDD \$3 \$20 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.1563p AD=0.063p
++ PS=1.22u PD=0.72u rfmode=0
+M$31 \$20 \$4 \$12 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.063p AD=0.0798p
++ PS=0.72u PD=0.8u rfmode=0
+M$32 \$12 \$19 \$5 VDD sg13_lv_pmos L=0.13u W=0.42u AS=0.0798p AD=0.1428p
++ PS=0.8u PD=1.52u rfmode=0
+.ENDS sg13g2_dfrbpq_1
+
+.SUBCKT sg13g2_a22oi_1 Y VSS VDD A2 B2 B1 A1
+M$1 VSS B1 \$10 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2553p AD=0.13875p
++ PS=2.17u PD=1.115u rfmode=0
+M$2 \$10 B2 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.13875p AD=0.2664p PS=1.115u
++ PD=1.46u rfmode=0
+M$3 Y A1 \$9 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2664p AD=0.0962p PS=1.46u
++ PD=1u rfmode=0
+M$4 \$9 A2 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.0962p AD=0.2516p PS=1u
++ PD=2.16u rfmode=0
+M$5 VDD A1 \$5 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2716p PS=2.92u
++ PD=1.605u rfmode=0
+M$6 \$5 B1 Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2716p AD=0.2128p PS=1.605u
++ PD=1.5u rfmode=0
+M$7 Y B2 \$5 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2744p PS=1.5u
++ PD=1.61u rfmode=0
+M$8 \$5 A2 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2744p AD=0.3808p PS=1.61u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_a22oi_1
+
+.SUBCKT sg13g2_and3_1 VDD VSS A C B X
+M$1 \$7 A \$9 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.2176p AD=0.1216p PS=1.96u
++ PD=1.02u rfmode=0
+M$2 \$9 B \$8 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.1216p AD=0.1216p PS=1.02u
++ PD=1.02u rfmode=0
+M$3 VSS C \$8 VSS sg13_lv_nmos L=0.13u W=0.64u AS=0.1371p AD=0.1216p PS=1.12u
++ PD=1.02u rfmode=0
+M$4 VSS \$7 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1371p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$5 \$7 A VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.1596p PS=2.36u
++ PD=1.22u rfmode=0
+M$6 VDD B \$7 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.1596p AD=0.1596p PS=1.22u
++ PD=1.22u rfmode=0
+M$7 VDD C \$7 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.36195p AD=0.1596p PS=1.84u
++ PD=1.22u rfmode=0
+M$8 VDD \$7 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.36195p AD=0.3808p PS=1.84u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_and3_1
+
+.SUBCKT sg13g2_a21oi_1 VDD Y VSS A2 A1 B1
+M$1 VSS B1 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 Y A1 \$8 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$3 \$8 A2 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$4 Y B1 \$4 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$5 \$4 A1 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$6 VDD A2 \$4 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_a21oi_1
+
+.SUBCKT sg13g2_nor3_1 VDD VSS C Y B A
+M$1 VSS A Y VSS sg13_lv_nmos L=0.13u W=0.77u AS=0.2618p AD=0.1694p PS=2.22u
++ PD=1.21u rfmode=0
+M$2 Y B VSS VSS sg13_lv_nmos L=0.13u W=0.77u AS=0.1694p AD=0.1463p PS=1.21u
++ PD=1.15u rfmode=0
+M$3 VSS C Y VSS sg13_lv_nmos L=0.13u W=0.77u AS=0.1463p AD=0.2618p PS=1.15u
++ PD=2.22u rfmode=0
+M$4 VDD A \$8 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2464p PS=2.92u
++ PD=1.56u rfmode=0
+M$5 \$8 B \$7 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2464p AD=0.2128p PS=1.56u
++ PD=1.5u rfmode=0
+M$6 \$7 C Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_nor3_1
+
+.SUBCKT sg13g2_o21ai_1 VSS Y VDD B1 A2 A1
+M$1 \$2 A1 VSS VSS sg13_lv_nmos L=0.15u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 VSS A2 \$2 VSS sg13_lv_nmos L=0.15u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$3 \$2 B1 Y VSS sg13_lv_nmos L=0.15u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$4 VDD A1 \$8 VDD sg13_lv_pmos L=0.15u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$5 \$8 A2 Y VDD sg13_lv_pmos L=0.15u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$6 Y B1 VDD VDD sg13_lv_pmos L=0.15u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_o21ai_1
+
+.SUBCKT sg13g2_or3_1 VDD VSS C A B X
+M$1 \$6 C VSS VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.187p AD=0.1045p PS=1.78u
++ PD=0.93u rfmode=0
+M$2 VSS B \$6 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.1045p AD=0.198p PS=0.93u
++ PD=1.27u rfmode=0
+M$3 \$6 A VSS VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.198p AD=0.13395p PS=1.27u
++ PD=1.12u rfmode=0
+M$4 VSS \$6 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.13395p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$5 \$6 C \$9 VDD sg13_lv_pmos L=0.13u W=1u AS=0.34p AD=0.19p PS=2.68u PD=1.38u
++ rfmode=0
+M$6 \$9 B \$8 VDD sg13_lv_pmos L=0.13u W=1u AS=0.19p AD=0.1575p PS=1.38u
++ PD=1.315u rfmode=0
+M$7 \$8 A VDD VDD sg13_lv_pmos L=0.13u W=1u AS=0.1575p AD=0.3822p PS=1.315u
++ PD=1.84u rfmode=0
+M$8 VDD \$6 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3822p AD=0.3808p PS=1.84u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_or3_1
+
+.SUBCKT sg13g2_or2_1 A X B VDD VSS
+M$1 VSS B \$6 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.187p AD=0.1045p PS=1.78u
++ PD=0.93u rfmode=0
+M$2 \$6 A VSS VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.1045p AD=0.1469p PS=0.93u
++ PD=1.155u rfmode=0
+M$3 VSS \$6 X VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1469p AD=0.2516p PS=1.155u
++ PD=2.16u rfmode=0
+M$4 \$6 B \$7 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.1596p PS=2.36u
++ PD=1.22u rfmode=0
+M$5 VDD A \$7 VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2226p AD=0.1596p PS=1.535u
++ PD=1.22u rfmode=0
+M$6 VDD \$6 X VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2226p AD=0.3976p PS=1.535u
++ PD=2.95u rfmode=0
+.ENDS sg13g2_or2_1
+
+.SUBCKT sg13g2_nand3b_1 VDD VSS Y B C A_N
+M$1 VSS A_N \$6 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.18575p AD=0.187p PS=1.26u
++ PD=1.78u rfmode=0
+M$2 VSS C \$9 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.18575p AD=0.1406p PS=1.26u
++ PD=1.12u rfmode=0
+M$3 \$9 B \$8 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.1406p PS=1.12u
++ PD=1.12u rfmode=0
+M$4 \$8 \$6 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.3404p PS=1.12u
++ PD=2.4u rfmode=0
+M$5 \$6 A_N VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.2198p PS=2.36u
++ PD=1.53u rfmode=0
+M$6 VDD C Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2198p AD=0.2128p PS=1.53u
++ PD=1.5u rfmode=0
+M$7 Y B VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p PS=1.5u
++ PD=1.5u rfmode=0
+M$8 VDD \$6 Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_nand3b_1
+
+.SUBCKT sg13g2_nor2b_1 VSS VDD Y A B_N
+M$1 VSS B_N \$5 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.17255p AD=0.187p PS=1.25u
++ PD=1.78u rfmode=0
+M$2 VSS \$5 Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.17255p AD=0.1406p PS=1.25u
++ PD=1.12u rfmode=0
+M$3 Y A VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$4 \$5 B_N VDD VDD sg13_lv_pmos L=0.13u W=0.84u AS=0.2856p AD=0.2618p PS=2.36u
++ PD=1.63u rfmode=0
+M$5 VDD \$5 \$7 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2618p AD=0.1176p PS=1.63u
++ PD=1.33u rfmode=0
+M$6 \$7 A Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.1176p AD=0.3808p PS=1.33u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_nor2b_1
+
+.SUBCKT sg13g2_nor2_1 VDD VSS B A Y
+M$1 VSS A Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 Y B VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$3 VDD A \$6 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.4032p AD=0.1176p PS=2.96u
++ PD=1.33u rfmode=0
+M$4 \$6 B Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.1176p AD=0.3808p PS=1.33u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_nor2_1
+
+.SUBCKT sg13g2_nand2_1 VDD VSS Y A B
+M$1 VSS B \$6 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.1406p PS=2.16u
++ PD=1.12u rfmode=0
+M$2 \$6 A Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1406p AD=0.2516p PS=1.12u
++ PD=2.16u rfmode=0
+M$3 VDD B Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p PS=2.92u
++ PD=1.5u rfmode=0
+M$4 Y A VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p PS=1.5u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_nand2_1
+
+.SUBCKT sg13g2_inv_1 VDD VSS A Y
+M$1 VSS A Y VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.2516p PS=2.16u
++ PD=2.16u rfmode=0
+M$2 VDD A Y VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.3808p PS=2.92u
++ PD=2.92u rfmode=0
+.ENDS sg13g2_inv_1
+
+.SUBCKT sg13g2_decap_4 VDD VSS
+M$1 VSS VDD VSS VSS sg13_lv_nmos L=1u W=0.42u AS=0.1428p AD=0.1428p PS=1.52u
++ PD=1.52u rfmode=0
+M$2 VDD VSS VDD VDD sg13_lv_pmos L=1u W=1u AS=0.34p AD=0.34p PS=2.68u PD=2.68u
++ rfmode=0
+.ENDS sg13g2_decap_4
+
+.SUBCKT sg13g2_decap_8 VDD VSS
+M$1 VSS VDD VSS VSS sg13_lv_nmos L=1u W=0.84u AS=0.2226p AD=0.2226p PS=2.32u
++ PD=2.32u rfmode=0
+M$3 VDD VSS VDD VDD sg13_lv_pmos L=1u W=2u AS=0.53p AD=0.53p PS=4.06u PD=4.06u
++ rfmode=0
+.ENDS sg13g2_decap_8
+
+.SUBCKT bstrap40 VSS out ckb gb VDD vin
+C$1 \$6 \$7 cap_cmim w=39.8u l=9.94u A=395.612p P=99.48u m=1
+M$2 gb ckb \$6 \$6 sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$3 \$6 gb VDD \$6 sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$4 vin gb out VSS sg13_lv_nmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$6 VSS ckb \$8 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$8 VSS ckb \$7 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$10 vin gb \$7 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$12 \$8 VDD gb VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+.ENDS bstrap40
+
+.SUBCKT sw_tg VSS VDD trk trkb bot vin
+M$1 vin trkb bot VDD sg13_lv_pmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$3 vin trk bot VSS sg13_lv_nmos L=0.13u W=2u AS=0.545p AD=0.545p PS=4.09u
++ PD=4.09u rfmode=1
+.ENDS sw_tg
+
+.SUBCKT sw_bitcell VSS bot trkb ctl trk vin VDD
+M$1 VDD ctl bot VDD sg13_lv_pmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$3 vin trkb bot VDD sg13_lv_pmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$5 VSS ctl bot VSS sg13_lv_nmos L=0.13u W=2u AS=0.545p AD=0.545p PS=4.09u
++ PD=4.09u rfmode=1
+M$7 vin trk bot VSS sg13_lv_nmos L=0.13u W=2u AS=0.545p AD=0.545p PS=4.09u
++ PD=4.09u rfmode=1
+.ENDS sw_bitcell
+
+.SUBCKT sw_bitcell11 VSSB VSS bot trkb ctl gb vin VDD
+M$1 VDD ctl bot VDD sg13_lv_pmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$3 vin trkb bot VDD sg13_lv_pmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$5 VSS ctl bot VSSB sg13_lv_nmos L=0.13u W=2u AS=0.545p AD=0.545p PS=4.09u
++ PD=4.09u rfmode=1
+M$7 vin gb bot VSSB sg13_lv_nmos L=0.13u W=2u AS=0.545p AD=0.545p PS=4.09u
++ PD=4.09u rfmode=1
+.ENDS sw_bitcell11
+
+.SUBCKT sa_comp VSS clk inp inn outn outp VDD
+M$1 \$5 clk VDD VDD sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$2 outp clk VDD VDD sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$3 \$8 clk VDD VDD sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$4 outn clk VDD VDD sg13_lv_pmos L=0.13u W=2u AS=0.7p AD=0.7p PS=4.7u PD=4.7u
++ rfmode=1
+M$5 VDD outp outn VDD sg13_lv_pmos L=0.13u W=6u AS=1.635p AD=1.635p PS=10.09u
++ PD=10.09u rfmode=1
+M$7 VDD outn outp VDD sg13_lv_pmos L=0.13u W=6u AS=1.635p AD=1.635p PS=10.09u
++ PD=10.09u rfmode=1
+M$9 \$5 outp outn VSS sg13_lv_nmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$11 \$8 outn outp VSS sg13_lv_nmos L=0.13u W=4u AS=1.09p AD=1.09p PS=7.09u
++ PD=7.09u rfmode=1
+M$13 \$3 inp \$5 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$15 \$3 inn \$8 VSS sg13_lv_nmos L=0.15u W=2u AS=0.535p AD=0.535p PS=4.07u
++ PD=4.07u rfmode=1
+M$17 VSS clk \$3 VSS sg13_lv_nmos L=0.3u W=3u AS=0.8025p AD=0.8025p PS=5.57u
++ PD=5.57u rfmode=1
+.ENDS sa_comp
+
+.SUBCKT cdac_array b7 topp b6 b5 b4 b3 b2 b1 b0 term
+C$1 topp b7 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=128
+C$2 topp b6 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=64
+C$3 topp b5 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=32
+C$14 topp b3 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=8
+C$16 topp term cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=1
+C$17 topp b1 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=2
+C$18 topp b2 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=4
+C$68 topp b4 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=16
+C$161 topp b0 cap_cmim w=2.14u l=2.14u A=4.5796p P=8.56u m=1
+.ENDS cdac_array

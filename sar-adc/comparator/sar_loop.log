@@ -1,0 +1,1052 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * oa-sar8: transistor-in-the-loop sar conversion.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                    0.58065
+tail                                   1.06114
+q                                          1.5
+inn                                    1.21935
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        8.44693e-14
+vip#branch                         3.41216e-12
+vclk#branch                        2.93807e-10
+vdd#branch                        -7.85101e-10
+
+
+No. of Data Rows : 106
+vop                 =  -6.48807e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                    0.76815
+tail                                  0.901366
+q                                          1.5
+inn                                    1.03185
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                         3.4199e-13
+vip#branch                         1.36841e-12
+vclk#branch                         2.9288e-10
+vdd#branch                        -7.37643e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.67942e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                     0.8619
+tail                                  0.823918
+q                                          1.5
+inn                                     0.9381
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        5.78842e-13
+vip#branch                         8.61579e-13
+vclk#branch                        2.92584e-10
+vdd#branch                        -7.14338e-10
+
+
+No. of Data Rows : 105
+vop                 =  8.59732e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.908775
+tail                                  0.809439
+q                                          1.5
+inn                                   0.891225
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.41045e-13
+vip#branch                         6.76059e-13
+vclk#branch                        2.92537e-10
+vdd#branch                        -7.09937e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.49999e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.885337
+tail                                  0.811115
+q                                          1.5
+inn                                   0.914663
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        6.55406e-13
+vip#branch                         7.64023e-13
+vclk#branch                        2.92543e-10
+vdd#branch                        -7.10447e-10
+
+
+No. of Data Rows : 105
+vop                 =  2.48162e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.897056
+tail                                  0.808585
+q                                          1.5
+inn                                   0.902944
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        6.97044e-13
+vip#branch                         7.18853e-13
+vclk#branch                        2.92535e-10
+vdd#branch                        -7.09677e-10
+
+
+No. of Data Rows : 109
+vop                 =  3.74744e-06
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.902916
+tail                                  0.808583
+q                                          1.5
+inn                                   0.897084
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.18736e-13
+vip#branch                         6.97146e-13
+vclk#branch                        2.92535e-10
+vdd#branch                        -7.09676e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.50002e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.899986
+tail                                  0.808476
+q                                          1.5
+inn                                   0.900014
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.07827e-13
+vip#branch                         7.07933e-13
+vclk#branch                        2.92534e-10
+vdd#branch                        -7.09643e-10
+
+
+No. of Data Rows : 104
+vop                 =  1.49999e+00
+RESULT vin=0.1113 code=19
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                    0.74475
+tail                                  0.921382
+q                                          1.5
+inn                                    1.05525
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        2.96738e-13
+vip#branch                         1.53516e-12
+vclk#branch                        2.92971e-10
+vdd#branch                        -7.43617e-10
+
+
+No. of Data Rows : 105
+vop                 =  -8.24662e-06
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                    0.93225
+tail                                  0.820024
+q                                          1.5
+inn                                    0.86775
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        8.36369e-13
+vip#branch                         5.97164e-13
+vclk#branch                        2.92571e-10
+vdd#branch                        -7.13156e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.49998e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                     0.8385
+tail                                  0.841826
+q                                          1.5
+inn                                     0.9615
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        5.10177e-13
+vip#branch                         9.68345e-13
+vclk#branch                        2.92645e-10
+vdd#branch                        -7.19759e-10
+
+
+No. of Data Rows : 105
+vop                 =  5.31028e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.885375
+tail                                  0.811101
+q                                          1.5
+inn                                   0.914625
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        6.55544e-13
+vip#branch                         7.63892e-13
+vclk#branch                        2.92543e-10
+vdd#branch                        -7.10443e-10
+
+
+No. of Data Rows : 105
+vop                 =  2.46235e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.908813
+tail                                  0.809448
+q                                          1.5
+inn                                   0.891188
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.41184e-13
+vip#branch                           6.759e-13
+vclk#branch                        2.92537e-10
+vdd#branch                        -7.09939e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.49999e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.897094
+tail                                  0.808583
+q                                          1.5
+inn                                   0.902906
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        6.97144e-13
+vip#branch                         7.18718e-13
+vclk#branch                        2.92535e-10
+vdd#branch                        -7.09676e-10
+
+
+No. of Data Rows : 106
+vop                 =  -1.75611e-04
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.902953
+tail                                  0.808586
+q                                          1.5
+inn                                   0.897047
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.18869e-13
+vip#branch                         6.96983e-13
+vclk#branch                        2.92535e-10
+vdd#branch                        -7.09677e-10
+
+
+No. of Data Rows : 106
+vop                 =  1.50001e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.900023
+tail                                  0.808476
+q                                          1.5
+inn                                   0.899977
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                         7.0796e-13
+vip#branch                         7.07794e-13
+vclk#branch                        2.92534e-10
+vdd#branch                        -7.09643e-10
+
+
+No. of Data Rows : 104
+vop                 =  6.19365e-05
+RESULT vin=0.4395 code=74
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                    0.90145
+tail                                  0.808503
+q                                          1.5
+inn                                    0.89855
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.13264e-13
+vip#branch                         7.02505e-13
+vclk#branch                        2.92534e-10
+vdd#branch                        -7.09651e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.50001e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                    0.71395
+tail                                  0.947708
+q                                          1.5
+inn                                    1.08605
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        2.43921e-13
+vip#branch                         1.78626e-12
+vclk#branch                          2.931e-10
+vdd#branch                        -7.51452e-10
+
+
+No. of Data Rows : 105
+vop                 =  -1.08189e-04
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                     0.8077
+tail                                  0.867598
+q                                          1.5
+inn                                     0.9923
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        4.30097e-13
+vip#branch                         1.12685e-12
+vclk#branch                        2.92741e-10
+vdd#branch                        -7.27524e-10
+
+
+No. of Data Rows : 105
+vop                 =  8.12237e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.854575
+tail                                  0.829208
+q                                          1.5
+inn                                   0.945425
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        5.56555e-13
+vip#branch                         8.93986e-13
+vclk#branch                        2.92602e-10
+vdd#branch                        -7.15943e-10
+
+
+No. of Data Rows : 105
+vop                 =  6.79769e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.878013
+tail                                  0.814204
+q                                          1.5
+inn                                   0.921987
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        6.30577e-13
+vip#branch                         7.93468e-13
+vclk#branch                        2.92552e-10
+vdd#branch                        -7.11387e-10
+
+
+No. of Data Rows : 105
+vop                 =  5.93642e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.889731
+tail                                   0.80979
+q                                          1.5
+inn                                   0.910269
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        6.70757e-13
+vip#branch                         7.46806e-13
+vclk#branch                        2.92538e-10
+vdd#branch                        -7.10043e-10
+
+
+No. of Data Rows : 105
+vop                 =  -6.44975e-06
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.895591
+tail                                  0.808721
+q                                          1.5
+inn                                   0.904409
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        6.91693e-13
+vip#branch                         7.24353e-13
+vclk#branch                        2.92535e-10
+vdd#branch                        -7.09718e-10
+
+
+No. of Data Rows : 105
+vop                 =  -4.49863e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                    0.89852
+tail                                  0.808504
+q                                          1.5
+inn                                    0.90148
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.02403e-13
+vip#branch                         7.13353e-13
+vclk#branch                        2.92534e-10
+vdd#branch                        -7.09651e-10
+
+
+No. of Data Rows : 105
+vop                 =  -4.66706e-05
+RESULT vin=0.7529 code=128
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                    1.03625
+tail                                   0.90513
+q                                          1.5
+inn                                    0.76375
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        1.39831e-12
+vip#branch                         3.33157e-13
+vclk#branch                        2.92896e-10
+vdd#branch                        -7.38768e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.50000e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                    0.84875
+tail                                  0.833656
+q                                          1.5
+inn                                    0.95125
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        5.39372e-13
+vip#branch                         9.20428e-13
+vclk#branch                        2.92617e-10
+vdd#branch                        -7.17289e-10
+
+
+No. of Data Rows : 105
+vop                 =  5.72955e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                     0.9425
+tail                                  0.827049
+q                                          1.5
+inn                                     0.8575
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        8.80944e-13
+vip#branch                         5.65365e-13
+vclk#branch                        2.92594e-10
+vdd#branch                        -7.15288e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.49996e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.895625
+tail                                  0.808717
+q                                          1.5
+inn                                   0.904375
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        6.91837e-13
+vip#branch                         7.24223e-13
+vclk#branch                        2.92535e-10
+vdd#branch                        -7.09717e-10
+
+
+No. of Data Rows : 105
+vop                 =  -4.52521e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.919063
+tail                                  0.812849
+q                                          1.5
+inn                                   0.880938
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.81627e-13
+vip#branch                         6.40391e-13
+vclk#branch                        2.92548e-10
+vdd#branch                        -7.10974e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.49999e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.907344
+tail                                  0.809153
+q                                          1.5
+inn                                   0.892656
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.35524e-13
+vip#branch                         6.81115e-13
+vclk#branch                        2.92536e-10
+vdd#branch                        -7.09849e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.50000e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.901484
+tail                                  0.808504
+q                                          1.5
+inn                                   0.898516
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.13357e-13
+vip#branch                         7.02382e-13
+vclk#branch                        2.92534e-10
+vdd#branch                        -7.09652e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.50001e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.898555
+tail                                  0.808502
+q                                          1.5
+inn                                   0.901445
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.02549e-13
+vip#branch                         7.13201e-13
+vclk#branch                        2.92534e-10
+vdd#branch                        -7.09651e-10
+
+
+No. of Data Rows : 105
+vop                 =  -4.63809e-05
+RESULT vin=1.0225 code=174
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                    1.21785
+tail                                   1.05987
+q                                          1.5
+inn                                    0.58215
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        3.38776e-12
+vip#branch                         8.57584e-14
+vclk#branch                        2.93798e-10
+vdd#branch                        -7.84723e-10
+
+
+No. of Data Rows : 106
+vop                 =  1.49989e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                    1.03035
+tail                                  0.900083
+q                                          1.5
+inn                                    0.76965
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        1.35837e-12
+vip#branch                         3.45059e-13
+vclk#branch                        2.92874e-10
+vdd#branch                         -7.3726e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.49997e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                     0.9366
+tail                                  0.822887
+q                                          1.5
+inn                                     0.8634
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        8.55046e-13
+vip#branch                         5.83496e-13
+vclk#branch                        2.92581e-10
+vdd#branch                        -7.14026e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.49997e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.889725
+tail                                  0.809791
+q                                          1.5
+inn                                   0.910275
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        6.70746e-13
+vip#branch                         7.46838e-13
+vclk#branch                        2.92538e-10
+vdd#branch                        -7.10044e-10
+
+
+No. of Data Rows : 105
+vop                 =  -6.37982e-06
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.913162
+tail                                  0.810614
+q                                          1.5
+inn                                   0.886838
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.58101e-13
+vip#branch                         6.60645e-13
+vclk#branch                        2.92541e-10
+vdd#branch                        -7.10294e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.49999e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.901444
+tail                                  0.808502
+q                                          1.5
+inn                                   0.898556
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.13223e-13
+vip#branch                         7.02551e-13
+vclk#branch                        2.92534e-10
+vdd#branch                        -7.09651e-10
+
+
+No. of Data Rows : 105
+vop                 =  1.50001e+00
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.895584
+tail                                  0.808722
+q                                          1.5
+inn                                   0.904416
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        6.91687e-13
+vip#branch                         7.24376e-13
+vclk#branch                        2.92535e-10
+vdd#branch                        -7.09718e-10
+
+
+No. of Data Rows : 105
+vop                 =  -4.49324e-05
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+p                                          1.5
+inp                                   0.898514
+tail                                  0.808504
+q                                          1.5
+inn                                   0.901486
+outn                                       1.5
+outp                                       1.5
+vdd                                        1.5
+clk                                          0
+vdac#branch                        7.02385e-13
+vip#branch                         7.13389e-13
+vclk#branch                        2.92534e-10
+vdd#branch                        -7.09652e-10
+
+
+No. of Data Rows : 105
+vop                 =  -4.67243e-05
+RESULT vin=1.3857 code=236
+ngspice-46 done

@@ -1,0 +1,63 @@
+* OA-SAR8: transistor-in-the-loop SAR conversion.
+* The .control block IS the SAR controller: per bit trial it sets the DAC level,
+* fires one real StrongARM decision (transient), reads the latched result, and
+* updates the code -- 8 decisions converge one sample, like the real chip.
+.lib cornerMOSlv.lib mos_tt
+
+.param vdd=1.5
+
+XM1 p   inp tail 0   sg13_lv_nmos w=8u l=0.15u ng=4
+XM2 q   inn tail 0   sg13_lv_nmos w=8u l=0.15u ng=4
+XM3 outn outp p 0    sg13_lv_nmos w=4u l=0.13u ng=2
+XM4 outp outn q 0    sg13_lv_nmos w=4u l=0.13u ng=2
+XM5 outn outp vdd vdd sg13_lv_pmos w=6u l=0.13u ng=2
+XM6 outp outn vdd vdd sg13_lv_pmos w=6u l=0.13u ng=2
+XS1 p    clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS2 q    clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS3 outn clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XS4 outp clk vdd vdd sg13_lv_pmos w=2u l=0.13u ng=1
+XMt tail clk 0 0     sg13_lv_nmos w=3u l=0.3u ng=2
+
+VDD  vdd 0 {vdd}
+Vclk clk 0 pulse(0 {vdd} 1n 0.05n 0.05n 2n 100n)
+Vip  inp 0 0.75
+Vdac inn 0 0.75
+
+.control
+set appendwrite
+echo "vin bit trial_v cmp code_after" > sar_trace.txt
+let lsb = 1.5/256
+
+* input samples to convert (mid-code voltages)
+compose vins values 0.1113 0.4395 0.7529 1.0225 1.3857
+let iv = 0
+dowhile iv < 5
+  let vin = vins[iv]
+  alter Vip dc = $&vin
+  let code = 0
+  let bit = 7
+  dowhile bit >= 0
+    let trial = code + 2^bit
+    let vtrial = trial*lsb
+    * charge-redistribution equivalent: residue presented at fixed 0.9V CM,
+    * exactly what the real CDAC top plates do (comparator never sees low CM)
+    let vp_in = 0.9 + (vin - vtrial)/2
+    let vn_in = 0.9 - (vin - vtrial)/2
+    alter Vip  dc = $&vp_in
+    alter Vdac dc = $&vn_in
+    tran 50p 4n
+    meas tran vop find v(outp) at=2.9n
+    let cmp = (vop gt 0.75)
+    if cmp
+      let code = trial
+    end
+    echo "$&vin $&bit $&vtrial $&cmp $&code" >> sar_trace.txt
+    destroy all
+    let bit = bit - 1
+  end
+  echo "RESULT vin=$&vin code=$&code"
+  let iv = iv + 1
+end
+quit
+.endc
+.end

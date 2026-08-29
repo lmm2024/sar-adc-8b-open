@@ -1,0 +1,88 @@
+[
+  {
+    "cell": "sw_bitcell_opt_term",
+    "role": "termination",
+    "ndrv_um": 3.0,
+    "pdrv_um": 6.0,
+    "ntg_um": 2.0,
+    "ptg_um": 4.0
+  },
+  {
+    "cell": "sw_bitcell_opt_b0",
+    "role": "cdac_bit",
+    "bit": 0,
+    "ndrv_um": 3.0,
+    "pdrv_um": 6.0,
+    "ntg_um": 2.0,
+    "ptg_um": 4.0
+  },
+  {
+    "cell": "sw_bitcell_opt_b1",
+    "role": "cdac_bit",
+    "bit": 1,
+    "ndrv_um": 3.4000000000000004,
+    "pdrv_um": 6.800000000000001,
+    "ntg_um": 2.0,
+    "ptg_um": 4.0
+  },
+  {
+    "cell": "sw_bitcell_opt_b2",
+    "role": "cdac_bit",
+    "bit": 2,
+    "ndrv_um": 3.8000000000000003,
+    "pdrv_um": 7.6000000000000005,
+    "ntg_um": 2.0,
+    "ptg_um": 4.0
+  },
+  {
+    "cell": "sw_bitcell_opt_b3",
+    "role": "cdac_bit",
+    "bit": 3,
+    "ndrv_um": 4.2,
+    "pdrv_um": 8.4,
+    "ntg_um": 2.0,
+    "ptg_um": 4.0
+  },
+  {
+    "cell": "sw_bitcell_opt_b4",
+    "role": "cdac_bit",
+    "bit": 4,
+    "ndrv_um": 4.800000000000001,
+    "pdrv_um": 9.600000000000001,
+    "ntg_um": 2.0,
+    "ptg_um": 4.0
+  },
+  {
+    "cell": "sw_bitcell_opt_b5",
+    "role": "cdac_bit",
+    "bit": 5,
+    "ndrv_um": 5.4,
+    "pdrv_um": 10.8,
+    "ntg_um": 2.0,
+    "ptg_um": 4.0
+  },
+  {
+    "cell": "sw_bitcell_opt_b6",
+    "role": "cdac_bit",
+    "bit": 6,
+    "ndrv_um": 6.0,
+    "pdrv_um": 12.0,
+    "ntg_um": 2.0,
+    "ptg_um": 4.0
+  },
+  {
+    "cell": "sw_bitcell_opt_b7",
+    "role": "cdac_bit",
+    "bit": 7,
+    "ndrv_um": 6.800000000000001,
+    "pdrv_um": 13.600000000000001,
+    "ntg_um": 2.0,
+    "ptg_um": 4.0
+  },
+  {
+    "cell": "sw_tg_opt",
+    "role": "top_plate_tg",
+    "ntg_um": 2.0,
+    "ptg_um": 4.0
+  }
+]

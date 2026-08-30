@@ -29,6 +29,7 @@ MSB buffer or changing logical behavior. The rejected one-sided
 | 10 MS/s near-Nyquist | 33/33, 49.6832 dB SNDR, 7.9607-bit ENOB |
 | 10 MS/s, 312.5 kHz input | 33/33, 47.3143 dB SNDR, 7.5672-bit ENOB |
 | 10.5 MS/s phase screen | 7.7755-bit ENOB, below the 7.95-bit target |
+| 257-point DC transfer screen | 257/257 complete, monotonic on grid; codes 11–251 |
 
 The nine regular-DRC markers are the expected bare-macro density checks
 (`AFil.g`, `GFil.g`, `M1.j`–`M5.j`, `TM1.c`, `TM2.c`). They are not geometry,
@@ -38,6 +39,12 @@ integration, followed by a new full-chip DRC/LVS run.
 The digital macro metrics retain one max-fanout constraint warning. It is not
 a DRC/LVS/antenna failure; max slew and max capacitance are both zero, and the
 closed-loop full-RC PEX result is used as the functional timing acceptance.
+
+The 257-point static-transfer screen uses a 10.9375 mV grid (one nominal
+full-scale LSB). It is strictly monotonic, with 19 codes not hit by this coarse
+grid and a maximum best-fit residual of 3.56 code LSB. These values indicate
+where a finer transition sweep should focus; they are not transition-level
+DNL/INL sign-off.
 
 ## Important files
 

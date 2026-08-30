@@ -94,3 +94,14 @@ The original baseline's low-frequency reference was 46.3 dB / 7.40 bit at
 312.5 kHz; the released core18 reaches 47.314 dB / 7.567 bit. Static-transfer
 results are recorded under `sar-adc/signoff/core18_pdnfix_20260830/` when the
 full sweep is complete.
+
+## Static-transfer screening
+
+The completed 257-point full-RC differential-DC sweep spans −1.4 V to +1.4 V
+with a 10.9375 mV grid. All 257 conversions completed and the code sequence is
+strictly monotonic on that grid (observed codes 11–251). Nineteen codes are not
+hit by the coarse grid and the maximum best-fit residual is 3.56 code LSB.
+Because the grid is only one nominal LSB, these are screening indicators rather
+than transition-level DNL/INL values; a finer sweep is required for those
+metrics. The CSV, JSON and plot are in
+`sar-adc/signoff/core18_pdnfix_20260830/results/`.

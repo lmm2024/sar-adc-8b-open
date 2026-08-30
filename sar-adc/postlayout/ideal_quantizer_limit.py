@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """Print the ideal-quantizer limit for planned coherent PEX records."""
-
 import argparse
 import math
 

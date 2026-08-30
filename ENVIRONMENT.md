@@ -9,7 +9,7 @@ needed: every step is a shell command executed inside the container.
 | Item | Value used for this project |
 |---|---|
 | Image | `docker.io/hpretl/iic-osic-tools:2026.07` (Ubuntu 24.04, `IIC_OSIC_TOOLS_VERSION=2026.07`) |
-| Host | macOS (Apple Silicon) with **Colima** (`colima start --cpu 4 --memory 12 --disk 60`); any Docker host works |
+| Host | Reproduced on Windows with Docker Desktop; the original baseline also used macOS/Colima. Any Docker host that supports the image works. |
 | Mount | repository root → `/foss/designs` (the scripts use absolute paths `/foss/designs/sar-adc/...` and `/foss/designs/sar-chip/...`) |
 | Start | `./start_x.sh` / `./start_vnc.sh` from the IIC-OSIC-TOOLS repo, or `docker run -d --name iic -v $PWD:/foss/designs hpretl/iic-osic-tools:2026.07 tail -f /dev/null` |
 | Shell | **always** `docker exec <container> bash -lc "…"` (the `-l` login shell sets `PATH` for `klayout`, `ngspice`, `librelane`, `sak-*.sh`, `verilator`) |

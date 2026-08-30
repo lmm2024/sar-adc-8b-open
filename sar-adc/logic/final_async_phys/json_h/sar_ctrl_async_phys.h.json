@@ -1,0 +1,2607 @@
+{
+  "creator": "Yosys 0.67 (git sha1 2d1509d1b, Release, GNU /usr/bin/c++ 13.3.0)",
+  "modules": {
+    "sar_ctrl_async_phys": {
+      "attributes": {
+        "hdlname": "sar_ctrl_async_phys",
+        "dynports": "00000000000000000000000000000001",
+        "top": "00000000000000000000000000000001",
+        "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:14.1-201.10"
+      },
+      "parameter_default_values": {
+        "N": "00000000000000000000000000001000"
+      },
+      "ports": {
+        "rst_n": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "track": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "cmp_p": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "cmp_n": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "cmp_fire": {
+          "direction": "output",
+          "bits": [ 6 ]
+        },
+        "cmp_valid": {
+          "direction": "output",
+          "bits": [ 7 ]
+        },
+        "cmp_fault": {
+          "direction": "output",
+          "bits": [ 8 ]
+        },
+        "dac_code": {
+          "direction": "output",
+          "bits": [ 9, 10, 11, 12, 13, 14, 15, 16 ]
+        },
+        "dac_code_n": {
+          "direction": "output",
+          "bits": [ 17, 18, 19, 20, 21, 22, 23, 24 ]
+        },
+        "bit_active": {
+          "direction": "output",
+          "bits": [ 25, 26, 27, 28, 29, 30, 31, 32 ]
+        },
+        "sample": {
+          "direction": "output",
+          "bits": [ 33 ]
+        },
+        "hold_req": {
+          "direction": "output",
+          "bits": [ 34 ]
+        },
+        "busy": {
+          "direction": "output",
+          "bits": [ 34 ]
+        },
+        "done": {
+          "direction": "output",
+          "bits": [ 35 ]
+        },
+        "result": {
+          "direction": "output",
+          "bits": [ 36, 37, 38, 39, 40, 41, 42, 43 ]
+        }
+      },
+      "cells": {
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109$25": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109.44-109.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "B": [ 45 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:132$28": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:132.26-132.64"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 47 ],
+            "B": [ 48 ],
+            "Y": [ 49 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:132$29": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:132.26-132.71"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 49 ],
+            "B": [ 34 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:183$42": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:183.31-183.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 51, 52, 53, 54, 55, 56, 57, 58 ],
+            "B": [ 59, 60, 61, 62, 63, 64, 65, 66 ],
+            "Y": [ 67, 68, 69, 70, 71, 72, 73, 74 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:187$45": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:187.26-187.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 75 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$50": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.23-199.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 76 ],
+            "Y": [ 77 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$52": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.23-199.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 77 ],
+            "B": [ 78 ],
+            "Y": [ 79 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$54": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.23-199.72"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 79 ],
+            "B": [ 80 ],
+            "Y": [ 81 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$56": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.23-200.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 81 ],
+            "B": [ 82 ],
+            "Y": [ 83 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$58": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.23-200.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 83 ],
+            "B": [ 84 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:61$2": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:61.28-61.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 5 ],
+            "Y": [ 82 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:62$6": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:62.26-62.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 85 ],
+            "B": [ 86 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:63$8": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:63.27-63.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 87 ],
+            "Y": [ 88 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:73$9": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:73.32-73.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 89 ],
+            "B": [ 88 ],
+            "Y": [ 90 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93$15": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93.27-93.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 91 ],
+            "B": [ 92 ],
+            "Y": [ 93 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93$16": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93.27-94.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 93 ],
+            "B": [ 94 ],
+            "Y": [ 95 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93$18": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93.27-94.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 95 ],
+            "B": [ 82 ],
+            "Y": [ 96 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:98$19": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:98.29-98.45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 7 ],
+            "Y": [ 97 ]
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:98$21": {
+          "hide_name": 1,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:98.29-98.58"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ 98 ],
+            "Y": [ 89 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109$23": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109.34-109.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 99 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109$24": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109.56-109.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 100 ],
+            "Y": [ 45 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:132$27": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:132.50-132.64"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133$30": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133.26-133.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 101 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133$31": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133.35-133.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "Y": [ 102 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:183$41": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:183.42-183.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 103, 104, 105, 106, 107, 108, 109, 110 ],
+            "Y": [ 59, 60, 61, 62, 63, 64, 65, 66 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:187$44": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:187.34-187.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "Y": [ 75 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:190$47": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:190.33-190.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 51, 52, 53, 54, 55, 56, 57, 58 ],
+            "Y": [ 111, 112, 113, 114, 115, 116, 117, 118 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$51": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.45-199.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 119 ],
+            "Y": [ 78 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$53": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.62-199.72"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "Y": [ 80 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:200$57": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:200.38-200.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "Y": [ 84 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:60$1": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:60.26-60.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 94 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:61$3": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:61.26-61.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 82 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:62$4": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:62.26-62.32"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "Y": [ 85 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:62$5": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:62.35-62.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 86 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:63$7": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:63.35-63.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 87 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74$10": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74.34-74.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 120 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74$11": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74.43-74.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "Y": [ 121 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93$14": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93.42-93.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 122 ],
+            "Y": [ 92 ]
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:98$20": {
+          "hide_name": 1,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:98.48-98.58"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "Y": [ 98 ]
+          }
+        },
+        "$or$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109$26": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109.34-109.71"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 99 ],
+            "B": [ 46 ],
+            "Y": [ 123 ]
+          }
+        },
+        "$or$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133$32": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133.26-133.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 101 ],
+            "B": [ 102 ],
+            "Y": [ 124 ]
+          }
+        },
+        "$or$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133$33": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133.26-133.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 124 ],
+            "B": [ 44 ],
+            "Y": [ 125 ]
+          }
+        },
+        "$or$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:168$38": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000001000",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000001000",
+            "Y_WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:168.28-168.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 126, 127, 128, 129, 130, 131, 132, 133 ],
+            "B": [ 104, 105, 106, 107, 108, 109, 110, "0" ],
+            "Y": [ 134, 135, 136, 137, 138, 139, 140, 141 ]
+          }
+        },
+        "$or$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74$12": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74.34-74.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 120 ],
+            "B": [ 121 ],
+            "Y": [ 142 ]
+          }
+        },
+        "$or$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74$13": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74.34-74.60"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 142 ],
+            "B": [ 50 ],
+            "Y": [ 143 ]
+          }
+        },
+        "$or$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:99$22": {
+          "hide_name": 1,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:99.29-99.58"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 96 ],
+            "B": [ 89 ],
+            "Y": [ 100 ]
+          }
+        },
+        "$procdff$100": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "00000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:143.5-179.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 2 ],
+            "CLK": [ 44 ],
+            "D": [ 144, 145, 146, 147, 148, 149, 150, 151 ],
+            "Q": [ 36, 37, 38, 39, 40, 41, 42, 43 ]
+          }
+        },
+        "$procdff$105": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "11111111",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:143.5-179.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 2 ],
+            "CLK": [ 44 ],
+            "D": [ 152, 153, 154, 155, 156, 157, 158, 159 ],
+            "Q": [ 51, 52, 53, 54, 55, 56, 57, 58 ]
+          }
+        },
+        "$procdff$110": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "00000000",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:143.5-179.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 2 ],
+            "CLK": [ 44 ],
+            "D": [ 160, 161, 162, 163, 164, 165, 166, 167 ],
+            "Q": [ 103, 104, 105, 106, 107, 108, 109, 110 ]
+          }
+        },
+        "$procdff$90": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:143.5-179.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 2 ],
+            "CLK": [ 44 ],
+            "D": [ 168 ],
+            "Q": [ 34 ]
+          }
+        },
+        "$procdff$95": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": "00000000000000000000000000000000",
+            "ARST_VALUE": "0",
+            "CLK_POLARITY": "1",
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "always_ff": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:143.5-179.8"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 2 ],
+            "CLK": [ 44 ],
+            "D": [ 169 ],
+            "Q": [ 35 ]
+          }
+        },
+        "$procmux$60": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:169.17-169.30|/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:169.13-177.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 104, 105, 106, 107, 108, 109, 110, "0" ],
+            "B": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "S": [ 103 ],
+            "Y": [ 170, 171, 172, 173, 174, 175, 176, 177 ]
+          }
+        },
+        "$procmux$63": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:153.22-153.27|/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:153.18-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "1" ],
+            "B": [ 170, 171, 172, 173, 174, 175, 176, 177 ],
+            "S": [ 34 ],
+            "Y": [ 160, 161, 162, 163, 164, 165, 166, 167 ]
+          }
+        },
+        "$procmux$66": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:153.22-153.27|/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:153.18-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "1" ],
+            "B": [ 178, 179, 180, 181, 182, 183, 184, 185 ],
+            "S": [ 34 ],
+            "Y": [ 152, 153, 154, 155, 156, 157, 158, 159 ]
+          }
+        },
+        "$procmux$69": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:169.17-169.30|/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:169.13-177.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 103 ],
+            "Y": [ 186 ]
+          }
+        },
+        "$procmux$72": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:153.22-153.27|/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:153.18-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 186 ],
+            "S": [ 34 ],
+            "Y": [ 169 ]
+          }
+        },
+        "$procmux$75": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:169.17-169.30|/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:169.13-177.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36, 37, 38, 39, 40, 41, 42, 43 ],
+            "B": [ 126, 127, 128, 129, 130, 131, 132, 133 ],
+            "S": [ 103 ],
+            "Y": [ 187, 188, 189, 190, 191, 192, 193, 194 ]
+          }
+        },
+        "$procmux$78": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:153.22-153.27|/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:153.18-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36, 37, 38, 39, 40, 41, 42, 43 ],
+            "B": [ 187, 188, 189, 190, 191, 192, 193, 194 ],
+            "S": [ 34 ],
+            "Y": [ 144, 145, 146, 147, 148, 149, 150, 151 ]
+          }
+        },
+        "$procmux$81": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:169.17-169.30|/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:169.13-177.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ "0" ],
+            "S": [ 103 ],
+            "Y": [ 195 ]
+          }
+        },
+        "$procmux$84": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "full_case": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:153.22-153.27|/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:153.18-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ 195 ],
+            "S": [ 34 ],
+            "Y": [ 168 ]
+          }
+        },
+        "$ternary$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:166$39": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:166.25-168.62"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 134, 135, 136, 137, 138, 139, 140, 141 ],
+            "B": [ 126, 127, 128, 129, 130, 131, 132, 133 ],
+            "S": [ 103 ],
+            "Y": [ 178, 179, 180, 181, 182, 183, 184, 185 ]
+          }
+        },
+        "$ternary$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:181$43": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:181.28-183.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 67, 68, 69, 70, 71, 72, 73, 74 ],
+            "B": [ 51, 52, 53, 54, 55, 56, 57, 58 ],
+            "S": [ 196 ],
+            "Y": [ 126, 127, 128, 129, 130, 131, 132, 133 ]
+          }
+        },
+        "$ternary$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:189$46": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:189.26-189.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1", "1", "1", "1", "1", "1", "1", "1" ],
+            "B": [ 51, 52, 53, 54, 55, 56, 57, 58 ],
+            "S": [ 34 ],
+            "Y": [ 9, 10, 11, 12, 13, 14, 15, 16 ]
+          }
+        },
+        "$ternary$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:190$48": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:190.26-190.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1", "1", "1", "1", "1", "1", "1", "1" ],
+            "B": [ 111, 112, 113, 114, 115, 116, 117, 118 ],
+            "S": [ 34 ],
+            "Y": [ 17, 18, 19, 20, 21, 22, 23, 24 ]
+          }
+        },
+        "$ternary$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:191$49": {
+          "hide_name": 1,
+          "type": "$mux",
+          "parameters": {
+            "WIDTH": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:191.26-191.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
+            "B": [ 103, 104, 105, 106, 107, 108, 109, 110 ],
+            "S": [ 34 ],
+            "Y": [ 25, 26, 27, 28, 29, 30, 31, 32 ]
+          }
+        },
+        "u_decision_hold.u_q": {
+          "hide_name": 0,
+          "type": "sg13g2_nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_decision_hold u_q",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:93.19-93.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 143 ],
+            "B": [ 197 ],
+            "Y": [ 196 ]
+          }
+        },
+        "u_decision_hold.u_qn": {
+          "hide_name": 0,
+          "type": "sg13g2_nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_decision_hold u_qn",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:95.19-95.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 90 ],
+            "B": [ 196 ],
+            "Y": [ 197 ]
+          }
+        },
+        "u_event_clock_delay.u_d0": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_event_clock_delay u_d0",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:56.26-56.46"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 119 ],
+            "X": [ 198 ]
+          }
+        },
+        "u_event_clock_delay.u_d1": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_event_clock_delay u_d1",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:58.26-58.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 198 ],
+            "X": [ 44 ]
+          }
+        },
+        "u_event_pending.u_q": {
+          "hide_name": 0,
+          "type": "sg13g2_nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_event_pending u_q",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:93.19-93.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 123 ],
+            "B": [ 199 ],
+            "Y": [ 119 ]
+          }
+        },
+        "u_event_pending.u_qn": {
+          "hide_name": 0,
+          "type": "sg13g2_nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_event_pending u_qn",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:95.19-95.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 100 ],
+            "B": [ 119 ],
+            "Y": [ 199 ]
+          }
+        },
+        "u_hold_delay.u_d0": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_hold_delay u_d0",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:25.26-25.46"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 94 ],
+            "X": [ 200 ]
+          }
+        },
+        "u_hold_delay.u_d1": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_hold_delay u_d1",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:27.26-27.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 200 ],
+            "X": [ 201 ]
+          }
+        },
+        "u_hold_delay.u_d2": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_hold_delay u_d2",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:29.26-29.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 201 ],
+            "X": [ 202 ]
+          }
+        },
+        "u_hold_delay.u_d3": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_hold_delay u_d3",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:31.26-31.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 202 ],
+            "X": [ 91 ]
+          }
+        },
+        "u_interbit_delay.u_d0": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_interbit_delay u_d0",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:40.26-40.46"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "X": [ 203 ]
+          }
+        },
+        "u_interbit_delay.u_d1": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_interbit_delay u_d1",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:42.26-42.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 203 ],
+            "X": [ 204 ]
+          }
+        },
+        "u_interbit_delay.u_d2": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_interbit_delay u_d2",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:44.26-44.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 204 ],
+            "X": [ 47 ]
+          }
+        },
+        "u_launch_width.u_d0": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_launch_width u_d0",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:73.26-73.46"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 91 ],
+            "X": [ 205 ]
+          }
+        },
+        "u_launch_width.u_d1": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_launch_width u_d1",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:75.26-75.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 205 ],
+            "X": [ 206 ]
+          }
+        },
+        "u_launch_width.u_d2": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_launch_width u_d2",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:77.26-77.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 206 ],
+            "X": [ 207 ]
+          }
+        },
+        "u_launch_width.u_d3": {
+          "hide_name": 0,
+          "type": "sg13g2_dlygate4sd3_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_launch_width u_d3",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:79.26-79.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "X": "output"
+          },
+          "connections": {
+            "A": [ 207 ],
+            "X": [ 122 ]
+          }
+        },
+        "u_settle_latch.u_q": {
+          "hide_name": 0,
+          "type": "sg13g2_nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_settle_latch u_q",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:93.19-93.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 125 ],
+            "B": [ 208 ],
+            "Y": [ 76 ]
+          }
+        },
+        "u_settle_latch.u_qn": {
+          "hide_name": 0,
+          "type": "sg13g2_nor2_1",
+          "parameters": {
+          },
+          "attributes": {
+            "dont_touch": "true",
+            "hdlname": "u_settle_latch u_qn",
+            "keep": "true",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:95.19-95.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 50 ],
+            "B": [ 76 ],
+            "Y": [ 208 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\active_reg[7:0]": {
+          "hide_name": 1,
+          "bits": [ 160, 161, 162, 163, 164, 165, 166, 167 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:143.5-179.8"
+          }
+        },
+        "$0\\busy[0:0]": {
+          "hide_name": 1,
+          "bits": [ 168 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:143.5-179.8"
+          }
+        },
+        "$0\\code_reg[7:0]": {
+          "hide_name": 1,
+          "bits": [ 152, 153, 154, 155, 156, 157, 158, 159 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:143.5-179.8"
+          }
+        },
+        "$0\\done[0:0]": {
+          "hide_name": 1,
+          "bits": [ 169 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:143.5-179.8"
+          }
+        },
+        "$0\\result[7:0]": {
+          "hide_name": 1,
+          "bits": [ 144, 145, 146, 147, 148, 149, 150, 151 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:143.5-179.8"
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109$25_Y": {
+          "hide_name": 1,
+          "bits": [ 46 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109.44-109.70"
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:132$28_Y": {
+          "hide_name": 1,
+          "bits": [ 49 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:132.26-132.64"
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:183$42_Y": {
+          "hide_name": 1,
+          "bits": [ 67, 68, 69, 70, 71, 72, 73, 74 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:183.31-183.53"
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$50_Y": {
+          "hide_name": 1,
+          "bits": [ 77 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.23-199.42"
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$52_Y": {
+          "hide_name": 1,
+          "bits": [ 79 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.23-199.59"
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$54_Y": {
+          "hide_name": 1,
+          "bits": [ 81 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.23-199.72"
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$56_Y": {
+          "hide_name": 1,
+          "bits": [ 83 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.23-200.35"
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:61$2_Y": {
+          "hide_name": 1,
+          "bits": [ 82 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:61.28-61.41"
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93$15_Y": {
+          "hide_name": 1,
+          "bits": [ 93 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93.27-93.60"
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93$16_Y": {
+          "hide_name": 1,
+          "bits": [ 95 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93.27-94.36"
+          }
+        },
+        "$and$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:98$19_Y": {
+          "hide_name": 1,
+          "bits": [ 97 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:98.29-98.45"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109$23_Y": {
+          "hide_name": 1,
+          "bits": [ 99 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109.34-109.40"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109$24_Y": {
+          "hide_name": 1,
+          "bits": [ 45 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:109.56-109.70"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:132$27_Y": {
+          "hide_name": 1,
+          "bits": [ 48 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:132.50-132.64"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133$30_Y": {
+          "hide_name": 1,
+          "bits": [ 101 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133.26-133.32"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133$31_Y": {
+          "hide_name": 1,
+          "bits": [ 102 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133.35-133.40"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:183$41_Y": {
+          "hide_name": 1,
+          "bits": [ 59, 60, 61, 62, 63, 64, 65, 66 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:183.42-183.53"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:187$44_Y": {
+          "hide_name": 1,
+          "bits": [ 75 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:187.34-187.39"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:190$47_Y": {
+          "hide_name": 1,
+          "bits": [ 111, 112, 113, 114, 115, 116, 117, 118 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:190.33-190.42"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$51_Y": {
+          "hide_name": 1,
+          "bits": [ 78 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.45-199.59"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199$53_Y": {
+          "hide_name": 1,
+          "bits": [ 80 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:199.62-199.72"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:200$57_Y": {
+          "hide_name": 1,
+          "bits": [ 84 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:200.38-200.48"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:62$4_Y": {
+          "hide_name": 1,
+          "bits": [ 85 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:62.26-62.32"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:62$5_Y": {
+          "hide_name": 1,
+          "bits": [ 86 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:62.35-62.41"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:63$7_Y": {
+          "hide_name": 1,
+          "bits": [ 87 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:63.35-63.41"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74$10_Y": {
+          "hide_name": 1,
+          "bits": [ 120 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74.34-74.40"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74$11_Y": {
+          "hide_name": 1,
+          "bits": [ 121 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74.43-74.48"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93$14_Y": {
+          "hide_name": 1,
+          "bits": [ 92 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:93.42-93.60"
+          }
+        },
+        "$not$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:98$20_Y": {
+          "hide_name": 1,
+          "bits": [ 98 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:98.48-98.58"
+          }
+        },
+        "$or$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133$32_Y": {
+          "hide_name": 1,
+          "bits": [ 124 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:133.26-133.40"
+          }
+        },
+        "$or$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:168$38_Y": {
+          "hide_name": 1,
+          "bits": [ 134, 135, 136, 137, 138, 139, 140, 141 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:168.28-168.61"
+          }
+        },
+        "$or$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74$12_Y": {
+          "hide_name": 1,
+          "bits": [ 142 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:74.34-74.48"
+          }
+        },
+        "$procmux$60_Y": {
+          "hide_name": 1,
+          "bits": [ 170, 171, 172, 173, 174, 175, 176, 177 ],
+          "attributes": {
+          }
+        },
+        "$procmux$69_Y": {
+          "hide_name": 1,
+          "bits": [ 186 ],
+          "attributes": {
+          }
+        },
+        "$procmux$75_Y": {
+          "hide_name": 1,
+          "bits": [ 187, 188, 189, 190, 191, 192, 193, 194 ],
+          "attributes": {
+          }
+        },
+        "$procmux$81_Y": {
+          "hide_name": 1,
+          "bits": [ 195 ],
+          "attributes": {
+          }
+        },
+        "$ternary$/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:166$39_Y": {
+          "hide_name": 1,
+          "bits": [ 178, 179, 180, 181, 182, 183, 184, 185 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:166.25-168.62"
+          }
+        },
+        "active_reg": {
+          "hide_name": 0,
+          "bits": [ 103, 104, 105, 106, 107, 108, 109, 110 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:57.19-57.29"
+          }
+        },
+        "bit_active": {
+          "hide_name": 0,
+          "bits": [ 25, 26, 27, 28, 29, 30, 31, 32 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:27.26-27.36"
+          }
+        },
+        "busy": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:30.26-30.30"
+          }
+        },
+        "cmp_decision": {
+          "hide_name": 0,
+          "bits": [ 88 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:52.11-52.23"
+          }
+        },
+        "cmp_decision_hold": {
+          "hide_name": 0,
+          "bits": [ 196 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:53.11-53.28"
+          }
+        },
+        "cmp_fault": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:24.26-24.35"
+          }
+        },
+        "cmp_fire": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:22.26-22.34"
+          }
+        },
+        "cmp_n": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:20.26-20.31"
+          }
+        },
+        "cmp_p": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:19.26-19.31"
+          }
+        },
+        "cmp_valid": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:23.26-23.35"
+          }
+        },
+        "code_reg": {
+          "hide_name": 0,
+          "bits": [ 51, 52, 53, 54, 55, 56, 57, 58 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:56.19-56.27"
+          }
+        },
+        "dac_code": {
+          "hide_name": 0,
+          "bits": [ 9, 10, 11, 12, 13, 14, 15, 16 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:25.26-25.34"
+          }
+        },
+        "dac_code_n": {
+          "hide_name": 0,
+          "bits": [ 17, 18, 19, 20, 21, 22, 23, 24 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:26.26-26.36"
+          }
+        },
+        "decision_event": {
+          "hide_name": 0,
+          "bits": [ 89 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:40.11-40.25"
+          }
+        },
+        "decision_hold_reset": {
+          "hide_name": 0,
+          "bits": [ 143 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:55.11-55.30"
+          }
+        },
+        "decision_hold_set": {
+          "hide_name": 0,
+          "bits": [ 90 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:54.11-54.28"
+          }
+        },
+        "done": {
+          "hide_name": 0,
+          "bits": [ 35 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:31.26-31.30"
+          }
+        },
+        "event_pending": {
+          "hide_name": 0,
+          "bits": [ 119 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:42.11-42.24"
+          }
+        },
+        "event_pending_reset": {
+          "hide_name": 0,
+          "bits": [ 123 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:43.11-43.30"
+          }
+        },
+        "guard_request": {
+          "hide_name": 0,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:46.11-46.24"
+          }
+        },
+        "guard_request_delayed": {
+          "hide_name": 0,
+          "bits": [ 47 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:47.11-47.32"
+          }
+        },
+        "guard_reset": {
+          "hide_name": 0,
+          "bits": [ 125 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:49.11-49.22"
+          }
+        },
+        "guard_set": {
+          "hide_name": 0,
+          "bits": [ 50 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:48.11-48.20"
+          }
+        },
+        "hold_elapsed": {
+          "hide_name": 0,
+          "bits": [ 91 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:37.11-37.23"
+          }
+        },
+        "hold_elapsed_tail": {
+          "hide_name": 0,
+          "bits": [ 122 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:38.11-38.28"
+          }
+        },
+        "hold_req": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:29.26-29.34"
+          }
+        },
+        "launch_pulse": {
+          "hide_name": 0,
+          "bits": [ 96 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:39.11-39.23"
+          }
+        },
+        "resolved_code": {
+          "hide_name": 0,
+          "bits": [ 126, 127, 128, 129, 130, 131, 132, 133 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:58.19-58.32"
+          }
+        },
+        "result": {
+          "hide_name": 0,
+          "bits": [ 36, 37, 38, 39, 40, 41, 42, 43 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:32.26-32.32"
+          }
+        },
+        "rst_n": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:17.26-17.31"
+          }
+        },
+        "sample": {
+          "hide_name": 0,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:28.26-28.32"
+          }
+        },
+        "sar_event_raw": {
+          "hide_name": 0,
+          "bits": [ 100 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:41.11-41.24"
+          }
+        },
+        "settle_ready": {
+          "hide_name": 0,
+          "bits": [ 76 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:50.11-50.23"
+          }
+        },
+        "track": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:18.26-18.31"
+          }
+        },
+        "track_n": {
+          "hide_name": 0,
+          "bits": [ 94 ],
+          "attributes": {
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_ctrl_async_phys.sv:36.11-36.18"
+          }
+        },
+        "u_decision_hold.q_n": {
+          "hide_name": 0,
+          "bits": [ 197 ],
+          "attributes": {
+            "hdlname": "u_decision_hold q_n",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:91.31-91.34"
+          }
+        },
+        "u_event_clock_delay.t0": {
+          "hide_name": 0,
+          "bits": [ 198 ],
+          "attributes": {
+            "hdlname": "u_event_clock_delay t0",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:54.31-54.33"
+          }
+        },
+        "u_event_pending.q_n": {
+          "hide_name": 0,
+          "bits": [ 199 ],
+          "attributes": {
+            "hdlname": "u_event_pending q_n",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:91.31-91.34"
+          }
+        },
+        "u_hold_delay.t0": {
+          "hide_name": 0,
+          "bits": [ 200 ],
+          "attributes": {
+            "hdlname": "u_hold_delay t0",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:23.31-23.33"
+          }
+        },
+        "u_hold_delay.t1": {
+          "hide_name": 0,
+          "bits": [ 201 ],
+          "attributes": {
+            "hdlname": "u_hold_delay t1",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:23.35-23.37"
+          }
+        },
+        "u_hold_delay.t2": {
+          "hide_name": 0,
+          "bits": [ 202 ],
+          "attributes": {
+            "hdlname": "u_hold_delay t2",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:23.39-23.41"
+          }
+        },
+        "u_interbit_delay.t0": {
+          "hide_name": 0,
+          "bits": [ 203 ],
+          "attributes": {
+            "hdlname": "u_interbit_delay t0",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:38.31-38.33"
+          }
+        },
+        "u_interbit_delay.t1": {
+          "hide_name": 0,
+          "bits": [ 204 ],
+          "attributes": {
+            "hdlname": "u_interbit_delay t1",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:38.35-38.37"
+          }
+        },
+        "u_launch_width.t0": {
+          "hide_name": 0,
+          "bits": [ 205 ],
+          "attributes": {
+            "hdlname": "u_launch_width t0",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:71.31-71.33"
+          }
+        },
+        "u_launch_width.t1": {
+          "hide_name": 0,
+          "bits": [ 206 ],
+          "attributes": {
+            "hdlname": "u_launch_width t1",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:71.35-71.37"
+          }
+        },
+        "u_launch_width.t2": {
+          "hide_name": 0,
+          "bits": [ 207 ],
+          "attributes": {
+            "hdlname": "u_launch_width t2",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:71.39-71.41"
+          }
+        },
+        "u_settle_latch.q_n": {
+          "hide_name": 0,
+          "bits": [ 208 ],
+          "attributes": {
+            "hdlname": "u_settle_latch q_n",
+            "keep": "true",
+            "src": "/foss/designs/core18_7p9643_candidate_pdnfix_20260830/rtl/sar_async_delay_cells.sv:91.31-91.34"
+          }
+        }
+      }
+    }
+  }
+}

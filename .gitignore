@@ -9,6 +9,7 @@ __pycache__/
 sar-adc/report/zipwork/
 sar-adc/report/deliver/
 sar-adc/report/*.zip
+sar-adc/build/
 sar-adc/logic/harden_v[1-8].log
 sar-adc/power/mixed*.log
 sar-adc/power/x[0-9]*.log
@@ -34,3 +35,7 @@ sar-chip/flow/librelane/runs/
 !results/core18_pex/
 !results/core18_pex/*.json
 !results/core18_pex/*.csv
+
+# Compact sign-off evidence for the released core18 PDN-fixed candidate.
+!sar-adc/signoff/
+!sar-adc/signoff/**

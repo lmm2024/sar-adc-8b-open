@@ -8,7 +8,7 @@ on M3 and change to M4 before crossing the analog switch rows.
 """
 import pya
 
-ASYNC_GDS = "../logic/runs/RUN_2026-08-20_POSTDAC_PENDING/final/gds/sar_ctrl_async_phys.gds"
+ASYNC_GDS = "../logic/final_async_phys/gds/sar_ctrl_async_phys.gds"
 TOP_NAME = "oa_sar8_core17_async"
 
 

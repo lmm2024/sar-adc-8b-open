@@ -9,7 +9,7 @@ CORE16 = HERE / "core16_full.cdl"
 ACORE13 = HERE / "acore13.cdl"
 ASYNC_SPICE = (
     HERE.parent
-    / "logic/runs/RUN_2026-08-20_POSTDAC_PENDING/final/spice/sar_ctrl_async_phys.spice"
+    / "logic/final_async_phys/spice/sar_ctrl_async_phys.spice"
 )
 OUT = HERE / "core17_async_full.cdl"
 

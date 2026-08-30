@@ -1,0 +1,4 @@
+[INFO] Running PEX of <oa_sar8_core18_final.gds>.
+[INFO] Results are put into </foss/designs/core18_7p9643_candidate_pdnfix_20260830/layout/pex_candidate_pdnfix_m3>.
+[INFO] PEX (full-RC) done, the extracted SPICE netlist is </foss/designs/core18_7p9643_candidate_pdnfix_20260830/layout/pex_candidate_pdnfix_m3/oa_sar8_core18_final.pex.spice>.
+[DONE] Bye!

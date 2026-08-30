@@ -1,0 +1,15 @@
+{
+  "pex_mode": "Magic full-RC (m=3)",
+  "corner": "IHP SG13G2 mos_tt + cap_typ, 1.5 V, 27 C",
+  "fs_msps": 10.0,
+  "track_ns": 25.0,
+  "requested_samples": 2,
+  "completed_samples": 2,
+  "codes": [
+    137,
+    160
+  ],
+  "conversion_time_ns_min": 34.446529650791774,
+  "conversion_time_ns_mean": 34.494821685556715,
+  "conversion_time_ns_max": 34.543113720321664
+}

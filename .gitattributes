@@ -1,0 +1,22 @@
+*.gds binary
+*.png binary
+*.odb binary
+*.spice text eol=lf
+*.cdl text eol=lf
+*.sv text eol=lf
+*.v text eol=lf
+*.vh text eol=lf
+*.sdf text eol=lf
+*.spef text eol=lf
+*.lef text eol=lf
+*.lib text eol=lf
+*.def text eol=lf
+*.tcl text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.log text eol=lf

@@ -1,0 +1,16 @@
+[INFO] Running LVS of </foss/designs/core18_7p9643_candidate_pdnfix_20260830/layout/oa_sar8_core18_final.gds> vs </foss/designs/core18_7p9643_candidate_pdnfix_20260830/layout/core18_final_full.cdl>.
+[INFO] Run KLayout LVS...
+---
+[INFO] KLayout LVS is OK, schematic/netlist and layout match!
+---
+CONGRATULATIONS! LVS is OK, schematic/netlist and layout match!
+      .-"""""-.
+    .'  _   _  '.
+   /   (o) (o)   \
+  |       <       |
+  |    \_____/    |
+   \             /
+    '.         .'
+      '-.....-'
+---
+[DONE] Bye!

@@ -1,0 +1,16 @@
+[INFO] Running DRC of <oa_sar8_core18_final.gds>.
+[INFO] Results are put into </foss/designs/core18_7p9643_candidate_pdnfix_20260830/layout/drc_candidate_pdnfix_final>.
+[INFO] Launching KLayout DRC...
+---
+[INFO] KLayout 9 DRC errors found! Check </foss/designs/core18_7p9643_candidate_pdnfix_20260830/layout/drc_candidate_pdnfix_final/oa_sar8_core18_final.klayout.drc>!
+---
+DRC ERRORS FOUND! Please check the output files!
+      .-"""""-.
+    .'  _   _  '.
+   /   (o) (o)   \
+  |       <       |
+  |     _____     |
+   \             /
+    '.         .'
+      '-.....-'
+---

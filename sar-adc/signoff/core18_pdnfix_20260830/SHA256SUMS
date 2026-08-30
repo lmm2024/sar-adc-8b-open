@@ -1,0 +1,7 @@
+39a420db0bb216b64a197c1ec904b37968ea5e8b8009bdc2990f13a984ac950f  ../../layout/oa_sar8_core18_final.gds
+39d43ef5f38c550b093990f42dc98d8887aaf51cc3d9e1edfead58e70d5e3803  ../../layout/oa_sar8_core18_final_base_7p9643.gds
+2117834011575fa93f5ba8ed10c6db92b1c41051344fddc03c5cee83aafb5061  ../../layout/core18_final_full.cdl
+7ac7b2d72713cd27826be42782ad3fe882d718edb7e984ce2429f199ba5554e0  ../../layout/pex_core18_final_w2_rc/oa_sar8_core18_final.pex.spice
+940d7576b08494776e0e2f610501cf2b0e13eeb9e9d083209edb73b7f8c9dd7  ../../logic/final_async_phys/gds/sar_ctrl_async_phys.gds
+edcd15e452d4ab882d8d543d4f228a0560ff4b311c326f837ae74731dda68f3b  ../../rtl/sar_ctrl_async_phys.sv
+7a09c9907e66b188dad204a981f660d262683c1489d804961e0144a923581881  ../../rtl/sar_async_delay_cells.sv

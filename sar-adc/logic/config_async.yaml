@@ -16,6 +16,13 @@ PL_TARGET_DENSITY_PCT: 68
 GRT_ALLOW_CONGESTION: true
 RUN_MAGIC_DRC: true
 PDN_MULTILAYER: false
+# Keep the signed-off SAR RTL and signal path unchanged.  Add a second
+# VDD/VSS TopMetal1 pair near the right-hand output cells so the MSB output
+# buffer no longer returns through ~33 um of narrow Metal1 to the only VSS
+# stripe.  The original default pitch is 75.6 um, larger than this 65 um
+# macro; 30 um produces two local power pairs without changing logic.
+PDN_VPITCH: 30
+PDN_HPITCH: 30
 IO_PIN_ORDER_CFG: dir::pin_order_async.cfg
 LINTER_INCLUDE_PDK_MODELS: true
 
